@@ -1,27 +1,39 @@
-<?php
+<?php 
+
 class captcha_bank_image
 {
-    /**
+	
+	/**
      * Renders captcha as a JPEG image
+     * @var int
      */
     const captchaBank_image_jpeg = 1;
     /**
      * Renders captcha as a PNG image (default)
+     * @var int
      */
     const captchaBank_image_png  = 2;
     /**
      * Renders captcha as a GIF image
+     * @var int
      */
     const captchaBank_image_gif  = 3;
 
     /**
      * Create a normal alphanumeric captcha
+     * @var int
      */
     const captchaBank_string     = 0;
     /**
      * Create a captcha consisting of a simple math problem
+     * @var int
      */
     const captchaBank_mathematics = 1;
+    /**
+     * Create a word based captcha using 2 words
+     * @var int
+     */
+    const captchaBank_words      = 2;
 
     /*%*********************************************************************%*/
     // Properties
@@ -29,11 +41,11 @@ class captcha_bank_image
     /**
      * The width of the captcha image
      */
-    public $image_width = 215;
+    public $image_width;
     /**
      * The height of the captcha image
      */
-    public $image_height = 80;
+    public $image_height;
     /**
      * The type of the image, default = png
      */
@@ -46,11 +58,11 @@ class captcha_bank_image
     /**
      * The color of the captcha text
      */
-    public $text_color     = '#e00000';
+    public $text_color;
     /**
      * The color of the lines over the captcha
      */
-    public $line_color     = '#707070';
+    public $line_color;
     /**
      * The color of the noise that is drawn
      */
@@ -59,7 +71,7 @@ class captcha_bank_image
     /**
      * How transparent to make the text 0 = completely opaque, 100 = invisible
      */
-    public $text_transparency_percentage = 20;
+    public $text_transparency_percentage = 50;
     /**
      * Whether or not to draw the text transparently, true = use transparency, false = no transparency
      */
@@ -68,15 +80,19 @@ class captcha_bank_image
     /**
      * The length of the captcha code
      */
-    public $code_length    = 6;
+    public $code_length;
     /**
      * Whether the captcha should be case sensitive (not recommended, use only for maximum protection)
      */
-    public $case_sensitive = true;
+    public $f = true;
     /**
      * The character set to use for generating the captcha code
      */
-    public $charset        = 'ABCDEFGHKLMNPRSTUVWYZabcdefghklmnprstuvwyz23456789';
+    public $charset        = 'ABCDEFGHKLMNPRSTUVWYZabcdefghklmnprstuvwyz0123456789';
+	
+	public $charset_digits = '0123456789';
+	
+	public $charset_alphabets = 'ABCDEFGHKLMNPRSTUVWYZabcdefghklmnprstuvwyz';
     /**
      * How long in seconds a captcha remains valid, after this time it will not be accepted
      */
@@ -89,34 +105,38 @@ class captcha_bank_image
     public $session_name   = null;
 
     /**
+     * true to use the wordlist file, false to generate random captcha codes
+     */
+    public $use_wordlist   = false;
+
+    /**
      * The level of distortion, 0.75 = normal, 1.0 = very high distortion
      */
-    public $perturbation = 0.85;
-
+    public $perturbation = 0.75;
     /**
      * How many lines to draw over the captcha code to increase security
      */
-    public $num_lines    = 5;
-
+    public $num_lines;
     /**
      * The level of noise (random dots) to place on the image, 0-10
      */
-    public $noise_level  = 2;
+    public $noise_level  =5;
 
     /**
      * The signature text to draw on the bottom corner of the image
      */
     public $image_signature = '';
-
     /**
      * The color of the signature text
      */
-    public $signature_color = '#707070';
-
+    public $signature_color = '#7a6ccc';
     /**
      * The path to the ttf font file to use for the signature text, defaults to $ttf_file (AHGBold.ttf)
      */
     public $signature_font;
+
+    
+
 
     /**
      * The type of captcha to create, either alphanumeric, or a math problem<br />
@@ -132,7 +152,15 @@ class captcha_bank_image
      * The font file to use to draw the captcha code, leave blank for default font AHGBold.ttf
      */
     public $ttf_file;
-
+    /**
+     * The path to the wordlist file to use, leave blank for default words/words.txt
+     */
+    public $wordlist_file;
+    /**
+     * The directory to scan for background images, if set a random background will be chosen from this folder
+     */
+    public $background_directory;
+	
     /**
      * Captcha ID if using static captcha
      */
@@ -152,24 +180,51 @@ class captcha_bank_image
 
     /**
      * The display value of the captcha to draw on the image (the word captcha, or the math equation to present to the user)
+     *
      */
     protected $code_display;
 
     /**
+     * A value that can be passed to the constructor that can be used to generate a captcha image with a given value
+     * This value does not get stored in the session or database and is only used when calling captcha_bank_image::display().
+     * If a display_value was passed to the constructor and the captcha image is generated, the display_value will be used
+     * as the string to draw on the captcha image.  Used only if captcha codes are generated and managed by a 3rd party app/library
+     *
+     */
+    public $display_value;
+
+    /**
      * Captcha code supplied by user [set from captcha_bank_image::check()]
+     *
+     * @var string
      */
     protected $captcha_code;
 
     /**
+     * Flag that can be specified telling CaptchaBankImage not to call exit after generating a captcha image
+     */
+    protected $no_exit;
+
+    /**
      * Flag indicating whether or not a PHP session should be started and used
+     *
+     * @var bool If true, no session will be started; if false, session will be started and used to store data (default)
      */
     protected $no_session;
 
     /**
      * Flag indicating whether or not HTTP headers will be sent when outputting captcha image
+     *
+     * @var bool If true (default) headers will be sent, if false, no headers are sent
      */
     protected $send_headers;
 
+    /**
+     * PDO connection when a database is used
+     *
+     * @var resource
+     */
+    protected $pdo_conn;
 
     // gd color resources that are allocated for drawing the image
     protected $gdbgcolor;
@@ -177,30 +232,65 @@ class captcha_bank_image
     protected $gdlinecolor;
     protected $gdsignaturecolor;
 
-    /**
-     * Create a new captcha_bank_image object, pass options to set in the constructor.<br />
-     */
     public function __construct($options = array())
     {
         $this->CaptchaBankImage_path = dirname(__FILE__);
 
         if (is_array($options) && sizeof($options) > 0) {
             foreach($options as $prop => $val) {
-                 $this->$prop = $val;
+                if ($prop == 'captchaId') {
+                    captcha_bank_image::$_captchaId = $val;
+                    $this->use_database     = true;
+                } else if ($prop == 'use_sqlite_db') {
+                    trigger_error("The use_sqlite_db option is deprecated, use 'use_database' instead", E_USER_NOTICE);
+                } else {
+                    $this->$prop = $val;
+                }
             }
         }
+		
+		$this->image_bg_color  = $this->initColor($this->image_bg_color,  '#ffffff');
+		$this->text_color      = $this->initColor($options[6],      '#000000');
+		$this->line_color      = $this->initColor($options[11],      '#616161');
+		$this->noise_color     = $this->initColor($options[14],     '#616161');
+		$this->signature_color = $this->initColor($options[22], '#616161');
 
-        $this->image_bg_color  = $this->initColor($this->image_bg_color,  '#ffffff');
-        $this->text_color      = $this->initColor($this->text_color,      '#616161');
-        $this->line_color      = $this->initColor($this->line_color,      '#616161');
-        $this->noise_color     = $this->initColor($this->noise_color,     '#616161');
-        $this->signature_color = $this->initColor($this->signature_color, '#616161');
-
+		$this->ttf_file = CAPTCHA_BK_PLUGIN_DIR . '/assets/fonts' . '/'.$options[7];
+		$this->code_length = $options[2];
+		$this->image_width = $options[3];
+		$this->image_height = $options[4];
+			$this->bgimg = CAPTCHA_BK_PLUGIN_DIR . '/assets/backgrounds/'.$options[5]; 
+		$this->num_lines = $options[9] == 1 ? $options[10] : 0;
+		$this->noise_level = $options[12] == 1 ? $options[13] : 0;
+		$this->use_transparent_text = $options[15] == 1 ? true : false;
+		$this->text_transparency_percentage = $options[16];
+		$this->image_signature = $options[20] == 1 ?  $options[21] : '';
+		$this->case_sensitive = $options[8] == 1 ?  true : false;
+		if($options[17] == "digits")
+		{
+			$this->charset = $this->charset_digits;
+		}
+		else if($options[17] == "alphabets")
+		{
+			$this->charset = $this->charset_alphabets;
+		} 
+	
+		
+		if($options[18] == 1)
+		{
+			$this->perturbation = $options[19];
+		}
         if (is_null($this->ttf_file)) {
             $this->ttf_file = $this->CaptchaBankImage_path . '/AHGBold.ttf';
         }
-
+		
+		
         $this->signature_font = $this->ttf_file;
+
+        if (is_null($this->wordlist_file)) {
+            $this->wordlist_file = $this->CaptchaBankImage_path . '/words/words.txt';
+        }
+
 
         if (is_null($this->code_length) || (int)$this->code_length < 1) {
             $this->code_length = 6;
@@ -214,8 +304,16 @@ class captcha_bank_image
             $this->namespace = 'default';
         }
 
+        if (is_null($this->no_exit)) {
+            $this->no_exit = false;
+        }
+
         if (is_null($this->no_session)) {
             $this->no_session = false;
+        }
+
+        if (is_null($this->send_headers)) {
+            $this->send_headers = true;
         }
 
         if ($this->no_session != true) {
@@ -230,7 +328,7 @@ class captcha_bank_image
     }
 
     /**
-     * Return the absolute path to the Securimage directory
+     * Return the absolute path to the CaptchaBankImage directory
      */
     public static function getPath()
     {
@@ -240,7 +338,7 @@ class captcha_bank_image
     /**
      * Generate a new captcha ID or retrieve the current ID
      */
-    public static function getCaptchaId()
+    public static function get_captcha_id($new = true, array $options = array())
     {
             return captcha_bank_image::$_captchaId;
     }
@@ -248,7 +346,7 @@ class captcha_bank_image
     /**
      * Validate a captcha code input against a captcha ID
      */
-    public static function checkByCaptchaId()
+    public static function check_by_captcha_id()
     {
             return false;
     }
@@ -259,13 +357,14 @@ class captcha_bank_image
      */
     public function  display($background_image = 'backgrounds/bg4.jpg')
     {
+    	
         set_error_handler(array(&$this, 'errorHandler'));
 
         if($background_image != '' && is_readable($background_image)) {
             $this->bgimg = $background_image;
         }
-
-        $this->doImage();
+		
+        $this->Image();
     }
 
     /**
@@ -280,9 +379,9 @@ class captcha_bank_image
     }
 
     /**
-     * Return the code from the session.  If none exists yet, an empty string is returned
+     * Return the code from the session or sqlite database if used.  If none exists yet, an empty string is returned
      */
-    public function getCode($array = false, $returnExisting = false)
+    public function get_code($array = false, $returnExisting = false)
     {
         $code = '';
         $time = 0;
@@ -302,16 +401,14 @@ class captcha_bank_image
         if ($this->no_session != true) {
             if (isset($_SESSION['captchaBankImage_code_value'][$this->namespace]) &&
                     trim($_SESSION['captchaBankImage_code_value'][$this->namespace]) != '') {
-                if ($this->isCodeExpired(
+                if ($this->expired_code(
                         $_SESSION['captchaBankImage_code_ctime'][$this->namespace]) == false) {
                     $code = $_SESSION['captchaBankImage_code_value'][$this->namespace];
                     $time = $_SESSION['captchaBankImage_code_ctime'][$this->namespace];
                     $disp = $_SESSION['captchaBankImage_code_disp'] [$this->namespace];
                 }
-						
             }
         }
-
 
         if ($array == true) {
             return array('code' => $code, 'ctime' => $time, 'display' => $disp);
@@ -323,45 +420,57 @@ class captcha_bank_image
     /**
      * The main image drawing routing, responsible for constructing the entire image and serving it
      */
-    protected function doImage()
+    protected function Image()
     {
         if( ($this->use_transparent_text == true || $this->bgimg != '') && function_exists('imagecreatetruecolor')) {
             $imagecreate = 'imagecreatetruecolor';
         } else {
             $imagecreate = 'imagecreate';
         }
-
         $this->im     = $imagecreate($this->image_width, $this->image_height);
         $this->tmpimg = $imagecreate($this->image_width * $this->iscale, $this->image_height * $this->iscale);
-        $this->allocateColors();
+        $this->add_colors();
         imagepalettecopy($this->tmpimg, $this->im);
 
-        $this->setBackground();
+        $this->set_background();
 
         $code = '';
+
+        if ($this->get_captcha_id(false) !== null) {
+            // a captcha Id was supplied
+
+            // check to see if a display_value for the captcha image was set
+            if (is_string($this->display_value) && strlen($this->display_value) > 0) {
+                $this->code_display = $this->display_value;
+                $this->code         = ($this->case_sensitive) ?
+                                       $this->display_value   :
+                                       strtolower($this->display_value);
+                $code = $this->code;
+            } 
+        }
 
         if ($code == '') {
             // if the code was not set using display_value or was not found in
             // the database, create a new code
-            $this->createCode();
+            $this->create_code();
         }
 
         if ($this->noise_level > 0) {
-            $this->drawNoise();
+            $this->draw_noise();
         }
 
-        $this->drawWord();
+        $this->draw_word();
 
         if ($this->perturbation > 0 && is_readable($this->ttf_file)) {
-            $this->distortedCopy();
+            $this->distorted_copy();
         }
 
         if ($this->num_lines > 0) {
-            $this->drawLines();
+            $this->draw_lines();
         }
 
         if (trim($this->image_signature) != '') {
-            $this->addSignature();
+            $this->add_signature();
         }
 
         $this->output();
@@ -370,7 +479,7 @@ class captcha_bank_image
     /**
      * Allocate the colors to be used for the image
      */
-    protected function allocateColors()
+    protected function add_colors()
     {
         // allocate bg color first for imagecreate
         $this->gdbgcolor = imagecolorallocate($this->im,
@@ -410,7 +519,7 @@ class captcha_bank_image
                                                           $this->noise_color->g,
                                                           $this->noise_color->b);
         }
-
+		
         $this->gdsignaturecolor = imagecolorallocate($this->im,
                                                      $this->signature_color->r,
                                                      $this->signature_color->g,
@@ -421,7 +530,7 @@ class captcha_bank_image
     /**
      * The the background color, or background image to be used
      */
-    protected function setBackground()
+    protected function set_background()
     {
         // set background color of image by drawing a rectangle since imagecreatetruecolor doesn't set a bg color
         imagefilledrectangle($this->im, 0, 0,
@@ -430,6 +539,18 @@ class captcha_bank_image
         imagefilledrectangle($this->tmpimg, 0, 0,
                              $this->image_width * $this->iscale, $this->image_height * $this->iscale,
                              $this->gdbgcolor);
+
+        if ($this->bgimg == '') {
+            if ($this->background_directory != null &&
+                is_dir($this->background_directory) &&
+                is_readable($this->background_directory))
+            {
+                $img = $this->get_background_from_directory();
+                if ($img != false) {
+                    $this->bgimg = $img;
+                }
+            }
+        }
 
         if ($this->bgimg == '') {
             return;
@@ -455,9 +576,31 @@ class captcha_bank_image
     }
 
     /**
+     * Scan the directory for a background image to use
+     */
+    protected function get_background_from_directory()
+    {
+        $images = array();
+
+        if ( ($dh = opendir($this->background_directory)) !== false) {
+            while (($file = readdir($dh)) !== false) {
+                if (preg_match('/(jpg|gif|png)$/i', $file)) $images[] = $file;
+            }
+
+            closedir($dh);
+
+            if (sizeof($images) > 0) {
+                return rtrim($this->background_directory, '/') . '/' . $images[mt_rand(0, sizeof($images)-1)];
+            }
+        }
+
+        return false;
+    }
+
+    /**
      * Generates the code or math problem and saves the value to the session
      */
-    public function createCode()
+    public function create_code()
     {
         $this->code = false;
 
@@ -482,11 +625,20 @@ class captcha_bank_image
                 break;
             }
 
+            case self::captchaBank_words:
+                $words = $this->access_code_from_file(2);
+                $this->code = implode(' ', $words);
+                $this->code_display = $this->code;
+                break;
+
             default:
             {
+                if ($this->use_wordlist && is_readable($this->wordlist_file)) {
+                    $this->code = $this->access_code_from_file();
+                }
 
                 if ($this->code == false) {
-                    $this->code = $this->generateCode($this->code_length);
+                    $this->code = $this->generate_code($this->code_length);
                 }
 
                 $this->code_display = $this->code;
@@ -494,13 +646,13 @@ class captcha_bank_image
             } // default
         }
 
-         $this->saveData();
+         $this->save_data();
     }
 
     /**
      * Draws the captcha code on the image
      */
-    protected function drawWord()
+    protected function draw_word()
     {
         $width2  = $this->image_width * $this->iscale;
         $height2 = $this->image_height * $this->iscale;
@@ -529,12 +681,14 @@ class captcha_bank_image
             }
         }
 
+      
+
     }
 
     /**
      * Copies the captcha image to the final image with distortion applied
      */
-    protected function distortedCopy()
+    protected function distorted_copy()
     {
         $numpoles = 3; // distortion factor
         // make array of poles AKA attractor points
@@ -585,7 +739,7 @@ class captcha_bank_image
     /**
      * Draws distorted lines on the image
      */
-    protected function drawLines()
+    protected function draw_lines()
     {
         for ($line = 0; $line < $this->num_lines; ++ $line) {
             $x = $this->image_width * (1 + $line) / ($this->num_lines + 1);
@@ -622,7 +776,7 @@ class captcha_bank_image
     /**
      * Draws random noise on the image
      */
-    protected function drawNoise()
+    protected function draw_noise()
     {
         if ($this->noise_level > 10) {
             $noise_level = 10;
@@ -654,7 +808,7 @@ class captcha_bank_image
     /**
     * Print signature text on image
     */
-    protected function addSignature()
+    protected function add_signature()
     {
         $bbox = imagettfbbox(10, 0, $this->signature_font, $this->image_signature);
         $textlen = $bbox[2] - $bbox[0];
@@ -706,12 +860,56 @@ class captcha_bank_image
         imagedestroy($this->im);
         restore_error_handler();
 
+        if (!$this->no_exit) exit;
+    }
+
+    /**
+     * Gets a captcha code from a wordlist
+     */
+    protected function access_code_from_file($numWords = 1)
+    {
+        $fp = fopen($this->wordlist_file, 'rb');
+        if (!$fp) return false;
+
+        $fsize = filesize($this->wordlist_file);
+        if ($fsize < 128) return false; // too small of a list to be effective
+
+        if ((int)$numWords < 1 || (int)$numWords > 5) $numWords = 1;
+
+        $words = array();
+        $i = 0;
+        do {
+            fseek($fp, mt_rand(0, $fsize - 64), SEEK_SET); // seek to a random position of file from 0 to filesize-64
+            $data = fread($fp, 64); // read a chunk from our random position
+            $data = preg_replace("/\r?\n/", "\n", $data);
+
+            $start = @strpos($data, "\n", mt_rand(0, 56)) + 1; // random start position
+            $end   = @strpos($data, "\n", $start);          // find end of word
+
+            if ($start === false) {
+                // picked start position at end of file
+                continue;
+            } else if ($end === false) {
+                $end = strlen($data);
+            }
+
+            $word = strtolower(substr($data, $start, $end - $start)); // return a line of the file
+            $words[] = $word;
+        } while (++$i < $numWords);
+
+        fclose($fp);
+
+        if ($numWords < 2) {
+            return $words[0];
+        } else {
+            return $words;
+        }
     }
 
     /**
      * Generates a random captcha code from the set character set
      */
-    protected function generateCode()
+    protected function generate_code()
     {
         $code = '';
 
@@ -735,14 +933,14 @@ class captcha_bank_image
     protected function validate()
     {
         if (!is_string($this->code) || strlen($this->code) == 0) {
-            $code = $this->getCode();
+            $code = $this->get_code();
             // returns stored code, or an empty string if no stored code was found
             // checks the session and database if enabled
         } else {
             $code = $this->code;
         }
 
-        if ($this->case_sensitive == true && preg_match('/[A-Z]/', $code)) {
+        if ($this->case_sensitive == false && preg_match('/[A-Z]/', $code)) {
             // case sensitive was set from captcha_bank_show.php but not in class
             // the code saved in the session has capitals so set case sensitive to true
             $this->case_sensitive = true;
@@ -773,7 +971,7 @@ class captcha_bank_image
     /**
      * Save data to session namespace and database if used
      */
-    protected function saveData()
+    protected function save_data()
     {
         if ($this->no_session != true) {
             if (isset($_SESSION['captchaBankImage_code_value']) && is_scalar($_SESSION['captchaBankImage_code_value'])) {
@@ -787,10 +985,12 @@ class captcha_bank_image
             $_SESSION['captchaBankImage_code_ctime'][$this->namespace] = time();
         }
     }
+
     /**
      * Checks to see if the captcha code has expired and cannot be used
+     * @param unknown_type $creation_time
      */
-    protected function isCodeExpired($creation_time)
+    protected function expired_code($creation_time)
     {
         $expired = true;
 
@@ -805,6 +1005,8 @@ class captcha_bank_image
 
     /**
      * Checks to see if headers can be sent and if any error has been output to the browser
+     *
+     * @return bool true if headers haven't been sent and no output/errors will break images, false if unsafe
      */
     protected function canSendHeaders()
     {
@@ -821,6 +1023,8 @@ class captcha_bank_image
 
     /**
      * Return a random float between 0 and 0.9999
+     *
+     * @return float Random float between 0 and 0.9999
      */
     function frand()
     {
@@ -829,6 +1033,8 @@ class captcha_bank_image
 
     /**
      * Convert an html color code to a CaptchaBankImage_Color
+     * @param string $color
+     * @param CaptchaBankImage_Color $default The defalt color to use if $color is invalid
      */
     protected function initColor($color, $default)
     {
@@ -849,6 +1055,16 @@ class captcha_bank_image
 
     /**
      * Error handler used when outputting captcha image
+     * This error handler helps determine if any errors raised would
+     * prevent captcha image from displaying.  If they have
+     * no effect on the output buffer or headers, true is returned so
+     * the script can continue processing.
+     * @param int $errno
+     * @param string $errstr
+     * @param string $errfile
+     * @param int $errline
+     * @param array $errcontext
+     * @return boolean true if handled, false if PHP should handle
      */
     public function errorHandler($errno, $errstr, $errfile = '', $errline = 0, $errcontext = array())
     {
@@ -862,11 +1078,13 @@ class captcha_bank_image
 
         return false;
     }
+	
+	
 }
 
 
 /**
- * Color object for captcha_bank_image CAPTCHA
+ * Color object for CaptchaBankImage CAPTCHA
  */
 class CaptchaBankImage_Color
 {
@@ -878,10 +1096,16 @@ class CaptchaBankImage_Color
      * Create a new CaptchaBankImage_Color object.<br />
      * Constructor expects 1 or 3 arguments.<br />
      * When passing a single argument, specify the color using HTML hex format,<br />
-     * $color = new CaptchaBankImage_Color('#0080FF')
+     * when passing 3 arguments, specify each RGB component (from 0-255) individually.<br />
+     * $color = new CaptchaBankImage_Color('#0080FF') or <br />
+     * $color = new CaptchaBankImage_Color(0, 128, 255)
+     *
+     * @param string $color
+     * @throws Exception
      */
     public function __construct($color = '#ffffff')
     {
+    	
         $args = func_get_args();
 
         if (sizeof($args) == 0) {
@@ -912,6 +1136,9 @@ class CaptchaBankImage_Color
 
     /**
      * Construct from an rgb triplet
+     * @param int $red The red component, 0-255
+     * @param int $green The green component, 0-255
+     * @param int $blue The blue component, 0-255
      */
     protected function constructRGB($red, $green, $blue)
     {
@@ -929,6 +1156,7 @@ class CaptchaBankImage_Color
 
     /**
      * Construct from an html hex color code
+     * @param string $color
      */
     protected function constructHTML($color)
     {
@@ -947,3 +1175,4 @@ class CaptchaBankImage_Color
         $this->b = hexdec($blue);
     }
 }
+?>
