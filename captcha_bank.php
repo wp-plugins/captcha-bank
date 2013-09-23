@@ -1,11 +1,11 @@
 <?php
 /*
  Plugin Name: Captcha Bank
- Plugin URI:
- Description:
- Author: Tech-Banker
+ Plugin URI: http://wordpress.org/plugins/captcha-bank
+ Description: This plugin allows you to implement security captcha form into web forms to prevent spam.
+ Author: contact-banker
  Version: 1.0
- Author URI:
+ Author URI: http://wordpress.org/plugins/captcha-bank
 */
 	////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 	//   D e f i n e     CONSTANTS //////////////////////////////////////////////////////////////////////////////////////////////////
