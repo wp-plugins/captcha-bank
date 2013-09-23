@@ -135,7 +135,7 @@ class captcha_bank_image
      */
     public $signature_font;
 
-    
+	public $case_sensitive = true;
 
 
     /**
@@ -236,18 +236,8 @@ class captcha_bank_image
     {
         $this->CaptchaBankImage_path = dirname(__FILE__);
 
-        if (is_array($options) && sizeof($options) > 0) {
-            foreach($options as $prop => $val) {
-                if ($prop == 'captchaId') {
-                    captcha_bank_image::$_captchaId = $val;
-                    $this->use_database     = true;
-                } else if ($prop == 'use_sqlite_db') {
-                    trigger_error("The use_sqlite_db option is deprecated, use 'use_database' instead", E_USER_NOTICE);
-                } else {
-                    $this->$prop = $val;
-                }
-            }
-        }
+        if(count($options) > 0)
+		{
 		
 		$this->image_bg_color  = $this->initColor($this->image_bg_color,  '#ffffff');
 		$this->text_color      = $this->initColor($options[6],      '#000000');
@@ -279,6 +269,7 @@ class captcha_bank_image
 		if($options[18] == 1)
 		{
 			$this->perturbation = $options[19];
+		}
 		}
         if (is_null($this->ttf_file)) {
             $this->ttf_file = $this->CaptchaBankImage_path . '/AHGBold.ttf';
