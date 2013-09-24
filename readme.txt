@@ -19,9 +19,6 @@ It protects your website from spam by means of logic, easily understood by human
 
 You will not have to spend your precious time on annoying attempts to understand hard-to-read words, combinations of letters or pictures that make your eyes pop up.
 
-
-All you need is to do one of the three basic maths actions - add, subtract and multiply.
-
 = Features =
 
 * Captcha Label : You can add a label to display captcha in the form.
