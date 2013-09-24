@@ -23,47 +23,47 @@ for($flag=0; $flag < count($settings); $flag++)
 		<div class="row-fluid">
 			<div class="span12">
 				<div id="captcha_settings_message" class="updated settings-error" style="display: none;"> 
-			<p><strong><?php _e("Success! Captcha settings has been saved.", captcha_bank); ?></strong></p>
-		</div>
+					<p><strong><?php _e("Success! Captcha settings has been saved.", captcha_bank); ?></strong></p>
+				</div>
 				<form id="captcha_settings" class="form-horizontal" method="post">
 				<div class="row-fluid">
-					<div class="span12">
+					<div class="span8">
 						<div class="block well">
 							<div class="body">
 								<div class="control-group">
 									<label class="control-label"><?php _e( "Captcha Label", captcha_bank ); ?> :</label>
 									<div class = "controls">
-										<input name="ux_label" type="text" id="ux_label" class="span12"  value="<?php echo $settings_array[0]; ?>"/>
+										<input name="ux_label" type="text" id="ux_label" class="span8"  value="<?php echo $settings_array[0]; ?>"/>
 									</div>
 								</div>
 								<div class="control-group">
 									<label class="control-label"><?php _e( "Captcha Tooltip", captcha_bank ); ?> :</label>
 									<div class = "controls">
-										<input name="ux_tooltip" type="text" id="ux_tooltip" class="span12"  value="<?php echo $settings_array[1]; ?>"/>
+										<input name="ux_tooltip" type="text" id="ux_tooltip" class="span8"  value="<?php echo $settings_array[1]; ?>"/>
 									</div>
 								</div>
 								<div class="control-group">
 									<label class="control-label"><?php _e( "Number of Captcha Characters to be Displayed", captcha_bank ); ?> :</label>
 									<div class = "controls">
-										<input name="ux_characters" type="text" id="ux_characters" class="span12" onblur="set_text_value('no_characters')" onkeyup="set_text_value('noise_level')" onkeypress="return OnlyNumbers(event)"  value="<?php echo $settings_array[2]; ?>"/>
+										<input name="ux_characters" type="text" id="ux_characters" class="span8" onblur="set_text_value('no_characters')" onkeyup="set_text_value('noise_level')" onkeypress="return OnlyNumbers(event)"  value="<?php echo $settings_array[2]; ?>"/>
 									</div>
 								</div>
 								<div class="control-group">
 									<label class="control-label"><?php _e( "Captcha Width", captcha_bank ); ?> : <?php _e( "(in pixels)", captcha_bank ); ?></label>
 									<div class = "controls">
-										<input name="ux_image_width" type="text" id="ux_image_width" class="span12" onkeypress="return OnlyNumbers(event)"  value="<?php echo $settings_array[3]; ?>"/>
+										<input name="ux_image_width" type="text" id="ux_image_width" class="span8" onkeypress="return OnlyNumbers(event)"  value="<?php echo $settings_array[3]; ?>"/>
 									</div>
 								</div>
 								<div class="control-group">
 									<label class="control-label"><?php _e( "Captcha Height", captcha_bank ); ?> : <?php _e( "(in pixels)", captcha_bank ); ?></label>
 									<div class = "controls">
-										<input name="ux_image_height" type="text" id="ux_image_height" class="span12" onkeypress="return OnlyNumbers(event)"  value="<?php echo $settings_array[4]; ?>"/>
+										<input name="ux_image_height" type="text" id="ux_image_height" class="span8" onkeypress="return OnlyNumbers(event)"  value="<?php echo $settings_array[4]; ?>"/>
 									</div>
 								</div>
 								<div class="control-group">
 									<label class="control-label"><?php _e( "Captcha Type", captcha_bank ); ?> :</label>
 									<div class = "controls">
-										<select name="ux_captcha_type" id="ux_captcha_type" class="span12">
+										<select name="ux_captcha_type" id="ux_captcha_type" class="span8">
 											<?php 
 											if($settings_array[17] == "digits")
 											{
@@ -247,7 +247,7 @@ for($flag=0; $flag < count($settings); $flag++)
 								<div class="control-group" id="number_of_lines">
 									<label class="control-label"><?php _e( "Number Of Lines to be Displayed", captcha_bank ); ?> :</label>
 									<div class = "controls">
-										<input type="text"  name="ux_number_of_lines" id="ux_number_of_lines" class="span12" onkeypress="return OnlyNumbers(event)" value="<?php echo $settings_array[10]; ?>"  />
+										<input type="text"  name="ux_number_of_lines" id="ux_number_of_lines" class="span8" onkeypress="return OnlyNumbers(event)" value="<?php echo $settings_array[10]; ?>"  />
 									</div>
 								</div>
 								<div class="control-group" id="line_color">
@@ -280,7 +280,7 @@ for($flag=0; $flag < count($settings); $flag++)
 								<div class="control-group" id="noise_level">
 									<label class="control-label"><?php _e( "Noice Level", captcha_bank ); ?> :</label>
 									<div class = "controls">
-										<input type="text"  name="ux_noise_level" id="ux_noise_level" class="span12" onblur="set_text_value('noise_level')" onkeyup="set_text_value('noise_level')" onkeypress="return OnlyNumbers(event)" value="<?php echo $settings_array[13]; ?>"  />
+										<input type="text"  name="ux_noise_level" id="ux_noise_level" class="span8" onblur="set_text_value('noise_level')" onkeyup="set_text_value('noise_level')" onkeypress="return OnlyNumbers(event)" value="<?php echo $settings_array[13]; ?>"  />
 									</div>
 								</div>
 								<div class="control-group" id="noise_color">
@@ -313,7 +313,7 @@ for($flag=0; $flag < count($settings); $flag++)
 								<div class="control-group" id="text_transparency">
 									<label class="control-label"><?php _e( "Text Transparency Percentage", captcha_bank ); ?> :</label>
 									<div class = "controls">
-										<input type="text"  name="ux_transparency_percent" id="ux_transparency_percent" class="span12"   onblur="set_text_value('tranparency_percentage')" onkeyup="set_text_value('tranparency_percentage')" onkeypress="return OnlyNumbers(event)"  value="<?php echo $settings_array[16]; ?>"  />
+										<input type="text"  name="ux_transparency_percent" id="ux_transparency_percent" class="span8"   onblur="set_text_value('tranparency_percentage')" onkeyup="set_text_value('tranparency_percentage')" onkeypress="return OnlyNumbers(event)"  value="<?php echo $settings_array[16]; ?>"  />
 									</div>
 								</div>
 								
@@ -339,7 +339,7 @@ for($flag=0; $flag < count($settings); $flag++)
 								<div class="control-group" id="distortion">
 									<label class="control-label"><?php _e( "Level of Distortion", captcha_bank ); ?> :</label>
 									<div class = "controls">
-										<input type="text"  name="ux_distortion_level" id="ux_distortion_level" class="span12"  onblur="set_text_value('distortion_level')" onkeyup="set_text_value('distortion_level')" onkeypress="return OnlyNumbers(event)" value="<?php echo $settings_array[19]; ?>"/>
+										<input type="text"  name="ux_distortion_level" id="ux_distortion_level" class="span8"  onblur="set_text_value('distortion_level')" onkeyup="set_text_value('distortion_level')" onkeypress="return OnlyNumbers(event)" value="<?php echo $settings_array[19]; ?>"/>
 									</div>
 								</div>
 								<div class="control-group">
@@ -364,7 +364,7 @@ for($flag=0; $flag < count($settings); $flag++)
 								<div class="control-group" id="image_signature">
 									<label class="control-label"><?php _e( "Signature", captcha_bank ); ?> :</label>
 									<div class = "controls">
-										<input type="text"  name="ux_signature" id="ux_signature" class="span12"   value="<?php echo $settings_array[21]; ?>"/>
+										<input type="text"  name="ux_signature" id="ux_signature" class="span8"   value="<?php echo $settings_array[21]; ?>"/>
 									</div>
 								</div>
 								<div class="control-group" id="signature_color">
@@ -492,8 +492,22 @@ for($flag=0; $flag < count($settings); $flag++)
 							</div>
 						</div>
 					</div>
+					<div class="span4">
+						<div class="block well" style="width:70%;float:left;">
+							<div class="control-group">
+								<pre>
+									<img id="captcha_image" title="<?php echo $settings_array[1];?>" style="border: 1px solid #000;margin-right: 15px; cursor: pointer;" src="<?php echo admin_url('admin-ajax.php') . "?sid=" .md5(uniqid());  ?>"  align="left" />
+									<a tabindex="-1" style="border-style: none; " href="#" title="Refresh Image" onclick="document.getElementById('captcha_image').src = '<?php echo admin_url('admin-ajax.php') . "?sid=" .md5(uniqid());  ?>'; this.blur(); return false"><img src="<?php echo CAPTCHA_BK_PLUGIN_URL ."/refresh.png"?>" alt="Reload Image" height="25" width="25" onclick="this.blur()" align="bottom" border="0" /></a><br />
+								</pre>
+								<p>
+									<strong>Enter Code*:</strong></br>
+									<input type="text" name="security_code" class="span10" maxlength="16" />
+								</p>
+							</div>
+						</div>
+					</div>	
 				</div>
-			</form>
+				</form>
 			</div>
 		</div>
 	</div>

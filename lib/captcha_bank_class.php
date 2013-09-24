@@ -1,54 +1,60 @@
 <?php
 global $wpdb;
-$settings = $wpdb -> get_col
-(
-	$wpdb -> prepare
-	(
-		'SELECT settings_value FROM ' . captcha_bank_settings() . " ORDER BY settings_id ASC",""
-	)
-);
-$settings_array = array();
-for($flag=0; $flag < count($settings); $flag++)
+if (count($wpdb->get_var('SHOW TABLES LIKE "' . captcha_bank_settings() . '"')) == 1)
 {
-	array_push($settings_array, $settings[$flag]);
-} 
-
-/*************************************************************************************/
-	//Add captch on login form
-	if($settings_array[23] == 1)
+	$settings = $wpdb -> get_col
+	(
+		$wpdb -> prepare
+		(
+			'SELECT settings_value FROM ' . captcha_bank_settings() . " ORDER BY settings_id ASC",""
+		)
+	);
+	if(count($settings) > 0)
 	{
-		add_action( 'login_form', 'captcha_bank_form' );
-		add_filter('wp_authenticate_user','captcha_bank_login_check',10,2 );
-	}
+		$settings_array = array();
+		for($flag=0; $flag < count($settings); $flag++)
+		{
+			array_push($settings_array, $settings[$flag]);
+		} 
 	
-	//Add captcha on register form
-	if($settings_array[26] == 1)
-	{
-	add_action( 'register_form', 'captcha_bank_form' );
-	add_action( 'register_post', 'captcha_bank_register_post',10,3);
-	}
 	
-	//Add captcha on Lostpassword form
-	if($settings_array[27] == 1)
-	{
-		add_action( 'lostpassword_form', 'captcha_bank_form' );
-		add_action( 'allow_password_reset', 'captcha_bank_lostpassword_post',1);
+	/*************************************************************************************/
+		//Add captch on login form
+		if($settings_array[23] == 1)
+		{
+			add_action( 'login_form', 'captcha_bank_form' );
+			add_filter('wp_authenticate_user','captcha_bank_login_check',10,2 );
+		}
+		
+		//Add captcha on register form
+		if($settings_array[26] == 1)
+		{
+		add_action( 'register_form', 'captcha_bank_form' );
+		add_action( 'register_post', 'captcha_bank_register_post',10,3);
+		}
+		
+		//Add captcha on Lostpassword form
+		if($settings_array[27] == 1)
+		{
+			add_action( 'lostpassword_form', 'captcha_bank_form' );
+			add_action( 'allow_password_reset', 'captcha_bank_lostpassword_post',1);
+		}
+		
+		//Add captcha on comment form
+		if($settings_array[24] == 1)
+		{
+			add_action( 'comment_form_after_fields', 'captcha_bank_form');
+			add_action( 'pre_comment_on_post', 'captcha_bank_comment_post' );
+		}
+		
+		//Add captcha on comment form when admin is login
+		if($settings_array[25] == 1)
+		{
+			add_action('comment_form_logged_in_after', 'captcha_bank_form');
+			add_action( 'pre_comment_on_post', 'captcha_bank_comment_post' );
+		}
 	}
-	
-	//Add captcha on comment form
-	if($settings_array[24] == 1)
-	{
-		add_action( 'comment_form_after_fields', 'captcha_bank_form');
-		add_action( 'pre_comment_on_post', 'captcha_bank_comment_post' );
-	}
-	
-	//Add captcha on comment form when admin is login
-	if($settings_array[25] == 1)
-	{
-		add_action('comment_form_logged_in_after', 'captcha_bank_form');
-		add_action( 'pre_comment_on_post', 'captcha_bank_comment_post' );
-	}
-	
+}	
 /*************************************************************************************/
 	//this function is to add captcha
 function captcha_bank_form()

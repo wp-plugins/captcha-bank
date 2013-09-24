@@ -29,7 +29,7 @@ register_uninstall_hook(__FILE__,'plugin_delete_script');
 
 if(file_exists(CAPTCHA_BK_PLUGIN_DIR. '/lib/captcha_bank_class.php'))
 {
-	 require_once(CAPTCHA_BK_PLUGIN_DIR. '/lib/captcha_bank_class.php');
+	 include_once CAPTCHA_BK_PLUGIN_DIR. '/lib/captcha_bank_class.php';
 }
 
 function plugin_install_script()
