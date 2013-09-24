@@ -54,9 +54,8 @@ add_action('admin_init','css_calls');
 function create_captcha_bank_menues()
 {
 	global $wpdb;
-	$menu = add_menu_page('Captcha Bank', __('Captcha Bank', captcha_bank), 'administrator', 'captcha_bank_test','',CAPTCHA_BK_PLUGIN_URL . '/assets/images/icon.png');
-	add_submenu_page('', 'TestPage', __('TestPage', captcha_bank), 'administrator', 'captcha_bank_test', 'captcha_bank_test');
-	add_submenu_page('captcha_bank_test', 'Settings', __('Settings', captcha_bank), 'administrator', 'captcha_bank_setting', 'captcha_bank_setting');
+	$menu = add_menu_page('Captcha Bank', __('Captcha Bank', captcha_bank), 'administrator', 'captcha_bank_setting','',CAPTCHA_BK_PLUGIN_URL . '/assets/images/icon.png');
+	add_submenu_page('', 'Settings', __('Settings', captcha_bank), 'administrator', 'captcha_bank_setting', 'captcha_bank_setting');
 }
 //--------------------------------------------------------------------------------------------------------------//
 //CODE FOR CALLING JAVASCRIPT FUNCTIONS
@@ -83,12 +82,6 @@ function css_calls()
 //--------------------------------------------------------------------------------------------------------------//
 // CODE FOR CREATING PAGES
 //---------------------------------------------------------------------------------------------------------------//
-
-function captcha_bank_test()
-{
-	global $wpdb;
-	include_once CAPTCHA_BK_PLUGIN_DIR .'/captcha_bank_test.php';
-}
 
 function captcha_bank_setting()
 {
