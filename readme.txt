@@ -11,7 +11,8 @@ Captch Bank allows you to implement high security captcha into your wordpress we
 
 == Description ==
 
-The Captcha Bank plugin allows you to implement a super security captcha into your wordpress site.<br/> It protects your website from spam by means of math logic, easily understood by human beings. You will not have to spend your precious time on annoying attempts to understand hard-to-read words, combinations of letters or pictures that make your eyes pop up. All you need is to do one of the three basic maths actions - add, subtract and multiply.
+The Captcha Bank plugin allows you to implement a super security captcha into your wordpress site.
+It protects your website from spam by means of math logic, easily understood by human beings. You will not have to spend your precious time on annoying attempts to understand hard-to-read words, combinations of letters or pictures that make your eyes pop up. All you need is to do one of the three basic maths actions - add, subtract and multiply.
 
 = Features =
 
