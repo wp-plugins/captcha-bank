@@ -1,4 +1,4 @@
-=== Captcha Bank ===
+﻿=== Captcha Bank ===
 Contributors: contact-banker,Gallery-Bank
 Tags: captcha, match captcha, text captcha, spam, antispam, login, registration, comment, lost password, captcha bank, anti spam
 Requires at least: 3.0
@@ -22,9 +22,32 @@ There is also a premium version of the plugin, allowing compatibility with Buddy
 
 = Features =
 
-* Display: You can use letters and numbers in captcha or just one of these two things - either letters or numbers.
-* Actions: The basic math actions are used - add, subtract, multiply.
-* Label: You can add a label to display captcha in the form.
+* Captcha Label : You can add a label to display captcha in the form.
+* Captcha Tooltip : You can add a tooltip to display captcha in the form.
+* Number of Captcha Characters to be Displayed
+* Captcha Width : (in pixels)
+* Captcha Height : (in pixels)
+* Captcha Type : Alphabets only , Digits only, Both Alphabets & Digits
+* Is Captcha to be Case Sensitive?
+* Captcha Background Pattern
+* Captcha Text Color
+* Show Lines on Captcha Background
+* Number Of Lines to be Displayed
+* Line Color
+* Show Noise on Captcha
+* Noice Level
+* Noise Color
+* Show Text Transparency
+* Text Transparency Percentage
+* Distortion
+* Level of Distortion
+* Image Signature
+* Captcha on login form
+* Captcha on Comment form
+* Captcha on admin Comment form
+* Captcha on Register form
+* Captcha on Lost Password form
+
 
 = Translation =
 
