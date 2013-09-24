@@ -7,19 +7,42 @@ Stable tag: 1.0
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
-Captch Bank allows you to implement high security captcha form into web forms to prevent spam.
+Captch Bank allows you to implement high security captcha into your wordpress webs site to prevent spam.
 
 == Description ==
 
-The Captcha Bank plugin allows you to implement a super security captcha form into web forms. It protects your website from spam by means of math logic, easily understood by human beings. You will not have to spend your precious time on annoying attempts to understand hard-to-read words, combinations of letters or pictures that make your eyes pop up. All you need is to do one of the three basic maths actions - add, subtract and multiply.
+The Captcha Bank plugin allows you to implement a super security captcha into your wordpress site. It protects your website from spam by means of math logic, easily understood by human beings. You will not have to spend your precious time on annoying attempts to understand hard-to-read words, combinations of letters or pictures that make your eyes pop up. All you need is to do one of the three basic maths actions - add, subtract and multiply.
 This captcha can be used for login, registration, password recovery, comments forms.
 There is also a premium version of the plugin, allowing compatibility with BuddyPress (Registration form, Comments form, "Create a Group" form).
 
 = Features =
 
-* Display: You can use letters and numbers in captcha or just one of these two things - either letters or numbers.
-* Actions: The basic math actions are used - add, subtract, multiply.
-* Label: You can add a label to display captcha in the form.
+* Captcha Label : You can add a label to display captcha in the form.
+* Captcha Tooltip : You can add a tooltip to display captcha in the form.
+* Number of Captcha Characters to be Displayed
+* Captcha Width : (in pixels)
+* Captcha Height : (in pixels)
+* Captcha Type : Alphabets only , Digits only, Both Alphabets & Digits
+* Is Captcha to be Case Sensitive?
+* Captcha Background Pattern
+* Captcha Text Color
+* Show Lines on Captcha Background
+* Number Of Lines to be Displayed
+* Line Color
+* Show Noise on Captcha
+* Noice Level
+* Noise Color
+* Show Text Transparency
+* Text Transparency Percentage
+* Distortion
+* Level of Distortion
+* Image Signature
+* Captcha on login form
+* Captcha on Comment form
+* Captcha on admin Comment form
+* Captcha on Register form
+* Captcha on Lost Password form
+
 
 == Frequently Asked Questions ==
 
