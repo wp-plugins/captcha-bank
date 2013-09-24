@@ -7,7 +7,7 @@ Stable tag: 1.0
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
-Captch Bank allows you to implement security captcha form into web forms to prevent spam.
+Captch Bank allows you to implement high security captcha form into web forms to prevent spam.
 
 == Description ==
 
@@ -21,6 +21,10 @@ There is also a premium version of the plugin, allowing compatibility with Buddy
 * Actions: The basic math actions are used - add, subtract, multiply.
 * Label: You can add a label to display captcha in the form.
 
+== Frequently Asked Questions ==
+
+Got a question?
+We'd love to hear from you! Email us at: author@tech-banker.com
 
 == Installation ==
 
