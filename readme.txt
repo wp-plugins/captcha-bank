@@ -1,5 +1,5 @@
 === Captcha Bank ===
-Contributors: contact-banker,gallery-bank
+Contributors: contact-banker,Gallery-Bank
 Tags: captcha, match captcha, text captcha, spam, antispam, login, registration, comment, lost password, capcha, catcha, captcha bank
 Requires at least: 3.0
 Tested up to: 3.6.1
