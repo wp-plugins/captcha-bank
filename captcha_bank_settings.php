@@ -492,6 +492,7 @@ for($flag=0; $flag < count($settings); $flag++)
 								$sessionStarted = @session_start();
 								//restore_error_handler();
 								session_test();
+								
 								function session_test()
 								{
 									if (!isset($_GET['testimage'])) 
@@ -527,7 +528,7 @@ for($flag=0; $flag < count($settings); $flag++)
 												exit;
 											}
 											$_SESSION['captchaBankImage_test_value'] = 'test';
-											
+											//header('Location: admin.php?page=captcha_bank_setting&tested=1');
 											exit;
 										}
 									}
