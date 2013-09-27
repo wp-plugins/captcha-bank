@@ -528,7 +528,7 @@ for($flag=0; $flag < count($settings); $flag++)
 												exit;
 											}
 											$_SESSION['captchaBankImage_test_value'] = 'test';
-											//header('Location: admin.php?page=captcha_bank_setting&tested=1');
+											header('Location: admin.php?page=captcha_bank_setting&tested=1');
 											exit;
 										}
 									}
