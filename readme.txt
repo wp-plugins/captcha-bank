@@ -3,7 +3,7 @@ Contributors: contact-banker,Gallery-Bank
 Tags: captcha, match captcha, text captcha, spam, antispam, login, registration, comment, lost password, capcha, catcha, captcha bank
 Requires at least: 3.0
 Tested up to: 3.6.1
-Stable tag: 1.0
+Stable tag: 1.1
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -62,6 +62,11 @@ We'd love to hear from you! Email us at: author@tech-banker.com
 2. Activate the plugin through the 'Plugins' menu in WordPress.
 
 == Changelog ==
+
+= 1.1 =
+
+* Bugs Fixed with functionality related to Browsers
+* Improved CSS
 
 = 1.0 =
 

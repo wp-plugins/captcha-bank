@@ -76,11 +76,16 @@ function captcha_bank_form()
 <label><?php echo $settings_array[0];?></label>
 	<p>
 		<img id="captcha_image" title="<?php echo $settings_array[1];?>" style="border: 1px solid #000; margin-right: 15px; cursor: pointer;" src="<?php echo admin_url('admin-ajax.php') . "?sid=" .md5(uniqid());  ?>"  align="left" />
-		<a tabindex="-1" style="border-style: none;" href="#" title="Refresh Image" onclick="document.getElementById('captcha_image').src = '<?php echo admin_url('admin-ajax.php') . "?sid=" .md5(uniqid());  ?>'; this.blur(); return false"><img src="<?php echo CAPTCHA_BK_PLUGIN_URL ."/refresh.png"?>" alt="Reload Image" height="32" width="32" onclick="this.blur()" align="bottom" border="0" /></a><br />
+		<a id="Refresh" style="border-style: none;" href="#" title="Refresh Image" ><img src="<?php echo CAPTCHA_BK_PLUGIN_URL ."/refresh.png"?>" alt="Reload Image" height="32" width="32" onclick="this.blur()" align="bottom" border="0" /></a><br />
 		<strong>Enter Code*:</strong><br />
 		<input type="text" name="security_code" size="12" maxlength="16" />
 	</p>
-
+<script type="text/javascript">
+	jQuery('#Refresh').click(function(){
+		document.getElementById('captcha_image').src = '<?php echo admin_url('admin-ajax.php') . "?sid=" ?>' + Math.random();
+		return false;
+	});
+</script>
 <?php
 	}
 /*************************************************************************************/

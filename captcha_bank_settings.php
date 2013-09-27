@@ -120,97 +120,68 @@ for($flag=0; $flag < count($settings); $flag++)
 												if($settings_array[5] == "bg3.jpg" )
 												{
 													?>
-													<td>
 														<input type="radio" name="ux_bg_image" id="bg3"  checked="checked" value="bg3.jpg" style="vertical-align: top !important;margin-top:20px;margin-right:10px;"/>
 														<img src="<?php echo CAPTCHA_BK_PLUGIN_URL . '/assets/backgrounds/bg3.jpg'?>" height="50" width="200" />
-														
-													</td>
-													<td>
+													
 														<input type="radio" name="ux_bg_image" id="bg4" value="bg4.jpg" style="vertical-align: top !important;margin-top:20px;margin-right:10px;margin-left:10px;" />
 														<img src="<?php echo CAPTCHA_BK_PLUGIN_URL . '/assets/backgrounds/bg4.jpg'?>" height="50" width="200" /><br/><br/>
-														
-													</td>
-													<td>
+													
 														<input type="radio" name="ux_bg_image" id="bg5" value="bg5.jpg" style="vertical-align: top !important;margin-top:20px;margin-right:10px;"/>
 														<img src="<?php echo CAPTCHA_BK_PLUGIN_URL . '/assets/backgrounds/bg5.jpg'?>" height="50" width="200" />
 														
-													</td>
-													<td>
+													
 														<input type="radio" name="ux_bg_image" id="bg6" value="bg6.png" style="vertical-align: top !important;margin-top:20px;margin-right:10px;margin-left:10px;" />
 														<img src="<?php echo CAPTCHA_BK_PLUGIN_URL . '/assets/backgrounds/bg6.png'?>" height="50" width="200" />
-													</td>
 													<?php
 												}
 												elseif($settings_array[5] == "bg4.jpg" )
 												{
 													?>
-													<td>
 														<input type="radio" name="ux_bg_image" id="bg3" value="bg3.jpg" style="vertical-align: top !important;margin-top:20px;margin-right:10px;"/>
 														<img src="<?php echo CAPTCHA_BK_PLUGIN_URL . '/assets/backgrounds/bg3.jpg'?>" height="50" width="200" />
-														
-													</td>
-													<td>
+													
 														<input type="radio" name="ux_bg_image" id="bg4" checked="checked" value="bg4.jpg" style="vertical-align: top !important;margin-top:20px;margin-right:10px;margin-left:10px;" />
 														<img src="<?php echo CAPTCHA_BK_PLUGIN_URL . '/assets/backgrounds/bg4.jpg'?>" height="50" width="200" /><br/><br/>
 														
-													</td>
-													<td>
+													
 														<input type="radio" name="ux_bg_image" id="bg5" value="bg5.jpg" style="vertical-align: top !important;margin-top:20px;margin-right:10px;"/>
 														<img src="<?php echo CAPTCHA_BK_PLUGIN_URL . '/assets/backgrounds/bg5.jpg'?>" height="50" width="200" />
 														
-													</td>
-													<td>
+													
 														<input type="radio" name="ux_bg_image" id="bg6" value="bg6.png" style="vertical-align: top !important;margin-top:20px;margin-right:10px;margin-left:10px;" />
 														<img src="<?php echo CAPTCHA_BK_PLUGIN_URL . '/assets/backgrounds/bg6.png'?>" height="50" width="200" />
-													</td>
 													<?php
 												}
 												elseif($settings_array[5] == "bg5.jpg")
 												{
 													?>
-													<td>
 														<input type="radio" name="ux_bg_image" id="bg3"   value="bg3.jpg" style="vertical-align: top !important;margin-top:20px;margin-right:10px;"/>
 														<img src="<?php echo CAPTCHA_BK_PLUGIN_URL . '/assets/backgrounds/bg3.jpg'?>" height="50" width="200" />
-														
-													</td>
-													<td>
+													
 														<input type="radio" name="ux_bg_image" id="bg4" value="bg4.jpg" style="vertical-align: top !important;margin-top:20px;margin-right:10px;margin-left:10px;" />
 														<img src="<?php echo CAPTCHA_BK_PLUGIN_URL . '/assets/backgrounds/bg4.jpg'?>" height="50" width="200" /><br/><br/>
 														
-													</td>
-													<td>
 														<input type="radio" name="ux_bg_image" id="bg5" value="bg5.jpg" checked="checked" style="vertical-align: top !important;margin-top:20px;margin-right:10px;"/>
 														<img src="<?php echo CAPTCHA_BK_PLUGIN_URL . '/assets/backgrounds/bg5.jpg'?>" height="50" width="200" />
-														
-													</td>
-													<td>
+													
 														<input type="radio" name="ux_bg_image" id="bg6" value="bg6.png" style="vertical-align: top !important;margin-top:20px;margin-right:10px;margin-left:10px;" />
 														<img src="<?php echo CAPTCHA_BK_PLUGIN_URL . '/assets/backgrounds/bg6.png'?>" height="50" width="200" />
-													</td>
 													<?php
 												}
 												else
 												{
 													?>
-													<td>
 														<input type="radio" name="ux_bg_image" id="bg3"   value="bg3.jpg" style="vertical-align: top !important;margin-top:20px;margin-right:10px;"/>
 														<img src="<?php echo CAPTCHA_BK_PLUGIN_URL . '/assets/backgrounds/bg3.jpg'?>" height="50" width="200" />
-														
-													</td>
-													<td>
+													
 														<input type="radio" name="ux_bg_image" id="bg4" value="bg4.jpg" style="vertical-align: top !important;margin-top:20px;margin-right:10px;margin-left:10px;" />
 														<img src="<?php echo CAPTCHA_BK_PLUGIN_URL . '/assets/backgrounds/bg4.jpg'?>" height="50" width="200" /><br/><br/>
-														
-													</td>
-													<td>
+													
 														<input type="radio" name="ux_bg_image" id="bg5" value="bg5.jpg"  style="vertical-align: top !important;margin-top:20px;margin-right:10px;"/>
 														<img src="<?php echo CAPTCHA_BK_PLUGIN_URL . '/assets/backgrounds/bg5.jpg'?>" height="50" width="200" />
-														
-													</td>
-													<td>
+													
 														<input type="radio" name="ux_bg_image" id="bg6" value="bg6.png" checked="checked" style="vertical-align: top !important;margin-top:20px;margin-right:10px;margin-left:10px;" />
 														<img src="<?php echo CAPTCHA_BK_PLUGIN_URL . '/assets/backgrounds/bg6.png'?>" height="50" width="200" />
-													</td>
 													<?php
 												}
 												?>
@@ -494,10 +465,9 @@ for($flag=0; $flag < count($settings); $flag++)
 						<div class="span4">
 							<div class="block well" style="width:70%;float:left;">
 								<div class="control-group">
-									<pre>
+									<label><?php echo $settings_array[0];?></label>
 										<img id="captcha_image" title="<?php echo $settings_array[1];?>" style="border: 1px solid #000;margin-right: 15px; cursor: pointer;" src="<?php echo admin_url('admin-ajax.php') . "?sid=" .md5(uniqid());  ?>"  align="left" />
-										<a tabindex="-1" style="border-style: none; " href="#" title="Refresh Image" onclick="document.getElementById('captcha_image').src = '<?php echo admin_url('admin-ajax.php') . "?sid=" .md5(uniqid());  ?>'; this.blur(); return false"><img src="<?php echo CAPTCHA_BK_PLUGIN_URL ."/refresh.png"?>" alt="Reload Image" height="25" width="25" onclick="this.blur()" align="bottom" border="0" /></a><br />
-									</pre>
+										<a style="float: right;" id="Refresh" href="#" title="Refresh Image" ><img src="<?php echo CAPTCHA_BK_PLUGIN_URL ."/refresh.png"?>" alt="Reload Image" height="25" width="25" onclick="this.blur()" align="bottom" border="0" /></a><br />
 									<p>
 										<strong>Enter Code*:</strong></br>
 										<input type="text" name="security_code" class="span10" maxlength="16" />
@@ -522,32 +492,6 @@ for($flag=0; $flag < count($settings); $flag++)
 								$sessionStarted = @session_start();
 								//restore_error_handler();
 								session_test();
-								if (isset($_GET['testimage']) && $_GET['testimage'] == '1')
-								{
-									$im    = imagecreate(225, 225);
-									$white = imagecolorallocate($im, 255, 255, 255);
-									$black = imagecolorallocate($im,   0,   0,   0);
-									$red   = imagecolorallocate($im, 255,   0,   0);
-									$green = imagecolorallocate($im,   0, 255,   0);
-									$blue  = imagecolorallocate($im,   0,   0, 255);
-								// draw the head
-									imagearc($im, 100, 120, 200, 200,  0, 360, $black);
-								// mouth
-									imagearc($im, 100, 120, 150, 150, 25, 155, $red);
-								// left and then the right eye
-									imagearc($im,  60,  95,  50,  50,  0, 360, $green);
-									imagearc($im, 140,  95,  50,  50,  0, 360, $blue);
-									imagestring($im, 5, 15, 1, 'Captcha Bank Will Work!!', $blue);
-									imagestring($im, 2, 5, 20, ':) :) :)', $black);
-									imagestring($im, 2, 5, 30, ':) :)', $black);
-									imagestring($im, 2, 5, 40, ':)', $black);
-									imagestring($im, 2, 150, 20, '(: (: (:', $black);
-									imagestring($im, 2, 168, 30, '(: (:', $black);
-									imagestring($im, 2, 186, 40, '(:', $black);
-									header('Content-type: image/png');
-									imagepng($im, null, 3);
-									exit;
-								}
 								function session_test()
 								{
 									if (!isset($_GET['testimage'])) 
@@ -583,7 +527,7 @@ for($flag=0; $flag < count($settings); $flag++)
 												exit;
 											}
 											$_SESSION['captchaBankImage_test_value'] = 'test';
-											header('Location: admin.php?page=captcha_bank_setting&tested=1');
+											
 											exit;
 										}
 									}
@@ -719,8 +663,9 @@ for($flag=0; $flag < count($settings); $flag++)
 									<?php else: ?>
 									<?php _e( "Your server meets the requirements for using Captcha Bank!", captcha_bank ); ?>
 									<?php endif; ?>
-									<br /><br />
-										<img src="<?php echo CAPTCHA_BK_PLUGIN_URL . '/captcha_bank_settings.php?testimage=1' ?>" alt="Test Image" align="bottom" />
+									<div style="margin-top:20px;text-align:center">
+										<img src="<?php echo CAPTCHA_BK_PLUGIN_URL . '/captcha_bank_test.php?testimage=1' ?>" alt="Test Image" align="bottom" />
+									</div>
 									<?php else: ?>
 									<?php _e( "Based on the requirements, you do not have what it takes to run Captcha Bank :", captcha_bank ); ?> :
 									<?php endif; ?>
@@ -909,4 +854,7 @@ for($flag=0; $flag < count($settings); $flag++)
 			}ux_characters
 		}
 	}
+	jQuery('#Refresh').click(function(){
+		document.getElementById('captcha_image').src = '<?php echo admin_url('admin-ajax.php') . "?sid=" ?>' + Math.random();
+	});
 </script>

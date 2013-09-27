@@ -292,8 +292,8 @@ else
 					'captcha_on_lost_password_form'
 				)
 			);
-			die();
-		}
+			 die();
+		 }
 	}
-}
+ }
 ?>
