@@ -47,6 +47,9 @@ You will not have to spend your precious time on annoying attempts to understand
 * Captcha on Register form
 * Captcha on Lost Password form
 
+== Screenshots ==
+
+1. Captcha Bank Settings Page
 
 == Frequently Asked Questions ==
 
