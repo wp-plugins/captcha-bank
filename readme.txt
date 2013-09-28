@@ -1,6 +1,6 @@
 ﻿=== Wordpress Captcha By Tech Banker ===
 Contributors: contact-banker,Gallery-Bank
-Tags: captcha, match captcha, text captcha, spam, antispam, login, registration, comment, lost password, capcha, catcha, captcha bank
+Tags: captcha,spam, anti-spam, login, registration, comments, lost password, widget, captcha bank, admin, spam
 Requires at least: 3.0
 Tested up to: 3.6.1
 Stable tag: 1.1
