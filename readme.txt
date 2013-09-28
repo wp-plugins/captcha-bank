@@ -7,7 +7,7 @@ Stable tag: 1.1
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
-Captch Bank allows you to implement high security captcha into your wordpress webs site to prevent spammers.
+An easy to use Wordpress Captcha Plugin to prevent spam on your site.
 
 == Description ==
 
