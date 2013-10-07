@@ -1,6 +1,6 @@
 ﻿=== Wordpress Captcha By Captcha Bank ===
 Contributors: contact-banker,Gallery-Bank
-Tags: captcha,spam, anti-spam, login, registration, comments, lost password, widget, captcha bank, admin, spam, plugin, widget, captcha plugin, best captcha plugin, easy captcha plugin, easy captcha
+Tags: captcha, spam, anti-spam, login, registration, comments, lost password, widget, captcha bank, admin, spam, plugin, widget, captcha plugin, best captcha plugin, easy captcha plugin, easy captcha
 Requires at least: 3.0
 Tested up to: 3.6.1
 Stable tag: 1.1
