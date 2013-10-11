@@ -7,7 +7,7 @@ Stable tag: 1.1
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
-An easy to use Wordpress Captcha Plugin to prevent spam on your site.
+An easy to use powerful wordpress Captcha Plugin to prevent spam on your site.
 
 == Description ==
 
