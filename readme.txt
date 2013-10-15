@@ -13,9 +13,11 @@ An easy to use powerful wordpress Captcha Plugin to prevent spam on your site.
 
 **Captcha Bank is a powerful captcha protection for WordPress login, lost password, registration, and comment forms.
 
-
 It protects your website from spam by means of logic, easily understood by human beings. 
 
+** Highly Recommended Gallery Plugin [Gallery-Bank](http://gallery-bank.com)
+
+** It can be downloaded [here](http://wordpress.org/plugins/gallery-bank/) from the Wordpress Repository 
 
 You will not have to spend your precious time on annoying attempts to understand hard-to-read words, combinations of letters or pictures that make your eyes pop up.
 
