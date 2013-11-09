@@ -1,4 +1,4 @@
-﻿=== Worpress Captcha By Captcha Bank ===
+﻿=== Captcha Bank ===
 Contributors: contact-banker,Gallery-Bank
 Tags: captcha, spam, anti-spam, login, registration, comments, lost password, widget, captcha bank, admin, spam, plugin, widget, captcha plugin, best captcha plugin, easy captcha plugin
 Requires at least: 3.0
