@@ -18,9 +18,10 @@ You will not have to spend your precious time on annoying attempts to understand
 
 It protects your website from spam by means of logic, easily understood by human beings. 
 
-**Highly Recommended Gallery Plugin [Gallery-Bank](http://gallery-bank.com)**
+**The following are other recommended plugins by the author of Contact Bank.
 
-**It can be downloaded [here](http://wordpress.org/plugins/gallery-bank/) from the Wordpress Repository**
+* [Gallery Bank](http://wordpress.org/plugins/gallery-bank/) - Gallery Bank is an easy to use Responsive WordPress Premium Gallery Plugin for galleries, videos and albums.
+* Contact Bank](http://wordpress.org/plugins/contact-bank/) - Contact Bank allows you to add a contact form easilly and simply to a post or a page.
 
 
 = Features =
