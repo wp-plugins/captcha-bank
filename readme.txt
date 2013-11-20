@@ -20,9 +20,7 @@ It protects your website from spam by means of logic, easily understood by human
 
 **The following are other recommended plugins by the author of Captcha Bank.**
 
-* [Gallery Bank](http://wordpress.org/plugins/gallery-bank/) - Gallery Bank is an easy to use Responsive WordPress Premium Gallery Plugin for galleries, videos and albums.
 * [Contact Bank](http://wordpress.org/plugins/contact-bank/) - Contact Bank allows you to add a contact form easilly and simply to a post or a page.
-
 
 = Features =
 
