@@ -4,7 +4,7 @@
  Plugin URI: http://wordpress.org/plugins/captcha-bank
  Description: This plugin allows you to implement security captcha form into web forms to prevent spam.
  Author: contact-banker
- Version: 1.1
+ Version: 1.2
  Author URI: http://wordpress.org/plugins/captcha-bank
 */
 	////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -64,9 +64,8 @@ function create_captcha_bank_menues()
 function js_calls()
 {
 	wp_enqueue_script('jquery');
-	wp_enqueue_script('jquery-ui-tabs');
 	wp_enqueue_script('mColorPicker_small.js', CAPTCHA_BK_PLUGIN_URL .'/assets/js/colorpicker/js/mColorPicker_small.js');
-	wp_enqueue_script('jquery.validate .min.js', CAPTCHA_BK_PLUGIN_URL .'/assets/js/jquery.validate.min.js');
+	wp_enqueue_script('jquery.validate.min.js', CAPTCHA_BK_PLUGIN_URL .'/assets/js/jquery.validate.min.js');
 }
 
 //--------------------------------------------------------------------------------------------------------------//
@@ -76,8 +75,6 @@ function css_calls()
 {
 	wp_enqueue_style('main', CAPTCHA_BK_PLUGIN_URL . '/assets/css/main.css');
 	wp_enqueue_style('system-message', CAPTCHA_BK_PLUGIN_URL . '/assets/css/system-message.css');
-	wp_enqueue_style('colorbox.css', CAPTCHA_BK_PLUGIN_URL .'/assets/css/colorbox.css');
-
 }
 
 //--------------------------------------------------------------------------------------------------------------//

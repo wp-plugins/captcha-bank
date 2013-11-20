@@ -1,4 +1,6 @@
 <?php
+error_reporting(0);
+session_start();
 global $wpdb;
 $settings = $wpdb -> get_col
 (
@@ -12,6 +14,7 @@ for($flag=0; $flag < count($settings); $flag++)
 {
 	array_push($settings_array, $settings[$flag]);
 } 
+
 ?>
 <div class="block well" >
 	<div class="navbar">
@@ -22,7 +25,7 @@ for($flag=0; $flag < count($settings); $flag++)
 	<div class="body" style="margin:10px;">
 		<div class="row-fluid">
 			<div class="span12">
-				<div id="captcha_settings_message" class="updated settings-error" style="display: none;"> 
+				<div id="captcha_settings_message" class="message green" style="display: none;"> 
 					<p><strong><?php _e("Success! Captcha settings has been saved.", captcha_bank); ?></strong></p>
 				</div>
 				<form id="captcha_settings" class="form-horizontal" method="post">
@@ -488,13 +491,7 @@ for($flag=0; $flag < count($settings); $flag++)
 									exit;
 								}
 								$GLOBALS['session_start_error'] = null;
-								$level = error_reporting(0);
 								set_error_handler('session_error_handler', E_ALL);
-								session_name('captchaBankImage_test');
-								$sessionStarted = @session_start();
-								//restore_error_handler();
-								session_test();
-								
 								function session_test()
 								{
 									if (!isset($_GET['testimage'])) 
