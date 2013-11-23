@@ -16,7 +16,7 @@ An easy to use powerful wordpress Captcha Plugin to prevent spam on your site.
 **How to Setup Captcha Bank?**
 
 
-[youtube http://www.youtube.com/watch?v=neq5g6EGPDw]
+[youtube http://www.youtube.com/watch?v=CI2i-eiWkx8]
 
 You will not have to spend your precious time on annoying attempts to understand hard-to-read words, combinations of letters or pictures that make your eyes pop up.
 
