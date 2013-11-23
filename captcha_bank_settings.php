@@ -13,8 +13,7 @@ $settings_array = array();
 for($flag=0; $flag < count($settings); $flag++)
 {
 	array_push($settings_array, $settings[$flag]);
-} 
-
+}
 ?>
 <div class="block well" >
 	<div class="navbar">
@@ -466,22 +465,23 @@ for($flag=0; $flag < count($settings); $flag++)
 							</div>
 						</div>
 						<div class="span4">
-							<div class="block well" style="width:70%;float:left;">
+							<div class="block well">
 								<div class="control-group">
-									<label><?php echo $settings_array[0];?></label>
-									<pre>
-										<img id="captcha_image" title="<?php echo $settings_array[1];?>" style="border: 1px solid #000;margin-right: 15px; cursor: pointer;" src="<?php echo admin_url('admin-ajax.php') . "?sid=" .md5(uniqid());  ?>"  align="left" />
-										<a style="float: right;" id="Refresh" href="#" title="Refresh Image" ><img src="<?php echo CAPTCHA_BK_PLUGIN_URL ."/refresh.png"?>" alt="Reload Image" height="25" width="25" onclick="this.blur()" align="bottom" border="0" /></a><br />
-									</pre>
-									<p>
-										<strong>Enter Code*:</strong></br>
-										<input type="text" name="security_code" class="span10" maxlength="16" />
-									</p>
+									<label class="control-label"><?php echo $settings_array[0];?></label>
+									<img id="captcha_image" title="<?php echo $settings_array[1];?>" style="border: 1px solid #000;margin-right: 15px; cursor: pointer;" src="<?php echo admin_url('admin-ajax.php') . "?sid=" .md5(uniqid());  ?>"  align="left" />
+									<a style="float:left;" id="Refresh" href="#" title="Refresh Image" ><img src="<?php echo CAPTCHA_BK_PLUGIN_URL ."/refresh.png"?>" alt="Reload Image" height="25" width="25" onclick="this.blur()" align="bottom" border="0" /></a><br />
+								</div>
+								<div class="control-group">
+									<label class="control-label"><strong>Enter Code*:</strong></label>
+									<div class="controls">
+										<input type="text" name="security_code" class="span10" maxlength="16" />	
+									</div>
+									
 								</div>
 							</div>
 						</div>
 						<div class="span4">
-							<div class="block well" style="width:70%;float:left;">
+							<div class="block well">
 								<?php
 								if (version_compare(PHP_VERSION, '5.2.0', '<'))
 								{

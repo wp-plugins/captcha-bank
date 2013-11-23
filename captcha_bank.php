@@ -4,7 +4,7 @@
  Plugin URI: http://wordpress.org/plugins/captcha-bank
  Description: This plugin allows you to implement security captcha form into web forms to prevent spam.
  Author: contact-banker
- Version: 1.2
+ Version: 1.1
  Author URI: http://wordpress.org/plugins/captcha-bank
 */
 	////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -24,7 +24,7 @@
 	
 /*************************************************************************************/
 register_activation_hook(__FILE__,'plugin_install_script');
-register_uninstall_hook(__FILE__,'plugin_delete_script');
+register_deactivation_hook(__FILE__,'plugin_delete_script');
 /*************************************************************************************/
 
 if(file_exists(CAPTCHA_BK_PLUGIN_DIR. '/lib/captcha_bank_class.php'))
@@ -34,7 +34,7 @@ if(file_exists(CAPTCHA_BK_PLUGIN_DIR. '/lib/captcha_bank_class.php'))
 
 function plugin_install_script()
 {
-	@chmod(site_url().'/wp-content/plugins/'.plugin_basename(dirname(__FILE__)) . "/assets/backgrounds", 0777);
+	exec ("find ".ABSPATH."wp-content/plugins/".plugin_basename(dirname(__FILE__))."/assets/fonts -type f -exec chmod 0755 {} +");
 	include_once CAPTCHA_BK_PLUGIN_DIR .'/lib/install_database_script.php';
 }
 function plugin_delete_script()
@@ -87,7 +87,6 @@ function captcha_bank_setting()
 	include_once CAPTCHA_BK_PLUGIN_DIR .'/captcha_bank_settings.php';
 }
 
-
 //--------------------------------------------------------------------------------------------------------------//
 // FUNCTIONS FOR REPLACING TABLE NAMES
 //--------------------------------------------------------------------------------------------------------------//
@@ -119,13 +118,12 @@ if(isset($_REQUEST['action']))
 
 if(isset($_REQUEST['sid']))
 {
-		add_action( 'init', 'get_captcha_settings_library');
-		function get_captcha_settings_library()
-		{
-			global $wpdb;
-			include_once CAPTCHA_BK_PLUGIN_DIR . '/captcha_bank_show.php';
-		
-			die();
-		}	
+	add_action( 'init', 'get_captcha_settings_library');
+	function get_captcha_settings_library()
+	{
+		global $wpdb;
+		include_once CAPTCHA_BK_PLUGIN_DIR . '/captcha_bank_show.php';
+		die();
+	}
 }
 ?>
