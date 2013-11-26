@@ -1,4 +1,5 @@
 <?php
+global $wpdb;
 	$settings = $wpdb -> get_col
 	(
 		$wpdb -> prepare
@@ -15,3 +16,4 @@ require_once dirname(__FILE__) . '/captcha_bank_image.php';
  
 $img = new captcha_bank_image($settings_array);
 $img->display();  // outputs the image and content headers to the browser
+?>

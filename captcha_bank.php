@@ -4,7 +4,7 @@
  Plugin URI: http://wordpress.org/plugins/captcha-bank
  Description: This plugin allows you to implement security captcha form into web forms to prevent spam.
  Author: contact-banker
- Version: 1.1
+ Version: 1.3
  Author URI: http://wordpress.org/plugins/captcha-bank
 */
 	////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////

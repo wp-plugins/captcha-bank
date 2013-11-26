@@ -43,14 +43,14 @@ if (count($wpdb->get_var('SHOW TABLES LIKE "' . captcha_bank_settings() . '"')) 
 		//Add captcha on comment form
 		if($settings_array[24] == 1)
 		{
-			add_action( 'comment_form_after_fields', 'captcha_bank_form');
+			add_action( 'comment_form_after_fields', 'captcha_bank_form', 1);
 			add_action( 'pre_comment_on_post', 'captcha_bank_comment_post' );
 		}
 		
 		//Add captcha on comment form when admin is login
 		if($settings_array[25] == 1)
 		{
-			add_action('comment_form_logged_in_after', 'captcha_bank_form');
+			add_action('comment_form_logged_in_after', 'captcha_bank_form', 1);
 			add_action( 'pre_comment_on_post', 'captcha_bank_comment_post' );
 		}
 	}
@@ -73,21 +73,21 @@ function captcha_bank_form()
 		array_push($settings_array, $settings[$flag]);
 	} 
 ?>
-<label><?php echo $settings_array[0];?></label>
-	<p>
-		<img id="captcha_image" title="<?php echo $settings_array[1];?>" style="border: 1px solid #000; margin-right: 15px; cursor: pointer;" src="<?php echo admin_url('admin-ajax.php') . "?sid=" .md5(uniqid());  ?>"  align="left" />
-		<a id="Refresh" style="border-style: none;" href="#" title="Refresh Image" ><img src="<?php echo CAPTCHA_BK_PLUGIN_URL ."/refresh.png"?>" alt="Reload Image" height="32" width="32" onclick="this.blur()" align="bottom" border="0" /></a><br />
-		<strong>Enter Code*:</strong><br />
-		<input type="text" name="security_code" size="12" maxlength="16" />
-	</p>
-<script type="text/javascript">
-	jQuery('#Refresh').click(function(){
-		document.getElementById('captcha_image').src = '<?php echo admin_url('admin-ajax.php') . "?sid=" ?>' + Math.random();
-		return false;
-	});
-</script>
+	<label><?php echo $settings_array[0];?></label>
+		<p>
+			<img id="captcha_image" title="<?php echo $settings_array[1];?>" style="border: 1px solid #000; margin-right: 15px; cursor: pointer;" src="<?php echo admin_url('admin-ajax.php') . "?sid=" .md5(uniqid());  ?>"  align="left" />
+			<a id="Refresh" style="border-style: none;" href="#" title="Refresh Image" ><img src="<?php echo CAPTCHA_BK_PLUGIN_URL ."/refresh.png"?>" alt="Reload Image" height="32" width="32" onclick="this.blur()" align="bottom" border="0" /></a><br />
+			<strong>Enter Code*:</strong><br />
+			<input type="text" name="security_code" size="12" maxlength="16" />
+		</p>
+	<script type="text/javascript">
+		jQuery('#Refresh').click(function(){
+			document.getElementById('captcha_image').src = '<?php echo admin_url('admin-ajax.php') . "?sid=" ?>' + Math.random();
+			return false;
+		});
+	</script>
 <?php
-	}
+}
 /*************************************************************************************/
 
 //this function is to check captcha code in login form

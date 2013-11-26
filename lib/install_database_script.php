@@ -16,7 +16,7 @@ if (count($wpdb->get_var('SHOW TABLES LIKE "' . captcha_bank_settings() . '"')) 
 		(
 			"INSERT INTO ".captcha_bank_settings()."(settings_key,settings_value) VALUES(%s, %s)",
 			"label",
-			""
+			"Captcha"
 		)
 	);
 	$wpdb->query
@@ -25,7 +25,7 @@ if (count($wpdb->get_var('SHOW TABLES LIKE "' . captcha_bank_settings() . '"')) 
 		(
 			"INSERT INTO ".captcha_bank_settings()."(settings_key,settings_value) VALUES(%s, %s)",
 			"tooltip",
-			""
+			"Enter the characters you see in the image"
 		)
 	);
 	$wpdb->query
@@ -196,7 +196,7 @@ if (count($wpdb->get_var('SHOW TABLES LIKE "' . captcha_bank_settings() . '"')) 
 		(
 			"INSERT INTO ".captcha_bank_settings()."(settings_key,settings_value) VALUES(%s, %s)",
 			"image_signature",
-			"0"
+			"1"
 		)
 	);
 	$wpdb->query
@@ -205,7 +205,7 @@ if (count($wpdb->get_var('SHOW TABLES LIKE "' . captcha_bank_settings() . '"')) 
 		(
 			"INSERT INTO ".captcha_bank_settings()."(settings_key,settings_value) VALUES(%s, %s)",
 			"signature",
-			""
+			"Captcha-Bank"
 		)
 	);
 	$wpdb->query
@@ -223,7 +223,7 @@ if (count($wpdb->get_var('SHOW TABLES LIKE "' . captcha_bank_settings() . '"')) 
 		(
 			"INSERT INTO ".captcha_bank_settings()."(settings_key,settings_value) VALUES(%s, %s)",
 			"captcha_on_login_form",
-			"0"
+			"1"
 		)
 	);
 	$wpdb->query
@@ -232,7 +232,7 @@ if (count($wpdb->get_var('SHOW TABLES LIKE "' . captcha_bank_settings() . '"')) 
 		(
 			"INSERT INTO ".captcha_bank_settings()."(settings_key,settings_value) VALUES(%s, %s)",
 			"captcha_on_comment_form",
-			"0"
+			"1"
 		)
 	);
 	$wpdb->query
@@ -241,7 +241,7 @@ if (count($wpdb->get_var('SHOW TABLES LIKE "' . captcha_bank_settings() . '"')) 
 		(
 			"INSERT INTO ".captcha_bank_settings()."(settings_key,settings_value) VALUES(%s, %s)",
 			"captcha_on_admin_comment_form",
-			"0"
+			"1"
 		)
 	);
 	$wpdb->query
@@ -250,7 +250,7 @@ if (count($wpdb->get_var('SHOW TABLES LIKE "' . captcha_bank_settings() . '"')) 
 		(
 			"INSERT INTO ".captcha_bank_settings()."(settings_key,settings_value) VALUES(%s, %s)",
 			"captcha_on_register_form",
-			"0"
+			"1"
 		)
 	);
 	$wpdb->query
@@ -259,7 +259,7 @@ if (count($wpdb->get_var('SHOW TABLES LIKE "' . captcha_bank_settings() . '"')) 
 		(
 			"INSERT INTO ".captcha_bank_settings()."(settings_key,settings_value) VALUES(%s, %s)",
 			"captcha_on_lost_password_form",
-			"0"
+			"1"
 		)
 	);
 }

@@ -1,6 +1,6 @@
 ﻿=== Captcha Bank ===
 Contributors: contact-banker
-Tags: captcha, spam, anti-spam, login, registration, comments, lost password, widget, captcha bank, admin, spam, plugin, widget, captcha plugin, best captcha plugin, easy captcha
+Tags: captcha, spam, anti-spam, login, registration, comments, lost password, widget, captcha bank, admin, spam, plugin, widget, captcha plugin, best captcha plugin, easy captcha plugin
 Requires at least: 3.0
 Tested up to: 3.7.1
 Stable tag: 1.2
@@ -16,7 +16,7 @@ An easy to use powerful wordpress Captcha Plugin to prevent spam on your site.
 **How to Setup Captcha Bank?**
 
 
-[youtube http://www.youtube.com/watch?v=CI2i-eiWkx8]
+[youtube http://www.youtube.com/watch?v=jxq9_f7uYfM]
 
 You will not have to spend your precious time on annoying attempts to understand hard-to-read words, combinations of letters or pictures that make your eyes pop up.
 
@@ -69,6 +69,12 @@ We'd love to hear from you! Email us at: author@tech-banker.com
 2. Activate the plugin through the 'Plugins' menu in WordPress.
 
 == Changelog ==
+
+= 1.3 =
+
+* Bugs Fixed with Comments Section Captcha
+* Database Changes
+* Improved CSS
 
 = 1.2 =
 

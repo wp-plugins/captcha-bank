@@ -178,7 +178,7 @@ class captcha_bank_image
      */
     public $signature_font;
 
-	public $case_sensitive = true;
+	public $case_sensitive = false;
 
 
     /**
