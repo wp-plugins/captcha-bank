@@ -3,7 +3,7 @@ Contributors: contact-banker
 Tags: captcha, spam, anti-spam, login, registration, comments, lost password, widget, captcha bank, admin, spam, plugin, widget, captcha plugin, best captcha plugin, easy captcha plugin
 Requires at least: 3.0
 Tested up to: 3.7.1
-Stable tag: 1.3
+Stable tag: 1.4
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -69,6 +69,10 @@ We'd love to hear from you! Email us at: author@tech-banker.com
 2. Activate the plugin through the 'Plugins' menu in WordPress.
 
 == Changelog ==
+
+= 1.4 =
+
+* Documentation Added
 
 = 1.3 =
 
