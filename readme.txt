@@ -1,5 +1,5 @@
 ﻿=== Captcha Bank ===
-Contributors: contact-banker
+Contributors: contact-banker, Galley-Bank
 Tags: captcha, spam, anti-spam, login, registration, comments, lost password, widget, captcha bank, admin, spam, plugin, widget, captcha plugin, best captcha plugin, easy captcha
 Requires at least: 3.0
 Tested up to: 3.7.1
@@ -24,7 +24,8 @@ It protects your website from spam by means of logic, easily understood by human
 
 **The following are other recommended plugins by the author of Captcha Bank.**
 
-* [Contact Bank](http://wordpress.org/plugins/contact-bank/) - Contact Bank allows you to add a contact form easilly and simply to a post or a page.
+* [Gallery Bank](http://wordpress.org/extend/plugins/gallery-bank/) - Gallery Bank is an easy to use Responsive WordPress Premium Gallery Plugin for galleries, videos and albums.
+* [Contact Bank](http://wordpress.org/extend/plugins/contact-bank/) - Contact Bank allows you to add a contact form easilly and simply to a post or a page.
 
 = Features =
 
