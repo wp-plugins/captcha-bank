@@ -11,6 +11,8 @@ An easy to use powerful wordpress Captcha Plugin to prevent spam on your site.
 
 == Description ==
 
+***Wishing you all, a very Happy New Year! Welcome 2014! from Captcha Bank***
+
 **Captcha Bank is a powerful captcha protection for WordPress login, lost password, registration, and comment forms.**
 
 **How to Setup Captcha Bank?**
