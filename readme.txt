@@ -1,6 +1,6 @@
 ﻿=== Captcha Bank ===
 Contributors: contact-banker, Gallery-Bank
-Tags: antispam, capcha, captcha, captha, catcha, comment, login, lost password, match captcha, registration, spam, text captcha, captcha bank
+Tags: admin,antispam, capcha, captcha, captha, catcha, comment, login, lost password, match captcha, registration, spam, text captcha, captcha bank,plugin,ajax,comments
 Requires at least: 3.0
 Tested up to: 3.8.2
 Stable tag: 1.6
