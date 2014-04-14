@@ -1,9 +1,9 @@
 ﻿=== Captcha Bank ===
 Contributors: contact-banker, Gallery-Bank
-Tags: captcha, spam, anti-spam, login, registration, comments, lost password, widget, captcha bank, admin, spam, plugin, widget, captcha plugin, best captcha plugin, easy captcha plugin,plugin,post,widget
+Tags: antispam, capcha, captcha, captha, catcha, comment, login, lost password, match captcha, registration, spam, text captcha, captcha bank
 Requires at least: 3.0
-Tested up to: 3.8
-Stable tag: 1.5
+Tested up to: 3.8.2
+Stable tag: 1.6
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -14,6 +14,18 @@ An easy to use powerful wordpress Captcha Plugin to prevent spam on your site.
 ***Wishing you all, a very Happy New Year! Welcome 2014! from Captcha Bank.***
 
 **Captcha Bank is a powerful captcha protection for WordPress login, lost password, registration, and comment forms.**
+
+> #### **Live Demos & Documentation**
+
+> * [Tech Banker](http://tech-banker.com/)
+> * [Captcha Bank](http://tech-banker.com/captcha-bank/)
+> * [Captcha Bank Demos](http://tech-banker.com/captcha-bank/demo/)
+> * [Capptcha Bank Documentation](http://tech-banker.com/captcha-bank/documentation/)
+
+***The Contact Bank WordPress Plugin is now proudly maintained by <a href="http://www.tech-banker.com">Tech Banker Pte Ltd.</a> since March 2014.***
+
+***April 14, 2014: We're happy to announce that Captcha Bank reached 9,500+ plugin downloads in only 6 months. We frequently receive positive feedback from people using our Captcha Bank Plugin for WordPress. Thanks so much for your support!***
+
 
 **How to Setup Captcha Bank?**
 
@@ -72,6 +84,9 @@ We'd love to hear from you! Email us at: author@tech-banker.com
 2. Activate the plugin through the 'Plugins' menu in WordPress.
 
 == Changelog ==
+= 1.6 =
+
+* Compatibility to 3.8.2
 
 = 1.5 =
 
