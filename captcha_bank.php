@@ -1,11 +1,11 @@
 <?php
 /*
  Plugin Name: Captcha Bank
- Plugin URI: http://wordpress.org/plugins/captcha-bank
+ Plugin URI: http://tech-banker.com
  Description: This plugin allows you to implement security captcha form into web forms to prevent spam.
- Author: contact-banker
- Version: 1.6
- Author URI: http://wordpress.org/plugins/captcha-bank
+ Author: Tech Banker
+ Version: 1.7
+ Author URI: http://tech-banker.com
 */
 	////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 	//   D e f i n e     CONSTANTS //////////////////////////////////////////////////////////////////////////////////////////////////
@@ -34,21 +34,12 @@ if(file_exists(CAPTCHA_BK_PLUGIN_DIR. '/lib/captcha_bank_class.php'))
 
 function plugin_install_script()
 {
-	
+	delete_option("captcha-bank-banner");
 	include_once CAPTCHA_BK_PLUGIN_DIR .'/lib/install_database_script.php';
 }
 function plugin_delete_script()
 {
-	global $wpdb;
-	$wpdb->query
-	(
-		$wpdb->prepare
-		(
-			"UPDATE ".$wpdb->prefix ."usermeta SET meta_value = %s WHERE meta_key = %s",
-			"wp330_toolbar,wp330_saving_widgets,wp340_choose_image_from_library,wp340_customize_current_theme_link,wp350_media,wp360_revisions,wp360_locks",
-			"dismissed_wp_pointers"
-		)
-	);
+	
 }
 
 //--------------------------------------------------------------------------------------------------------------//
@@ -74,7 +65,6 @@ function create_captcha_bank_menues()
 function js_calls()
 {
 	wp_enqueue_script('jquery');
-	wp_enqueue_script('mColorPicker_small.js', CAPTCHA_BK_PLUGIN_URL .'/assets/js/colorpicker/js/mColorPicker_small.js');
 	wp_enqueue_script('jquery.validate.min.js', CAPTCHA_BK_PLUGIN_URL .'/assets/js/jquery.validate.min.js');
 }
 
@@ -195,5 +185,27 @@ if(isset($_REQUEST['sid']))
 		include_once CAPTCHA_BK_PLUGIN_DIR . '/captcha_bank_show.php';
 		die();
 	}
+}
+
+function captcha_bank_banner()
+{
+		 echo'<div id="buy_captcha_pro" class="updated">
+		 		<div class="captcha_bank_buy_pro">
+			 		<div class="captcha_bank_text_control">
+				 		It\'s time to upgrade your <strong>Captcha Bank Standard Edition</strong> to <strong>Premium</strong> Edition!<br />
+				 		<span>Extend standard plugin functionality with awesome features! <br/>Go for Premium Version Now! Starting at <strong>6£/- only</strong></span>
+			 		</div>
+			 		<a class="button captcha_bank_message_buttons" href="admin.php?page=captcha_bank_setting&banner=no">CLOSE</a>
+			 		<a class="button captcha_bank_message_buttons" target="_blank" href="http://wordpress.org/support/view/plugin-reviews/captcha-bank?filter=5">RATE US 5 ★</a>
+			 		<a class="button captcha_bank_message_buttons" target="_blank" href="http://tech-banker.com/captcha-bank/demo/">LIVE DEMO</a>
+			 		<a class="button captcha_bank_message_buttons" target="_blank" href="http://tech-banker.com/captcha-bank/">UPGRADE NOW</a>
+		 		</div>
+		 	</div>';
+}
+
+$display_banner = get_option("captcha-bank-banner");
+if($display_banner == "")
+{
+	add_action("admin_notices", "captcha_bank_banner",1);
 }
 ?>

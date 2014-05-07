@@ -4,10 +4,7 @@ if (count($wpdb->get_var('SHOW TABLES LIKE "' . captcha_bank_settings() . '"')) 
 {
 	$settings = $wpdb -> get_col
 	(
-		$wpdb -> prepare
-		(
-			'SELECT settings_value FROM ' . captcha_bank_settings() . " ORDER BY settings_id ASC",""
-		)
+		"SELECT settings_value FROM " . captcha_bank_settings() . " ORDER BY settings_id ASC"
 	);
 	if(count($settings) > 0)
 	{
@@ -32,27 +29,6 @@ if (count($wpdb->get_var('SHOW TABLES LIKE "' . captcha_bank_settings() . '"')) 
 		add_action( 'register_form', 'captcha_bank_form' );
 		add_action( 'register_post', 'captcha_bank_register_post',10,3);
 		}
-		
-		//Add captcha on Lostpassword form
-		if($settings_array[27] == 1)
-		{
-			add_action( 'lostpassword_form', 'captcha_bank_form' );
-			add_action( 'allow_password_reset', 'captcha_bank_lostpassword_post',1);
-		}
-		
-		//Add captcha on comment form
-		if($settings_array[24] == 1)
-		{
-			add_action( 'comment_form_after_fields', 'captcha_bank_form', 1);
-			add_action( 'pre_comment_on_post', 'captcha_bank_comment_post' );
-		}
-		
-		//Add captcha on comment form when admin is login
-		if($settings_array[25] == 1)
-		{
-			add_action('comment_form_logged_in_after', 'captcha_bank_form', 1);
-			add_action( 'pre_comment_on_post', 'captcha_bank_comment_post' );
-		}
 	}
 }	
 /*************************************************************************************/
@@ -62,10 +38,7 @@ function captcha_bank_form()
 	global $wpdb;
 	$settings = $wpdb -> get_col
 	(
-		$wpdb -> prepare
-		(
-			'SELECT settings_value FROM ' . captcha_bank_settings() . " ORDER BY settings_id ASC",""
-		)
+		"SELECT settings_value FROM " . captcha_bank_settings() . " ORDER BY settings_id ASC"
 	);
 	$settings_array = array();
 	for($flag=0; $flag < count($settings); $flag++)
@@ -118,33 +91,4 @@ function captcha_bank_register_post($user,$email,$errors)
 	}
 }
 /*************************************************************************************/
-
-//this function to check captcha code in lostpassword form
-function captcha_bank_lostpassword_post($user)
-{
-	$captcha_code = @$_POST['security_code'];
-	require_once CAPTCHA_BK_PLUGIN_DIR . '/captcha_bank_image.php';
-	$captchaBankImage = new captcha_bank_image();
-	if ($captchaBankImage->check($captcha_code) == false) {
-		$user = new WP_Error( 'captcha_wrong', 'Error, the Captcha Code does not match. Please Try Again.' );
-		return $user;
-	}
-	return TRUE;
-}
-/*************************************************************************************/
-
-//This function is to check captcha code in comment form
-function captcha_bank_comment_post()
-{
-	$captcha_code = @$_POST['security_code'];
-	require_once CAPTCHA_BK_PLUGIN_DIR . '/captcha_bank_image.php';
-	$captchaBankImage = new captcha_bank_image();
-	if ($captchaBankImage->check($captcha_code) == false) {
-		wp_die( '<p><span><strong>Error</strong>: The Captcha Code does not match. Please Try Again.</span></p>');
-	}
-	else{
-		return ;
-	}
-}
-
 ?>

@@ -2,10 +2,7 @@
 global $wpdb;
 	$settings = $wpdb -> get_col
 	(
-		$wpdb -> prepare
-		(
-			'SELECT settings_value FROM ' . captcha_bank_settings() . " ORDER BY settings_id ASC",""
-		)
+		"SELECT settings_value FROM " . captcha_bank_settings() . " ORDER BY settings_id ASC"
 	);
 	$settings_array = array();
 	for($flag=0; $flag < count($settings); $flag++)

@@ -232,7 +232,7 @@ if (count($wpdb->get_var('SHOW TABLES LIKE "' . captcha_bank_settings() . '"')) 
 		(
 			"INSERT INTO ".captcha_bank_settings()."(settings_key,settings_value) VALUES(%s, %s)",
 			"captcha_on_comment_form",
-			"1"
+			"0"
 		)
 	);
 	$wpdb->query
@@ -241,7 +241,7 @@ if (count($wpdb->get_var('SHOW TABLES LIKE "' . captcha_bank_settings() . '"')) 
 		(
 			"INSERT INTO ".captcha_bank_settings()."(settings_key,settings_value) VALUES(%s, %s)",
 			"captcha_on_admin_comment_form",
-			"1"
+			"0"
 		)
 	);
 	$wpdb->query
@@ -259,7 +259,7 @@ if (count($wpdb->get_var('SHOW TABLES LIKE "' . captcha_bank_settings() . '"')) 
 		(
 			"INSERT INTO ".captcha_bank_settings()."(settings_key,settings_value) VALUES(%s, %s)",
 			"captcha_on_lost_password_form",
-			"1"
+			"0"
 		)
 	);
 }
