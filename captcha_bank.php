@@ -4,7 +4,7 @@
  Plugin URI: http://tech-banker.com
  Description: This plugin allows you to implement security captcha form into web forms to prevent spam.
  Author: Tech Banker
- Version: 1.7
+ Version: 1.8
  Author URI: http://tech-banker.com
 */
 	////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -57,6 +57,7 @@ function create_captcha_bank_menues()
 	global $wpdb;
 	$menu = add_menu_page('Captcha Bank', __('Captcha Bank', captcha_bank), 'administrator', 'captcha_bank_setting','',CAPTCHA_BK_PLUGIN_URL . '/assets/images/icon.png');
 	add_submenu_page('captcha_bank_setting', 'Settings', __('Settings', captcha_bank), 'administrator', 'captcha_bank_setting', 'captcha_bank_setting');
+	add_submenu_page('captcha_bank_setting', 'Purchase Pro Version', __('Purchase Pro Version', captcha_bank), 'administrator', 'captcha_bank_buy_pro', 'captcha_bank_buy_pro');
 	add_submenu_page('captcha_bank_setting', 'Documentation', __('Documentation', captcha_bank), 'administrator', 'captcha_bank_documentation', 'captcha_bank_documentation');
 }
 //--------------------------------------------------------------------------------------------------------------//
@@ -75,6 +76,9 @@ function css_calls()
 {
 	wp_enqueue_style('main', CAPTCHA_BK_PLUGIN_URL . '/assets/css/main.css');
 	wp_enqueue_style('system-message', CAPTCHA_BK_PLUGIN_URL . '/assets/css/system-message.css');
+	wp_enqueue_style('css3_grid_style', CAPTCHA_BK_PLUGIN_URL . '/assets/css/css3_grid_style.css');
+	wp_enqueue_style('responsive', CAPTCHA_BK_PLUGIN_URL . '/assets/css/responsive.css');
+	
 }
 
 //--------------------------------------------------------------------------------------------------------------//
@@ -84,13 +88,22 @@ function css_calls()
 function captcha_bank_setting()
 {
 	global $wpdb;
+	include_once CAPTCHA_BK_PLUGIN_DIR .'/header.php';
 	include_once CAPTCHA_BK_PLUGIN_DIR .'/captcha_bank_settings.php';
 }
 
 function captcha_bank_documentation()
 {
 	global $wpdb;
+	include_once CAPTCHA_BK_PLUGIN_DIR .'/header.php';
 	include_once CAPTCHA_BK_PLUGIN_DIR .'/captcha_bank_documentation.php';
+}
+
+function captcha_bank_buy_pro()
+{
+	global $wpdb;
+	include_once CAPTCHA_BK_PLUGIN_DIR .'/header.php';
+	include_once CAPTCHA_BK_PLUGIN_DIR .'/buy_pro_version.php';
 }
 
 //--------------------------------------------------------------------------------------------------------------//
@@ -186,26 +199,3 @@ if(isset($_REQUEST['sid']))
 		die();
 	}
 }
-
-function captcha_bank_banner()
-{
-		 echo'<div id="buy_captcha_pro" class="updated">
-		 		<div class="captcha_bank_buy_pro">
-			 		<div class="captcha_bank_text_control">
-				 		It\'s time to upgrade your <strong>Captcha Bank Standard Edition</strong> to <strong>Premium</strong> Edition!<br />
-				 		<span>Extend standard plugin functionality with awesome features! <br/>Go for Premium Version Now! Starting at <strong>6£/- only</strong></span>
-			 		</div>
-			 		<a class="button captcha_bank_message_buttons" href="admin.php?page=captcha_bank_setting&banner=no">CLOSE</a>
-			 		<a class="button captcha_bank_message_buttons" target="_blank" href="http://wordpress.org/support/view/plugin-reviews/captcha-bank?filter=5">RATE US 5 ★</a>
-			 		<a class="button captcha_bank_message_buttons" target="_blank" href="http://tech-banker.com/captcha-bank/demo/">LIVE DEMO</a>
-			 		<a class="button captcha_bank_message_buttons" target="_blank" href="http://tech-banker.com/captcha-bank/">UPGRADE NOW</a>
-		 		</div>
-		 	</div>';
-}
-
-$display_banner = get_option("captcha-bank-banner");
-if($display_banner == "")
-{
-	add_action("admin_notices", "captcha_bank_banner",1);
-}
-?>
