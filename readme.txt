@@ -1,4 +1,4 @@
-﻿=== Captcha Bank - WP Captcha Plugin ===
+﻿=== Captcha Bank - Best WP Captcha Plugin ===
 Contributors: contact-banker, Gallery-Bank
 Tags: admin,antispam, capcha, captcha, captha, catcha, comment, login, lost password, match captcha, registration, spam, text captcha, captcha bank,plugin,ajax,comments,captcha, comment, comments, form, forms, login, lost password, multilingual, register, registration, spam, wordpress captcha
 Requires at least: 3.0
