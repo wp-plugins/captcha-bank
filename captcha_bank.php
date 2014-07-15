@@ -4,7 +4,7 @@
  Plugin URI: http://tech-banker.com
  Description: This plugin allows you to implement security captcha form into web forms to prevent spam.
  Author: Tech Banker
- Version: 1.8
+ Version: 1.9
  Author URI: http://tech-banker.com
 */
 	////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
