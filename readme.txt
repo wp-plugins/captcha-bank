@@ -1,6 +1,6 @@
 ﻿=== WP Captcha Bank - Secure Captcha Plugin ===
 Contributors: contact-banker, Gallery-Bank
-Tags: admin, add, anti-spam, anti-spam security, antispam, arithmetic actions, capcha, captcha, captcha numbers, captcha plugin, captcha words, captha, catcha, comment, contact form with captcha, cpatcha, label, login, lost password, match captcha, math actions, multiply, registration, security, spam, spam protection, substract, text captcha, web form protection
+Tags: admin, add, anti-spam, anti-spam security, antispam, arithmetic actions, capcha, captcha, captcha numbers, captcha plugin, captcha words, captha, catcha, comment, contact form with captcha, cpatcha, label, login, lost password, match captcha, math actions, multiply, registration, security, spam, spam protection, substract, text captcha, web form protection, anti-spam, antispam, blacklist, bot, comment, signin, signup, spam, spam-bot, spamtrap, trap
 Requires at least: 3.0
 Tested up to: 3.9
 Stable tag: 1.9
