@@ -22,7 +22,7 @@ An easy to use powerful wordpress Captcha Plugin to prevent spam on your site.
 
 ***The Contact Bank WordPress Plugin is now proudly maintained by <a href="http://www.tech-banker.com">Tech Banker Pte Ltd.</a> since March 2014.***
 
-*** July 15, 2014: We're happy to announce that Captcha Bank reached 13,000+ plugin downloads in only 6 months. We frequently receive positive feedback from people using our Captcha Bank Plugin for WordPress. Thanks so much for your support!***
+*** August 2, 2014: We're happy to announce that Captcha Bank reached 13,700+ plugin downloads in only 6 months. We frequently receive positive feedback from people using our Captcha Bank Plugin for WordPress. Thanks so much for your support!***
 
 
 **How to Setup Captcha Bank?**
