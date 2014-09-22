@@ -11,7 +11,7 @@ An easy to use powerful wordpress Captcha Plugin to prevent spam on your site.
 
 == Description ==
 
-=== WP Captcha Bank - Secure Captcha Plugin ===
+### WP Captcha Bank - Secure Captcha Plugin
 
 ***Wishing you all, a very Happy New Year! Welcome 2014! from Captcha Bank.***
 
