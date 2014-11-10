@@ -3,7 +3,7 @@ Contributors: contact-banker, Gallery-Bank
 Tags: captcha, antispam, comment, catcha, registration, match captcha, lost password, login, spam, images captcha, capcha, captha, ecology, ecoplus, plus, buddypress, contact form 7, sweetcaptcha, text captcha, multilingual, register, admin, ajax, image, images, keycaptcha, plugin, post, akismet, wpmu, re captcha, recaptcha, wordpress captcha
 Requires at least: 3.0
 Tested up to: 4.0
-Stable tag: 1.9
+Stable tag: 2.0
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -11,26 +11,29 @@ An easy to use powerful wordpress Captcha Plugin to prevent spam on your site.
 
 == Description ==
 
-### WP Captcha Bank - Secure Captcha Plugin
+### [WP Captcha Bank - Secure Captcha Plugin](http://tech-banker.com/products/wp-captcha-bank/)
 
-***Wishing you all, a very Happy New Year! Welcome 2014! from Captcha Bank.***
+### Captcha Bank is a powerful captcha protection for WordPress login, lost password, registration, and comment forms.
 
-###Captcha Bank is a powerful captcha protection for WordPress login, lost password, registration, and comment forms.
+> #### **Live Demos**
 
->  **Live Demos & Documentation**
-
-> * [Tech Banker](http://tech-banker.com/)
-> * [Captcha Bank](http://tech-banker.com/captcha-bank/)
-
-***The Contact Bank WordPress Plugin is now proudly maintained by <a href="http://www.tech-banker.com">Tech Banker Pte Ltd.</a> since March 2014.***
-
-*** October 9, 2014: We're happy to announce that Captcha Bank reached 15,200+ plugin downloads in only 8 months. We frequently receive positive feedback from people using our Captcha Bank Plugin for WordPress. Thanks so much for your support!***
-
-
-###How to Setup Captcha Bank?
-
-
-[youtube http://www.youtube.com/watch?v=jxq9_f7uYfM]
+> * [Captcha Bank](http://tech-banker.com/products/wp-clean-up-optimizer/)
+> * [Captcha Bank Demos](http://tech-banker.com/products/wp-captcha-bank/demo/)
+> * [General Settings](http://tech-banker.com/products/wp-captcha-bank/demo/general-settings/)
+> * [Layout Settings](http://tech-banker.com/products/wp-captcha-bank/demo/layout-settings/)
+> * [Font Settings](http://tech-banker.com/products/wp-captcha-bank/demo/font-settings/)
+> * [Display Settings](http://tech-banker.com/products/wp-captcha-bank/demo/display-settings/)
+> * [Security Settings](http://tech-banker.com/products/wp-captcha-bank/demo/security-settings/)
+> * [Message Settings](http://tech-banker.com/products/wp-captcha-bank/demo/message-settings/)
+> * [Login Logs](http://tech-banker.com/products/wp-captcha-bank/demo/login-logs/)
+> * [Plugin Settings](http://tech-banker.com/products/wp-captcha-bank/demo/plugin-settings/)
+> * [Captcha for Login Form](http://tech-banker.com/products/wp-captcha-bank/demo/captcha-for-login-form/)
+> * [Captcha for Registration Form](http://tech-banker.com/products/wp-captcha-bank/demo/captcha-for-registration-form/)
+> * [Captcha for Reset Password Form](http://tech-banker.com/products/wp-captcha-bank/demo/captcha-for-reset-password-form/)
+> * [Captcha for Comment Form](http://tech-banker.com/products/wp-captcha-bank/demo/captcha-for-comment-form/)
+> * [Captcha for Admin Comment Form](http://tech-banker.com/products/wp-captcha-bank/demo/captcha-for-admin-comment-form/)
+> * [Captcha for Contact Bank Form](http://tech-banker.com/products/wp-captcha-bank/demo/captcha-for-contact-bank-form/)
+> * [System Status](http://tech-banker.com/products/wp-captcha-bank/demo/system-status/)
 
 You will not have to spend your precious time on annoying attempts to understand hard-to-read words, combinations of letters or pictures that make your eyes pop up.
 
@@ -102,6 +105,10 @@ After downloading the ZIP file,
 If any problem occurs, please contact us at [support@tech-banker.com](mailto:support@tech-banker.com).
 
 == Changelog ==
+
+= 2.0 =
+
+* Major Version Release
 
 = 1.9 =
 
