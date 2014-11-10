@@ -7,8 +7,7 @@ Stable tag: 2.0
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
-An easy to use powerful wordpress Captcha Plugin to prevent spam on your site.
-
+Captcha Bank plugin allows you to implement super security captcha into your WordPress Website
 == Description ==
 
 ### [WP Captcha Bank - Secure Captcha Plugin](http://tech-banker.com/products/wp-captcha-bank/)
@@ -17,7 +16,7 @@ An easy to use powerful wordpress Captcha Plugin to prevent spam on your site.
 
 > #### **Live Demos**
 
-> * [Captcha Bank](http://tech-banker.com/products/wp-clean-up-optimizer/)
+> * [Captcha Bank](http://tech-banker.com/products/wp-captcha-bank/)
 > * [Captcha Bank Demos](http://tech-banker.com/products/wp-captcha-bank/demo/)
 > * [General Settings](http://tech-banker.com/products/wp-captcha-bank/demo/general-settings/)
 > * [Layout Settings](http://tech-banker.com/products/wp-captcha-bank/demo/layout-settings/)
