@@ -217,7 +217,22 @@ Allows you to add single IP Address for blocking it as per your requirement.
 
 == Screenshots ==
 
-1. Captcha Bank Settings Page
+1. WP Captcha Bank General Settings Page
+2. WP Captcha Bank Layout Settings Page
+3. WP Captcha Bank Font Settings Page
+4. WP Captcha Bank Display Settings Page
+5. WP Captcha Bank Security Settings Page
+6. WP Captcha Bank Message Settings Page
+7. WP Captcha Bank Login Logs Page
+8. WP Captcha Bank Plugin Settings Page
+9. WP Captcha Bank System Status Page
+10. Captcha on Login Form
+11. Captcha on Registration Form
+12. Captcha on Lost Password Form
+13. Captcha on Comment Form
+14. Captcha on Admin Comment Form
+15. Captcha on Contact Bank Form
+
 
 == Frequently Asked Questions ==
 
@@ -228,9 +243,7 @@ Menus and then click on Captcha Settings link.
 
 [Click here to view the Image](http://tech-banker.com/wp-content/uploads/2014/10/captcha-settings-menu.png)
 
-Once you click on it, this page would open.
-
-Then click on the General Settings tab and here you can set the Title for Captcha.
+Once you click on it, this page would open. Then click on the General Settings tab and here you can set the Title for Captcha.
 
 [Click here to view the Image](http://tech-banker.com/wp-content/uploads/2014/10/captcha-title.png)
 
@@ -262,9 +275,7 @@ Once you click on it, this page would open. Then click on the General Settings t
 ### How to set the Type of Captcha to be displayed?
 
 Captcha Can be displayed in three different types i.e. Only alphabets, Only Digits and both Alphabets and Digits.
-To set Type of characters to be displayed, locate WP Captcha Bank Menu on the left side of WordPress
-
-Dashboard Menus and then click on Captcha Settings link.
+To set Type of characters to be displayed, locate WP Captcha Bank Menu on the left side of WordPress Dashboard Menus and then click on Captcha Settings link.
 
 [Click here to view the Image](http://tech-banker.com/wp-content/uploads/2014/10/captcha-settings-menu.png)
 
@@ -350,20 +361,15 @@ Once you click on the link this page would open. Tick the "membership" textbox t
 
 ### What is Login Logs? How to view Log Information for login users?
 
-Login Logs allows you to track the current users who are logging into you website and show there
-Geo Location on the map.
+Login Logs allows you to track the current users who are logging into you website and show there Geo Location on the map.
 
-It allows you to view the information such as Username, IP Address, Location, Date and Time,
-
-Captcha Status (whether user was able to login or not into the WordPress site using Captcha Bank) and
-
-Action to be performed to Whitelist or Block IP Address for the login user.
+It allows you to view the information such as Username, IP Address, Location, Date and Time, Captcha Status (whether user was able to login or not into the WordPress site using Captcha Bank) and action to be performed to Whitelist or Block IP Address for the login user.
 
 To view all the Log Information (Username, IP Address, Location, Date and Time, Captcha Status) for login users you need to go to the WP Captcha Bank Menu on the left side of the WordPress dashboard.
 
 [Click here to view the Image](http://tech-banker.com/wp-content/uploads/2014/10/login-logs-menu.png)
 
-Then click on Login Logs tab on the top of the page just next to Captcha Settings tab.
+Then click on Login Logs tab on the top of the page just next to Captcha Settings tab. 
 
 Here you can view all the Log Information (Username, IP Address, Location, Date and Time, Captcha Status) for login users.
 
