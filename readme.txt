@@ -1,6 +1,6 @@
 ﻿=== WP Captcha Bank ===
 Contributors: contact-banker, Gallery-Bank
-Tags: add, anti-spam, anti-spam security, antispam, arithmetic actions, capcha, captcha, captcha numbers, captcha plugin, captcha words, captha, catcha, comment, contact form with captcha, cpatcha, label, login, lost password, match captcha, math actions, multiply, registration, security, spam, spam protection, substract, text captcha, web form protection
+Tags: admin, ajax, anti-spam, anti-spam security, antispam, captcha, captcha numbers, captcha plugin, captcha words, comment, contact form with captcha, cpatcha, label, login, lost password, match captcha, math actions, multiply, registration, security, spam, spam protection, substract, text captcha, web form protection
 Requires at least: 3.0
 Tested up to: 4.0
 Stable tag: 2.0
@@ -14,7 +14,6 @@ Captcha Bank - Forget the Spam. The Best and Easiest way to setup Captcha. It's 
 ### [WP Captcha Bank - Secure Captcha Plugin](http://tech-banker.com/products/wp-captcha-bank/)
 
 WP Captcha Bank is a powerful captcha protection for WordPress login, lost password, registration, and comment forms. It protects your website from spam by means of logic, easily understood by human beings.
-
 
 > #### **Live Demos**
 
@@ -36,12 +35,17 @@ WP Captcha Bank is a powerful captcha protection for WordPress login, lost passw
 > * [Captcha for Contact Bank Form](http://tech-banker.com/products/wp-captcha-bank/demo/captcha-for-contact-bank-form/)
 > * [System Status](http://tech-banker.com/products/wp-captcha-bank/demo/system-status/)
 
-**WP Captcha Bank** is a powerful WordPress plugin which allows you to protect your WordPress website from spam. You can display Captcha on Login Form, Registration Form, Comment Form, Admin Comment form, Contact Bank Form and Hide Captcha for registered users easily.
+**WP Captcha Bank** is a powerful WordPress plugin which allows you to protect your WordPress website from spam. 
 
-> [Support Desk - Feel Free to ask your queries](http://tech-banker.com/forums/forum/captcha-bank-support/)
-> [Captcha Bank Knowledge Base](http://tech-banker.com/products/wp-captcha-bank/knowledge-base/)
-> [Upgrade to Premium Editions](http://tech-banker.com/products/wp-captcha-bank/pricing/)
-> [Like & Support Us on Facebook](https://www.facebook.com/TechBanker/)
+You can display Captcha on Login Form, Registration Form, Comment Form, Admin Comment form, Contact Bank Form and Hide Captcha for registered users easily.
+
+* [Support Desk - Feel Free to ask your queries](http://tech-banker.com/forums/forum/captcha-bank-support/)
+
+* [Captcha Bank Knowledge Base](http://tech-banker.com/products/wp-captcha-bank/knowledge-base/)
+
+* [Upgrade to Premium Editions](http://tech-banker.com/products/wp-captcha-bank/pricing/)
+
+* [Like & Support Us on Facebook](https://www.facebook.com/TechBanker/)
 
 
 > #### **Captcha Bank Key Features**
