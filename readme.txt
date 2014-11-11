@@ -7,7 +7,7 @@ Stable tag: 2.0
 License: GPLv3 or later
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
 
-Captcha Bank lets you forget about SPAM. It is an advance protection shield for your wordpress website. It's more than just a Captcha!
+Captcha Bank is a Bullet Proof Advance Protection Shield for your Wordpress website. It's more than just a Captcha!
 
 == Description ==
 
