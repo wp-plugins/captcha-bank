@@ -117,7 +117,7 @@ Allows you to display **Captcha** on WordPress Login Form.
 
 Allows you to display **Captcha** on WordPress Registration Form.
 
-= Captcha For Comments Form=
+= Captcha For Comments Form =
 
 Allows you to display **Captcha** on WordPress  Comment Form.
 
