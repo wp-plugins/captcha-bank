@@ -38,10 +38,10 @@ WP Captcha Bank is a powerful captcha protection for WordPress login, lost passw
 
 **WP Captcha Bank** is a powerful WordPress plugin which allows you to protect your WordPress website from spam. You can display Captcha on Login Form, Registration Form, Comment Form, Admin Comment form, Contact Bank Form and Hide Captcha for registered users easily.
 
-[Support Desk - Feel Free to ask your queries](http://tech-banker.com/forums/forum/captcha-bank-support/)
-[Captcha Bank Knowledge Base](http://tech-banker.com/products/wp-captcha-bank/knowledge-base/)
-[Upgrade to Premium Editions](http://tech-banker.com/products/wp-captcha-bank/pricing/)
-[Like & Support Us on Facebook](https://www.facebook.com/TechBanker/)
+> [Support Desk - Feel Free to ask your queries](http://tech-banker.com/forums/forum/captcha-bank-support/)
+> [Captcha Bank Knowledge Base](http://tech-banker.com/products/wp-captcha-bank/knowledge-base/)
+> [Upgrade to Premium Editions](http://tech-banker.com/products/wp-captcha-bank/pricing/)
+> [Like & Support Us on Facebook](https://www.facebook.com/TechBanker/)
 
 
 > #### **Captcha Bank Key Features**
