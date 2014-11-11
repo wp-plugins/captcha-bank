@@ -1,18 +1,20 @@
-﻿=== WP Captcha Bank - Secure Captcha Plugin ===
+﻿=== WP Captcha Bank ===
 Contributors: contact-banker, Gallery-Bank
-Tags: captcha, antispam, comment, catcha, registration, match captcha, lost password, login, spam, images captcha, capcha, captha, ecology, ecoplus, plus, buddypress, contact form 7, sweetcaptcha, text captcha, multilingual, register, admin, ajax, image, images, keycaptcha, plugin, post, akismet, wpmu, re captcha, recaptcha, wordpress captcha
+Tags: add, anti-spam, anti-spam security, antispam, arithmetic actions, capcha, captcha, captcha numbers, captcha plugin, captcha words, captha, catcha, comment, contact form with captcha, cpatcha, label, login, lost password, match captcha, math actions, multiply, registration, security, spam, spam protection, substract, text captcha, web form protection
 Requires at least: 3.0
 Tested up to: 4.0
 Stable tag: 2.0
-License: GPLv2 or later
-License URI: http://www.gnu.org/licenses/gpl-2.0.html
+License: GPLv3 or later
+License URI: http://www.gnu.org/licenses/gpl-3.0.html
 
-Captcha Bank plugin allows you to implement super security captcha into your WordPress Website
+Captcha Bank - Forget the Spam. The Best and Easiest way to setup Captcha. It's just more than a Captcha Plugin.
+
 == Description ==
 
 ### [WP Captcha Bank - Secure Captcha Plugin](http://tech-banker.com/products/wp-captcha-bank/)
 
-### Captcha Bank is a powerful captcha protection for WordPress login, lost password, registration, and comment forms.
+WP Captcha Bank is a powerful captcha protection for WordPress login, lost password, registration, and comment forms. It protects your website from spam by means of logic, easily understood by human beings.
+
 
 > #### **Live Demos**
 
@@ -34,42 +36,181 @@ Captcha Bank plugin allows you to implement super security captcha into your Wor
 > * [Captcha for Contact Bank Form](http://tech-banker.com/products/wp-captcha-bank/demo/captcha-for-contact-bank-form/)
 > * [System Status](http://tech-banker.com/products/wp-captcha-bank/demo/system-status/)
 
-You will not have to spend your precious time on annoying attempts to understand hard-to-read words, combinations of letters or pictures that make your eyes pop up.
+**WP Captcha Bank** is a powerful WordPress plugin which allows you to protect your WordPress website from spam. You can display Captcha on Login Form, Registration Form, Comment Form, Admin Comment form, Contact Bank Form and Hide Captcha for registered users easily.
 
-It protects your website from spam by means of logic, easily understood by human beings. 
+[Support Desk - Feel Free to ask your queries](http://tech-banker.com/forums/forum/captcha-bank-support/)
+[Captcha Bank Knowledge Base](http://tech-banker.com/products/wp-captcha-bank/knowledge-base/)
+[Upgrade to Premium Editions](http://tech-banker.com/products/wp-captcha-bank/pricing/)
+[Like & Support Us on Facebook](https://www.facebook.com/TechBanker/)
 
-**The following are other recommended plugins by the author of Captcha Bank.**
 
-* [Gallery Bank](http://wordpress.org/extend/plugins/gallery-bank/) - Gallery Bank is an easy to use Responsive WordPress Premium Gallery Plugin for galleries, videos and albums.
-* [Contact Bank](http://wordpress.org/extend/plugins/contact-bank/) - Contact Bank allows you to add a contact form easilly and simply to a post or a page.
+> #### **Captcha Bank Key Features**
 
-### Captcha Bank Features
+> * Multi Lingual
+> * Different Captcha Type
+> * 50 + Settings
+> * Different Captcha Backgrounds
+> * Case Sensitive Captcha
+> * Captcha for Login Forms
+> * Captcha for Registration Forms
+> * Login Logs
 
-* <strong>Captcha Label :</strong> You can add a label to display captcha in the form.
-* <strong>Captcha Tooltip :</strong> You can add a tooltip to display captcha in the form.
-* <strong>Number of Captcha Characters to be Displayed</strong>
-* <strong>Captcha Width :</strong> (in pixels)
-* <strong>Captcha Height :</strong> (in pixels)
-* <strong>Captcha Type :</strong> Alphabets only , Digits only, Both Alphabets & Digits
-* <strong>Is Captcha to be Case Sensitive?</strong>
-* <strong>Captcha Background Pattern</strong>
-* <strong>Captcha Text Color</strong>
-* <strong>Show Lines on Captcha Background</strong>
-* <strong>Number Of Lines to be Displayed</strong>
-* <strong>Line Color</strong>
-* <strong>Show Noise on Captcha</strong>
-* <strong>Noice Level</strong>
-* <strong>Noise Color</strong>
-* <strong>Show Text Transparency</strong>
-* <strong>Text Transparency Percentage</strong>
-* <strong>Distortion</strong>
-* <strong>Level of Distortion</strong>
-* <strong>Image Signature</strong>
-* <strong>Captcha on login form</strong>
-* <strong>Captcha on Comment form</strong>
-* <strong>Captcha on admin Comment form</strong>
-* <strong>Captcha on Register form</strong>
-* <strong>Captcha on Lost Password form</strong>
+> #### **Captcha Bank Key Features - Premium Editions**
+
+> Take your Captcha Bank to Next level. Upgrade to [Premium Editions]() and enjoy the following features.
+
+> * Multi Lingual
+> * Different Captcha Type
+> * 50 + Settings
+> * Different Captcha Backgrounds
+> * Case Sensitive Captcha
+> * Captcha for Login Forms
+> * Captcha for Registration Forms
+> * Login Logs
+> * Display Captcha for Comments Form
+> * Display Captcha for Admin Comments Form
+> * Display Captcha for Contact Bank Forms
+> * Display Captcha for Lost Password Form
+> * Block & White List IP Addresses
+> * Global Settings
+> * Auto IP Block
+> * Block IP Ranges
+> * Maximum Login Attempts
+> * Captcha Layout Settings
+> * Captcha Font Settings
+> * Captcha Message Settings
+> * Roles & Capabilities
+
+* Technical Support
+
+Technical Support by the Development Team for Installation, Bug Fixing, Plugin Compatibility Issues.
+
+* Plugin Updates
+
+Automatic Plugin Update Notification with New Features, Bug Fixing and much more.
+
+* Multi-Lingual
+
+Multi-Lingual Facility allows the plugin to be used in 36 languages.
+
+* Login Logs
+
+Allows you to track the current users who are logged in into you website and show there Geo Location on the map. It shows various details such as Username, IP Address, Location, Login Date & Time, Login Status, Action to Block or White list IP Address.
+
+* Captcha General Settings
+
+Allows you to set various settings for Captcha which includes Title, Tooltip, number of characters, Captcha type, Text Case for Captcha, Captcha text case sensitivity, Width and Height
+
+* Captcha For Login
+
+Allows you to display Captcha on WordPress Login Form.
+
+* Captcha For Registration
+
+Allows you to display Captcha on WordPress Registration Form.
+
+* Captcha For Comments
+
+Allows you to display Captcha on WordPress  Comment Form.
+
+* Captcha on Admin Comments Form
+
+Allows you to display Captcha on WordPress Admin Comment Form.
+
+* Captcha For Reset/Lost Password
+
+Allows you to display Captcha on WordPress Reset/Lost Password Form
+
+* Hide Captcha For Users
+
+Allows you to hide Captcha for Admin Comment form when the user is other than Administrator.
+
+* Captcha Layout Settings
+
+Allows you to set various Layout Settings such as Background, Lines, Dots, Text Transparency, and Signature for Captcha.
+
+* Captcha Font Settings
+
+Allows you to set different Font Settings (Font Family, Font Size, and Font Color) for Captcha Text.
+
+* Captcha Message Settings
+
+Allows you to set different settings for error messages such as Captcha Empty Error, Captcha Invalid Error, IP Block Message, Max Login Attempts and Maximum Login Exceeded Error.
+
+* Roles & Capabilities
+
+Allows you to controls the capabilities of WP Captcha Bank among different roles of WordPress users.
+
+* Captcha For Contact Bank
+
+* Block Login IP Address
+
+Allows you to block the IP Addresses of the login users from the Login Logs if he is considered as unauthorized.
+
+* Maximum Login Attemots
+
+Allows you to set number of login attempts left for the user incase Captcha code is left empty or filled invalid.
+
+* Auto IP Block
+
+Allows you to Blocks IP addresses for next 24 hours when the limit of login attempts is reached.
+
+* Block IP Ranges
+
+Allows you to block range of IP Addresses that are considered undesirable or hostile.
+
+*Block Single IP Address
+
+Allows you to add single IP Address for blocking it as per your requirement.
+= Popular Browsers Support =
+
+* **IE** - IE6+
+* **Firefox** - All versions
+* **Chrome** - All versions
+* **Safari** - All versions
+* **Opera** - All versions
+* **Android (NEW!)** - All versions
+* **Mobile Safari (NEW!)** - All versions
+
+
+**Captcha Bank is now available in the following Languages**
+
+* Albanian (sq_AL)
+* Arabic (ar)
+* Belarusian(be_BY)
+* Brazilian Portuguese (pt_BR)
+* Bulgarian (bg_BG)
+* Chinese (zh_CN)
+* Croation (hr)
+* Czech (cs_CZ)
+* Danish (da_DK)
+* Dutch (nl_NL)
+* English (en_GB)
+* Estonian (et)
+* Finnish (fi_FI)
+* French (fr_FR)
+* German (de_DE)
+* Greek (el_GR)
+* Hebrew (he_IL)
+* Hungarian (hu_HU)
+* Indonesian (id_ID)
+* Italian (it_IT)
+* Japanese (ja)
+* Korean (ko_KR)
+* Malay Malaysia (ms_MY)
+* Norwegian (nb)
+* Polish (pl_PL)
+* Portuguese (pt_PT)
+* Romanian (ro_RO)
+* Russian (ru_RU)
+* Serbian (sr_RS)
+* Slovenian (sl_SI)
+* Slovak (sk_SK)
+* Spanish (es_ES)
+* Swedish (sv_SE)
+* Turkish (tr)
+* Thai (th)
+* Ukrainian (uk)
 
 == Screenshots ==
 
