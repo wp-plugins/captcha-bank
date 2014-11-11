@@ -176,6 +176,49 @@ Allows you to add single IP Address for blocking it as per your requirement.
 * **Android (NEW!)** - All versions
 * **Mobile Safari (NEW!)** - All versions
 
+**Captcha Bank is now available in the following Languages**
+
+* Albanian (sq_AL)
+* Arabic (ar)
+* Belarusian(be_BY)
+* Brazilian Portuguese (pt_BR)
+* Bulgarian (bg_BG)
+* Chinese (zh_CN)
+* Croation (hr)
+* Czech (cs_CZ)
+* Danish (da_DK)
+* Dutch (nl_NL)
+* English (en_GB)
+* Estonian (et)
+* Finnish (fi_FI)
+* French (fr_FR)
+* German (de_DE)
+* Greek (el_GR)
+* Hebrew (he_IL)
+* Hungarian (hu_HU)
+* Indonesian (id_ID)
+* Italian (it_IT)
+* Japanese (ja)
+* Korean (ko_KR)
+* Malay Malaysia (ms_MY)
+* Norwegian (nb)
+* Polish (pl_PL)
+* Portuguese (pt_PT)
+* Romanian (ro_RO)
+* Russian (ru_RU)
+* Serbian (sr_RS)
+* Slovenian (sl_SI)
+* Slovak (sk_SK)
+* Spanish (es_ES)
+* Swedish (sv_SE)
+* Turkish (tr)
+* Thai (th)
+* Ukrainian (uk)
+
+== Screenshots ==
+
+1. Captcha Bank Settings Page
+
 == Frequently Asked Questions ==
 
 ### How to set Title for Captcha?
@@ -347,54 +390,6 @@ You can Preview the Captcha at the bottom of various Settings pages such as Gene
 After changing settings, when you click on the Save Settings button you can see the updated Captcha Preview.
 
 
-
-**Captcha Bank is now available in the following Languages**
-
-* Albanian (sq_AL)
-* Arabic (ar)
-* Belarusian(be_BY)
-* Brazilian Portuguese (pt_BR)
-* Bulgarian (bg_BG)
-* Chinese (zh_CN)
-* Croation (hr)
-* Czech (cs_CZ)
-* Danish (da_DK)
-* Dutch (nl_NL)
-* English (en_GB)
-* Estonian (et)
-* Finnish (fi_FI)
-* French (fr_FR)
-* German (de_DE)
-* Greek (el_GR)
-* Hebrew (he_IL)
-* Hungarian (hu_HU)
-* Indonesian (id_ID)
-* Italian (it_IT)
-* Japanese (ja)
-* Korean (ko_KR)
-* Malay Malaysia (ms_MY)
-* Norwegian (nb)
-* Polish (pl_PL)
-* Portuguese (pt_PT)
-* Romanian (ro_RO)
-* Russian (ru_RU)
-* Serbian (sr_RS)
-* Slovenian (sl_SI)
-* Slovak (sk_SK)
-* Spanish (es_ES)
-* Swedish (sv_SE)
-* Turkish (tr)
-* Thai (th)
-* Ukrainian (uk)
-
-== Screenshots ==
-
-1. Captcha Bank Settings Page
-
-== Frequently Asked Questions ==
-
-Got a question?
-We'd love to hear from you! Email us at: author@tech-banker.com
 
 == Installation ==
 
