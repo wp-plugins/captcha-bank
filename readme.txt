@@ -39,6 +39,7 @@ Captcha Bank lets you forget about SPAM. It is an advance protection shield for 
 
 = Useful Links =
 
+
 **[Captcha Bank Knowledge Base](http://tech-banker.com/products/wp-captcha-bank/knowledge-base/)**
 
 **[Support Desk - Feel Free to ask your queries](http://tech-banker.com/forums/forum/captcha-bank-support/)**
@@ -47,7 +48,7 @@ Captcha Bank lets you forget about SPAM. It is an advance protection shield for 
 
 **[Like & Support Us on Facebook](https://www.facebook.com/TechBanker/)**
 
-== Key Features in Captcha Bank Lite Edition ==
+= Key Features in Captcha Bank Lite Edition =
 
 * Multi-Lingual. Available now in 36 Languages.
 * Case Sensitive Captcha.
