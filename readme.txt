@@ -37,7 +37,7 @@ Captcha Bank lets you forget about SPAM. It is an advance protection shield for 
 > * [Captcha for Contact Bank Form](http://tech-banker.com/products/wp-captcha-bank/demo/captcha-for-contact-bank-form/)
 > * [System Status](http://tech-banker.com/products/wp-captcha-bank/demo/system-status/)
 
-== Useful Links ==
+= Useful Links =
 
 **[Captcha Bank Knowledge Base](http://tech-banker.com/products/wp-captcha-bank/knowledge-base/)**
 
@@ -61,7 +61,7 @@ Captcha Bank lets you forget about SPAM. It is an advance protection shield for 
 * Captcha Text Case
 * Captcha Preview
 
-== Key Features in Captcha Bank Premium Editions ==
+= Key Features in Captcha Bank Premium Editions =
 
 * Multi-Lingual. Available now in 36 Languages.
 * 50 + Settings
@@ -215,7 +215,7 @@ Allows you to add single IP Address for blocking it as per your requirement.
 * Thai (th)
 * Ukrainian (uk)
 
-== Technical Support ==
+= Technical Support =
 
 If any problem occurs, please contact us at [support@tech-banker.com](mailto:support@tech-banker.com).
 
@@ -247,7 +247,7 @@ If any problem occurs, please contact us at [support@tech-banker.com](mailto:sup
 
 == Frequently Asked Questions ==
 
-= How to set Title for **Captcha**? =
+= How to set Title for Captcha? =
 
 To set Title for **Captcha**, locate WP **Captcha** Bank Menu on the left side of WordPress Dashboard
 Menus and then click on **Captcha** Settings link.
@@ -259,7 +259,7 @@ Once you click on it, this page would open. Then click on the General Settings t
 [Click here to view the Image](http://tech-banker.com/wp-content/uploads/2014/10/captcha-title.png)
 
 
-= How to set Tooltip for **Captcha**? =
+= How to set Tooltip for Captcha? =
 
 You can set Tooltip for **Captcha** which would be displayed when you hover on the **Captcha**.
 To do so, locate WP **Captcha** Bank Menu on the left side of WordPress Dashboard Menus and then click on **Captcha** Settings link.
@@ -271,7 +271,7 @@ Once you click on it, this page would open. Then click on the General Settings t
 [Click here to view the Image](http://tech-banker.com/wp-content/uploads/2014/10/captcha-tooltip.png)
 
 
-= How to set number of characters to be displayed for **Captcha**? =
+= How to set number of characters to be displayed for Captcha? =
 
 In order to set number of characters to be displayed for **Captcha**, locate WP **Captcha** Bank Menu
 on the left side of WordPress Dashboard Menus and then click on **Captcha** Settings link.
@@ -283,7 +283,7 @@ Once you click on it, this page would open. Then click on the General Settings t
 [Click here to view the Image](http://tech-banker.com/wp-content/uploads/2014/10/captcha-characters.png)
 
 
-= How to set the Type of **Captcha** to be displayed? =
+= How to set the Type of Captcha to be displayed? =
 
 **Captcha** Can be displayed in three different types i.e. Only alphabets, Only Digits and both Alphabets and Digits.
 To set Type of characters to be displayed, locate WP **Captcha** Bank Menu on the left side of WordPress Dashboard Menus and then click on **Captcha** Settings link.
@@ -295,7 +295,7 @@ Once you click on it, this page would open. Then click on the General Settings t
 [Click here to view the Image](http://tech-banker.com/wp-content/uploads/2014/10/captcha-type.png)
 
 
-= How to set the Text Case for **Captcha**? =
+= How to set the Text Case for Captcha? =
 
 **Captcha** characters can be set to either Upper Case, Lower Case or Ramdom.
 To set Text Case for **Captcha** as one of the above, locate WP **Captcha** Bank Menu on the left side of WordPress Dashboard Menus and then click on **Captcha** Settings link.
@@ -307,7 +307,7 @@ Once you click on it, this page would open. Then click on the General Settings t
 [Click here to view the Image](http://tech-banker.com/wp-content/uploads/2014/10/captcha-text-case.png)
 
 
-= How to set Width for **Captcha**? =
+= How to set Width for Captcha? =
 
 You can set Width for **Captcha** by locating WP **Captcha** Bank Menu on the left side of WordPress Dashboard Menus and then click on **Captcha** Settings link.
 
@@ -318,7 +318,7 @@ Once you click on it, this page would open. Then click on the General Settings t
 [Click here to view the Image](http://tech-banker.com/wp-content/uploads/2014/10/captcha-width.png)
 
 
-= How to set Height for **Captcha**? =
+= How to set Height for Captcha? =
 
 You can set Height for **Captcha** by locating WP **Captcha** Bank Menu on the left side of WordPress Dashboard Menus and then click on **Captcha** Settings link.
 
@@ -329,7 +329,7 @@ Once you click on it, this page would open. Then click on the General Settings t
 [Click here to view the Image](http://tech-banker.com/wp-content/uploads/2014/10/captcha-height.png)
 
 
-= How to set Case Sensitivity for **Captcha**? =
+= How to set Case Sensitivity for Captcha? =
 
 You can set the Case Sensitivity for your **Captcha** by locating WP **Captcha** Bank Menu on the left side of WordPress Dashboard Menus and then click on **Captcha** Settings link.
 
@@ -340,7 +340,7 @@ Once you click on it, this page would open. Then click on the General Settings t
 [Click here to view the Image](http://tech-banker.com/wp-content/uploads/2014/10/captcha-case-sensitive.png)
 
 
-= How to set **Captcha** on Login Form? =
+= How to set Captcha on Login Form? =
 
 You can set **Captcha** on Login Form. For this you need to locate WP **Captcha** Bank Menu on the left side of WordPress Dashboard Menus and then click on **Captcha** Settings link.
 
@@ -351,7 +351,7 @@ Once you click on it, this page would open. Then click on the Display Settings t
 [Click here to view the Image](http://tech-banker.com/wp-content/uploads/2014/10/enable-captcha-login-form.png)
 
 
-= How to set **Captcha** on Registration Form? =
+= How to set Captcha on Registration Form? =
 
 In order to set **Captcha** on Registration Form, locate WP **Captcha** Bank Menu on the left side of WordPress Dashboard Menus and then click on **Captcha** Settings link.
 
@@ -398,7 +398,7 @@ Once you click on the link, this page would open and there you could see the sta
 [Click here to view the Image](http://tech-banker.com/wp-content/uploads/2014/10/systemreport-736x1024.png) 
 
 
-= How to Preview **Captcha**? =
+= How to Preview Captcha ? =
 
 You can Preview the **Captcha** at the bottom of various Settings pages such as General Settings, Layout Settings, Font Settings, Display Settings and Message Settings.
 
