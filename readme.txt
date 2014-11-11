@@ -176,6 +176,177 @@ Allows you to add single IP Address for blocking it as per your requirement.
 * **Android (NEW!)** - All versions
 * **Mobile Safari (NEW!)** - All versions
 
+== Frequently Asked Questions ==
+
+### How to set Title for Captcha?
+
+To set Title for Captcha, locate WP Captcha Bank Menu on the left side of WordPress Dashboard
+Menus and then click on Captcha Settings link.
+
+[Click here to view the Image](http://tech-banker.com/wp-content/uploads/2014/10/captcha-settings-menu.png)
+
+Once you click on it, this page would open.
+
+Then click on the General Settings tab and here you can set the Title for Captcha.
+
+[Click here to view the Image](http://tech-banker.com/wp-content/uploads/2014/10/captcha-title.png)
+
+
+### How to set Tooltip for Captcha?
+
+You can set Tooltip for Captcha which would be displayed when you hover on the Captcha.
+To do so, locate WP Captcha Bank Menu on the left side of WordPress Dashboard Menus and then click on Captcha Settings link.
+
+[Click here to view the Image](http://tech-banker.com/wp-content/uploads/2014/10/captcha-settings-menu.png)
+
+Once you click on it, this page would open. Then click on the General Settings tab and here you can set the Tooltip for Captcha.
+
+[Click here to view the Image](http://tech-banker.com/wp-content/uploads/2014/10/captcha-tooltip.png)
+
+
+### How to set number of characters to be displayed for Captcha?
+
+In order to set number of characters to be displayed for Captcha, locate WP Captcha Bank Menu
+on the left side of WordPress Dashboard Menus and then click on Captcha Settings link.
+
+[Click here to view the Image](http://tech-banker.com/wp-content/uploads/2014/10/captcha-settings-menu.png)
+
+Once you click on it, this page would open. Then click on the General Settings tab and here you can set number of characters to be displayed for Captcha.
+
+[Click here to view the Image](http://tech-banker.com/wp-content/uploads/2014/10/captcha-characters.png)
+
+
+### How to set the Type of Captcha to be displayed?
+
+Captcha Can be displayed in three different types i.e. Only alphabets, Only Digits and both Alphabets and Digits.
+To set Type of characters to be displayed, locate WP Captcha Bank Menu on the left side of WordPress
+
+Dashboard Menus and then click on Captcha Settings link.
+
+[Click here to view the Image](http://tech-banker.com/wp-content/uploads/2014/10/captcha-settings-menu.png)
+
+Once you click on it, this page would open. Then click on the General Settings tab and here you can set Type of characters to be displayed.
+
+[Click here to view the Image](http://tech-banker.com/wp-content/uploads/2014/10/captcha-type.png)
+
+
+### How to set the Text Case for Captcha?
+
+Captcha characters can be set to either Upper Case, Lower Case or Ramdom.
+To set Text Case for Captcha as one of the above, locate WP Captcha Bank Menu on the left side of WordPress Dashboard Menus and then click on Captcha Settings link.
+
+[Click here to view the Image](http://tech-banker.com/wp-content/uploads/2014/10/captcha-settings-menu.png)
+
+Once you click on it, this page would open. Then click on the General Settings tab and here you can set the Text Case for Captcha.
+
+[Click here to view the Image](http://tech-banker.com/wp-content/uploads/2014/10/captcha-text-case.png)
+
+
+### How to set Width for Captcha?
+
+You can set Width for Captcha by locating WP Captcha Bank Menu on the left side of WordPress Dashboard Menus and then click on Captcha Settings link.
+
+[Click here to view the Image](http://tech-banker.com/wp-content/uploads/2014/10/captcha-settings-menu.png)
+
+Once you click on it, this page would open. Then click on the General Settings tab and here you can set Width for Captcha.
+
+[Click here to view the Image](http://tech-banker.com/wp-content/uploads/2014/10/captcha-width.png)
+
+
+### How to set Height for Captcha?
+
+You can set Height for Captcha by locating WP Captcha Bank Menu on the left side of WordPress Dashboard Menus and then click on Captcha Settings link.
+
+[Click here to view the Image](http://tech-banker.com/wp-content/uploads/2014/10/captcha-settings-menu.png)
+
+Once you click on it, this page would open. Then click on the General Settings tab and here you can set Height for Captcha.
+
+[Click here to view the Image](http://tech-banker.com/wp-content/uploads/2014/10/captcha-height.png)
+
+
+### How to set Case Sensitivity for Captcha?
+
+You can set the Case Sensitivity for your Captcha by locating WP Captcha Bank Menu on the left side of WordPress Dashboard Menus and then click on Captcha Settings link.
+
+[Click here to view the Image](http://tech-banker.com/wp-content/uploads/2014/10/captcha-settings-menu.png)
+
+Once you click on it, this page would open. Then click on the General Settings tab and here you can set Case Sensitivity for Captcha.
+
+[Click here to view the Image](http://tech-banker.com/wp-content/uploads/2014/10/captcha-case-sensitive.png)
+
+
+### How to set Captcha on Login Form?
+
+You can set Captcha on Login Form. For this you need to locate WP Captcha Bank Menu on the left side of WordPress Dashboard Menus and then click on Captcha Settings link.
+
+[Click here to view the Image](http://tech-banker.com/wp-content/uploads/2014/10/captcha-settings-menu.png)
+
+Once you click on it, this page would open. Then click on the Display Settings tab and here you can set Captcha on Login Form.
+
+[Click here to view the Image](http://tech-banker.com/wp-content/uploads/2014/10/enable-captcha-login-form.png)
+
+
+### How to set Captcha on Registration Form?
+
+In order to set Captcha on Registration Form, locate WP Captcha Bank Menu on the left side of WordPress Dashboard Menus and then click on Captcha Settings link.
+
+[Click here to view the Image](http://tech-banker.com/wp-content/uploads/2014/10/captcha-settings-menu.png)
+
+Once you click on it, this page would open. Then click on the Display Settings tab and here you can set Captcha on Registration Form.
+
+[Click here to view the Image](http://tech-banker.com/wp-content/uploads/2014/10/enable-captcha-for-registration-form.png)
+
+Note* : To set Captcha on Registration form you need to tick the membership box located on General Settings page under Settings Link on the left side of the dashboard menu.
+
+[Click here to view the Image](http://tech-banker.com/wp-content/uploads/2014/10/general-menu.png)
+
+Once you click on the link this page would open. Tick the "membership" textbox to display captcha on Registration Form.
+
+[Click here to view the Image](http://tech-banker.com/wp-content/uploads/2014/10/registration-form.png)
+
+
+### What is Login Logs? How to view Log Information for login users?
+
+Login Logs allows you to track the current users who are logging into you website and show there
+Geo Location on the map.
+
+It allows you to view the information such as Username, IP Address, Location, Date and Time,
+
+Captcha Status (whether user was able to login or not into the WordPress site using Captcha Bank) and
+
+Action to be performed to Whitelist or Block IP Address for the login user.
+
+To view all the Log Information (Username, IP Address, Location, Date and Time, Captcha Status) for login users you need to go to the WP Captcha Bank Menu on the left side of the WordPress dashboard.
+
+[Click here to view the Image](http://tech-banker.com/wp-content/uploads/2014/10/login-logs-menu.png)
+
+Then click on Login Logs tab on the top of the page just next to Captcha Settings tab.
+
+Here you can view all the Log Information (Username, IP Address, Location, Date and Time, Captcha Status) for login users.
+
+[Click here to view the Image](http://tech-banker.com/wp-content/uploads/2014/10/login-logs.png) 
+
+
+### How to view Status of you System?
+
+In order to view status of your system, locate WP Captcha Bank Menu on the left side of WordPress Dashboard Menus and then click on System Status link.
+
+[Click here to view the Image](http://tech-banker.com/wp-content/uploads/2014/10/system-status-menu.png) 
+
+Once you click on the link, this page would open and there you could see the status of your system.
+
+[Click here to view the Image](http://tech-banker.com/wp-content/uploads/2014/10/systemreport-736x1024.png) 
+
+
+### How to Preview Captcha?
+
+You can Preview the Captcha at the bottom of various Settings pages such as General Settings, Layout Settings, Font Settings, Display Settings and Message Settings.
+
+[Click here to view the Image](http://tech-banker.com/wp-content/uploads/2014/10/captcha-preview11.png) 
+
+After changing settings, when you click on the Save Settings button you can see the updated Captcha Preview.
+
+
 
 **Captcha Bank is now available in the following Languages**
 
