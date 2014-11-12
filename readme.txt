@@ -1,6 +1,6 @@
 === Captcha Bank - Wordpress Captcha Protection ===
 Contributors: contact-banker, Gallery-Bank
-Tags: captcha bank, admin, ajax, anti-spam, antispam security, antispam, captcha, captcha numbers, protection shield, captcha plugin, captcha words, comment,contact form with captcha, cpatcha, label, login, lost password, match captcha, registration, security, spam, spam protection, text captcha, web form protection, login protection, wordpress protection, shield, security, wordpress security, captcha protection, case sensitive captcha, wordpress captcha, admin comment, contact bank, plugin, register, best captcha, best wordpress captcha, simple captcha, popular captcha
+Tags: captcha bank, admin, ajax, anti-spam, antispam security, antispam, captcha, captcha numbers, protection shield, captcha plugin, captcha words, comment, comments, contact form with captcha, cpatcha, label, login, lost password, match captcha, registration, security, spam, spam protection, text captcha, web form protection, login protection, wordpress protection, shield, security, wordpress security, captcha protection, case sensitive captcha, wordpress captcha, admin comment, contact bank, plugin, register, best captcha, best wordpress captcha, simple captcha, popular captcha, spam, form
 Requires at least: 3.0
 Tested up to: 4.0
 Stable tag: 2.0
