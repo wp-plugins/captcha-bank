@@ -14,11 +14,11 @@ Captcha Bank is a Bullet Proof Advance Protection Shield for your Wordpress webs
 
 [**WP Captcha Bank - Best Captcha Plugin**](http://tech-banker.com/products/wp-captcha-bank/) is a powerful WordPress shield which allows you to protect your WordPress website from SPAM. You can display **Captcha** on Login Form, Registration Form, Comment Form, Admin Comment form, Contact Bank Form and Hide **Captcha** for registered users easily. 
 
-**Captcha Bank** is loaded with more than 50+ settings including advance protection features such as Login Logs, Auto IP Block, Security Protections and much more. 
+It is loaded with more than 50+ settings including advance protection features such as Login Logs, Auto IP Block, Security Protections and much more. 
 
-**Captcha Bank**, a bullet proof captcha validator allows you to display **captcha** in different formats such as alphabets, digits or both. Its an advance protection shield that protects your website from spam by means of **captcha logic**, easily understood by human beings. Its a protection method for Website Login, Website Registration and Comment Spam in Blogs which makes the Captcha Bank powerful.
+It is a bullet proof validator allows you to display **captcha** in different formats such as alphabets, digits or both. Its an advance protection shield that protects your website from spam by means of **captcha logic**, easily understood by human beings. Its a protection method for Website Login, Website Registration and Comment Spam in Blogs which makes the Captcha Bank powerful.
 
-> #### **Live Demos - Captcha Bank**
+> #### **Live Demos**
 
 > * [**Captcha Bank**](http://tech-banker.com/products/wp-captcha-bank/)
 > * [**Captcha Bank Demos**](http://tech-banker.com/products/wp-captcha-bank/demo/)
@@ -38,10 +38,10 @@ Captcha Bank is a Bullet Proof Advance Protection Shield for your Wordpress webs
 > * [**Captcha for Contact Bank Form Demo**](http://tech-banker.com/products/wp-captcha-bank/demo/captcha-for-contact-bank-form/)
 > * [**System Status Demo**](http://tech-banker.com/products/wp-captcha-bank/demo/system-status/)
 
-= Useful Links - Captcha Bank =
+= Useful Links =
 
 
-**[Captcha Bank Knowledge Base](http://tech-banker.com/products/wp-captcha-bank/knowledge-base/)**
+**[Knowledge Base](http://tech-banker.com/products/wp-captcha-bank/knowledge-base/)**
 
 **[Support Desk - Feel Free to ask your queries](http://tech-banker.com/forums/forum/captcha-bank-support/)**
 
@@ -49,21 +49,21 @@ Captcha Bank is a Bullet Proof Advance Protection Shield for your Wordpress webs
 
 **[Like & Support Us on Facebook](https://www.facebook.com/TechBanker/)**
 
-= Key Features in Captcha Bank Lite Edition =
+= Key Features in Lite Edition =
 
 * Multi-Lingual. Available now in 36 Languages.
-* Case Sensitive Captcha.
-* Display Captcha on Wordpress Login Form.
-* Display Captcha on Registration Form.
-* Different Captcha Type.
-* Number of Captcha characters.
-* Captcha Width and Height
-* Captcha Title and Tooltip
-* Login Logs.
-* Captcha Text Case
-* Captcha Preview
+* Case Sensitive
+* Display on Wordpress Login Form.
+* Display on Registration Form.
+* Different Type.
+* Number of characters
+* Width and Height
+* Title and Tooltip
+* Login Logs
+* Text Case
+* Preview
 
-= Key Features in Captcha Bank Premium Editions =
+= Key Features in Premium Editions =
 
 * Multi-Lingual. Available now in 36 Languages.
 * 50 + Settings
@@ -74,19 +74,19 @@ Captcha Bank is a Bullet Proof Advance Protection Shield for your Wordpress webs
 * Display Captcha for Contact Bank Forms
 * Display Captcha for Lost Password Form
 * Block & White List IP Addresses
-* Captcha General Settings
-* Captcha Layout Settings
-* Captcha Font Settings
-* Captcha Message Settings
-* Captcha Security Settings
-* Different Captcha Backgrounds
-* Case Sensitive Captcha
+* General Settings
+* Layout Settings
+* Font Settings
+* Message Settings
+* Security Settings
+* Different Backgrounds
+* Case Sensitive
 * Auto IP Block
 * Block IP Ranges
 * Maximum Login Attempts
 * Roles & Capabilities
 * Login Logs
-* Captcha Preview
+* Preview
 
 Visit [**Captcha Bank**](http://tech-banker.com/products/wp-captcha-bank/) to upgrade to Pro Editions now.
 
@@ -106,7 +106,7 @@ Multi-Lingual Facility allows the plugin to be used in 36 languages.
 
 Allows you to track the current users who are logged in into you website and show there Geo Location on the map. It shows various details such as Username, IP Address, Location, Login Date & Time, Login Status, Action to Block or White list IP Address.
 
-= Captcha General Settings =
+= General Settings =
 
 Allows you to set various settings for **Captcha** which includes Title, Tooltip, number of characters, **Captcha** type, Text Case for **Captcha**, **Captcha** text case sensitivity, Width and Height
 
@@ -134,19 +134,19 @@ Allows you to display **Captcha** on WordPress Reset/Lost Password Form
 
 Allows you to hide **Captcha** for Admin Comment form when the user is other than Administrator.
 
-= Captcha General Settings =
+= General Settings =
 
-Allows you to set various settings for Captcha which includes Title, Tooltip, number of characters, Captcha type, Text Case for Captcha, Captcha text case sensitivity and  Width & Height.
+Allows you to set various settings for Captcha which includes Title, Tooltip, number of characters, type, Text Case, case sensitivity, Width and Height.
 
-= Captcha Layout Settings =
+= Layout Settings =
 
-Allows you to set various Layout Settings such as Background, Lines, Dots, Text Transparency, and Signature for **Captcha**.
+Allows you to set various Layout Settings such as Background, Lines, Dots, Text Transparency, and Signature.
 
-= Captcha Font Settings =
+= Font Settings =
 
-Allows you to set different Font Settings (Font Family, Font Size, and Font Color) for **Captcha** Text.
+Allows you to set different Font Settings (Font Family, Font Size, and Font Color).
 
-= Captcha Message Settings =
+= Message Settings =
 
 Allows you to set different settings for error messages such as **Captcha** Empty Error, **Captcha** Invalid Error, IP Block Message, Max Login Attempts and Maximum Login Exceeded Error.
 
@@ -217,13 +217,13 @@ Allows you to add single IP Address for blocking it as per your requirement.
 * Thai (th)
 * Ukrainian (uk)
 
-= Technical Support - Captcha Bank =
+= Technical Support =
 
 If any problem occurs, please contact us at [support@tech-banker.com](mailto:support@tech-banker.com).
 
 == Installation ==
 
-### Performing a new installation for Captcha Bank.
+### Performing a new installation
 
 After downloading the ZIP file,  
 
@@ -240,7 +240,7 @@ After downloading the ZIP file,
 
 == Other Notes ==
 
-= Minimum requirements for Captcha Bank. =  
+= Minimum requirements =  
 *   Wordpress 3.3+  
 *   PHP 5.x
 *   MySQL 5.x
@@ -261,7 +261,7 @@ Once you click on it, this page would open. Then click on the General Settings t
 [Click here to view the Image](http://tech-banker.com/wp-content/uploads/2014/10/captcha-title.png)
 
 
-= How to set Tooltip for Captcha? =
+= How to set Tooltip? =
 
 You can set Tooltip for **Captcha** which would be displayed when you hover on the **Captcha**.
 To do so, locate WP **Captcha** Bank Menu on the left side of WordPress Dashboard Menus and then click on **Captcha** Settings link.
@@ -273,7 +273,7 @@ Once you click on it, this page would open. Then click on the General Settings t
 [Click here to view the Image](http://tech-banker.com/wp-content/uploads/2014/10/captcha-tooltip.png)
 
 
-= How to set number of characters to be displayed for Captcha? =
+= How to set number of characters to be displayed? =
 
 In order to set number of characters to be displayed for **Captcha**, locate WP **Captcha** Bank Menu
 on the left side of WordPress Dashboard Menus and then click on **Captcha** Settings link.
@@ -297,7 +297,7 @@ Once you click on it, this page would open. Then click on the General Settings t
 [Click here to view the Image](http://tech-banker.com/wp-content/uploads/2014/10/captcha-type.png)
 
 
-= How to set the Text Case for Captcha? =
+= How to set the Text Case? =
 
 **Captcha** characters can be set to either Upper Case, Lower Case or Ramdom.
 To set Text Case for **Captcha** as one of the above, locate WP **Captcha** Bank Menu on the left side of WordPress Dashboard Menus and then click on **Captcha** Settings link.
@@ -309,7 +309,7 @@ Once you click on it, this page would open. Then click on the General Settings t
 [Click here to view the Image](http://tech-banker.com/wp-content/uploads/2014/10/captcha-text-case.png)
 
 
-= How to set Width for Captcha? =
+= How to set Width? =
 
 You can set Width for **Captcha** by locating WP **Captcha** Bank Menu on the left side of WordPress Dashboard Menus and then click on **Captcha** Settings link.
 
@@ -320,7 +320,7 @@ Once you click on it, this page would open. Then click on the General Settings t
 [Click here to view the Image](http://tech-banker.com/wp-content/uploads/2014/10/captcha-width.png)
 
 
-= How to set Height for Captcha? =
+= How to set Height? =
 
 You can set Height for **Captcha** by locating WP **Captcha** Bank Menu on the left side of WordPress Dashboard Menus and then click on **Captcha** Settings link.
 
@@ -331,7 +331,7 @@ Once you click on it, this page would open. Then click on the General Settings t
 [Click here to view the Image](http://tech-banker.com/wp-content/uploads/2014/10/captcha-height.png)
 
 
-= How to set Case Sensitivity for Captcha? =
+= How to set Case Sensitivity? =
 
 You can set the Case Sensitivity for your **Captcha** by locating WP **Captcha** Bank Menu on the left side of WordPress Dashboard Menus and then click on **Captcha** Settings link.
 
@@ -411,15 +411,15 @@ After changing settings, when you click on the Save Settings button you can see 
 
 == Screenshots ==
 
-1. **WP Captcha Bank General Settings Page**
-2. **WP Captcha Bank Layout Settings Page**
-3. **WP Captcha Bank Font Settings Page**
-4. **WP Captcha Bank Display Settings Page**
-5. **WP Captcha Bank Security Settings Page**
-6. **WP Captcha Bank Message Settings Page**
-7. **WP Captcha Bank Login Logs Page**
-8. **WP Captcha Bank Plugin Settings Page**
-9. **WP Captcha Bank System Status Page**
+1. **General Settings Page**
+2. **Layout Settings Page**
+3. **Font Settings Page**
+4. **Display Settings Page**
+5. **Security Settings Page**
+6. **Message Settings Page**
+7. **Login Logs Page**
+8. **Plugin Settings Page**
+9. **System Status Page**
 10.**Captcha on Login Form**
 11.**Captcha on Registration Form**
 12.**Captcha on Lost Password Form**
