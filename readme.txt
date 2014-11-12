@@ -17,29 +17,27 @@ Captcha Bank is a Bullet Proof Advance Protection Shield for your Wordpress webs
 
 **Captcha Bank**, a bullet proof captcha validator allows you to display **captcha** in different formats such as alphabets, digits or both. Its an advance protection shield that protects your website from spam by means of **captcha logic**, easily understood by human beings. Its a protection method for Website Login, Website Registration and Comment Spam in Blogs which makes the Captcha Bank powerful.
 
-[youtube http://www.youtube.com/watch?v=jxq9_f7uYfM]
+> #### **Live Demos - Captcha Bank**
 
-> #### **Live Demos**
+> * [**Captcha Bank**](http://tech-banker.com/products/wp-captcha-bank/)
+> * [**Captcha Bank Demos**](http://tech-banker.com/products/wp-captcha-bank/demo/)
+> * [**General Settings Demo**](http://tech-banker.com/products/wp-captcha-bank/demo/general-settings/)
+> * [**Layout Settings Demo**](http://tech-banker.com/products/wp-captcha-bank/demo/layout-settings/)
+> * [**Font Settings Demo**](http://tech-banker.com/products/wp-captcha-bank/demo/font-settings/)
+> * [**Display Settings Demo**](http://tech-banker.com/products/wp-captcha-bank/demo/display-settings/)
+> * [**Security Settings Demo**](http://tech-banker.com/products/wp-captcha-bank/demo/security-settings/)
+> * [**Message Settings Demo**](http://tech-banker.com/products/wp-captcha-bank/demo/message-settings/)
+> * [**Login Logs Demo**](http://tech-banker.com/products/wp-captcha-bank/demo/login-logs/)
+> * [**Plugin Settings Demo**](http://tech-banker.com/products/wp-captcha-bank/demo/plugin-settings/)
+> * [**Captcha for Login Form Demo**](http://tech-banker.com/products/wp-captcha-bank/demo/captcha-for-login-form/)
+> * [**Captcha for Registration Form Demo**](http://tech-banker.com/products/wp-captcha-bank/demo/captcha-for-registration-form/)
+> * [**Captcha for Reset Password Form Demo**](http://tech-banker.com/products/wp-captcha-bank/demo/captcha-for-reset-password-form/)
+> * [**Captcha for Comment Form Demo**](http://tech-banker.com/products/wp-captcha-bank/demo/captcha-for-comment-form/)
+> * [**Captcha for Admin Comment Form Demo**](http://tech-banker.com/products/wp-captcha-bank/demo/captcha-for-admin-comment-form/)
+> * [**Captcha for Contact Bank Form Demo**](http://tech-banker.com/products/wp-captcha-bank/demo/captcha-for-contact-bank-form/)
+> * [**System Status Demo**](http://tech-banker.com/products/wp-captcha-bank/demo/system-status/)
 
-> * [Captcha Bank](http://tech-banker.com/products/wp-captcha-bank/)
-> * [Captcha Bank Demos](http://tech-banker.com/products/wp-captcha-bank/demo/)
-> * [General Settings Demo](http://tech-banker.com/products/wp-captcha-bank/demo/general-settings/)
-> * [Layout Settings Demo](http://tech-banker.com/products/wp-captcha-bank/demo/layout-settings/)
-> * [Font Settings Demo](http://tech-banker.com/products/wp-captcha-bank/demo/font-settings/)
-> * [Display Settings Demo](http://tech-banker.com/products/wp-captcha-bank/demo/display-settings/)
-> * [Security Settings Demo](http://tech-banker.com/products/wp-captcha-bank/demo/security-settings/)
-> * [Message Settings Demo](http://tech-banker.com/products/wp-captcha-bank/demo/message-settings/)
-> * [Login Logs Demo](http://tech-banker.com/products/wp-captcha-bank/demo/login-logs/)
-> * [Plugin Settings Demo](http://tech-banker.com/products/wp-captcha-bank/demo/plugin-settings/)
-> * [Captcha for Login Form Demo](http://tech-banker.com/products/wp-captcha-bank/demo/captcha-for-login-form/)
-> * [Captcha for Registration Form Demo](http://tech-banker.com/products/wp-captcha-bank/demo/captcha-for-registration-form/)
-> * [Captcha for Reset Password Form Demo](http://tech-banker.com/products/wp-captcha-bank/demo/captcha-for-reset-password-form/)
-> * [Captcha for Comment Form Demo](http://tech-banker.com/products/wp-captcha-bank/demo/captcha-for-comment-form/)
-> * [Captcha for Admin Comment Form Demo](http://tech-banker.com/products/wp-captcha-bank/demo/captcha-for-admin-comment-form/)
-> * [Captcha for Contact Bank Form Demo](http://tech-banker.com/products/wp-captcha-bank/demo/captcha-for-contact-bank-form/)
-> * [System Status Demo](http://tech-banker.com/products/wp-captcha-bank/demo/system-status/)
-
-= Useful Links =
+= Useful Links - Captcha Bank =
 
 
 **[Captcha Bank Knowledge Base](http://tech-banker.com/products/wp-captcha-bank/knowledge-base/)**
@@ -89,9 +87,9 @@ Captcha Bank is a Bullet Proof Advance Protection Shield for your Wordpress webs
 * Login Logs
 * Captcha Preview
 
-Visit [here](http://tech-banker.com/products/wp-captcha-bank/) to upgrade to Pro Editions now.
+Visit [**Captcha Bank**](http://tech-banker.com/products/wp-captcha-bank/) to upgrade to Pro Editions now.
 
-= Technical Support =
+= Technical Support  =
 
 Technical Support by the Development Team for Installation, Bug Fixing, Plugin Compatibility Issues.
 
@@ -218,7 +216,7 @@ Allows you to add single IP Address for blocking it as per your requirement.
 * Thai (th)
 * Ukrainian (uk)
 
-= Technical Support =
+= Technical Support - Captcha Bank =
 
 If any problem occurs, please contact us at [support@tech-banker.com](mailto:support@tech-banker.com).
 
@@ -412,21 +410,21 @@ After changing settings, when you click on the Save Settings button you can see 
 
 == Screenshots ==
 
-1. WP **Captcha** Bank General Settings Page
-2. WP **Captcha** Bank Layout Settings Page
-3. WP **Captcha** Bank Font Settings Page
-4. WP **Captcha** Bank Display Settings Page
-5. WP **Captcha** Bank Security Settings Page
-6. WP **Captcha** Bank Message Settings Page
-7. WP **Captcha** Bank Login Logs Page
-8. WP **Captcha** Bank Plugin Settings Page
-9. WP **Captcha** Bank System Status Page
-10.**Captcha** on Login Form
-11.**Captcha** on Registration Form
-12.**Captcha** on Lost Password Form
-13.**Captcha** on Comment Form
-14.**Captcha** on Admin Comment Form
-15.**Captcha** on Contact Bank Form
+1. **WP Captcha Bank General Settings Page**
+2. **WP Captcha Bank Layout Settings Page**
+3. **WP Captcha Bank Font Settings Page**
+4. **WP Captcha Bank Display Settings Page**
+5. **WP Captcha Bank Security Settings Page**
+6. **WP Captcha Bank Message Settings Page**
+7. **WP Captcha Bank Login Logs Page**
+8. **WP Captcha Bank Plugin Settings Page**
+9. **WP Captcha Bank System Status Page**
+10.**Captcha on Login Form**
+11.**Captcha on Registration Form**
+12.**Captcha on Lost Password Form**
+13.**Captcha on Comment Form**
+14.**Captcha on Admin Comment Form**
+15.**Captcha on Contact Bank Form**
 
 
 == Changelog ==
@@ -445,43 +443,43 @@ After changing settings, when you click on the Save Settings button you can see 
 
 = 1.9 =
 
-* Compatibility to 3.9.1
+* Captcha Bank Compatibility to 3.9.1
 
 = 1.8 =
 
-* Layout Changed
+* Captcha Bank Layout Changed
 
 = 1.7 =
 
-* Compatibility to 3.9
+* Captcha Bank Compatibility to 3.9
 
 = 1.6 =
 
-* Compatibility to 3.8.2
+* Captcha Bank Compatibility to 3.8.2
 
 = 1.5 =
 
-* Compatibility to 3.8
+* Captcha Bank Compatibility to 3.8
 
 = 1.4 =
 
-* Documentation Added
+* Captcha Bank Documentation Added
 
 = 1.3 =
 
 * Bugs Fixed with Comments Section Captcha
-* Database Changes
-* Improved CSS
+* Captcha Bank Database Changes
+* Captcha Bank Improved CSS
 
 = 1.2 =
 
 * Bugs Fixed with Session Errors
-* Improved CSS
+* Captcha Bank Improved CSS
 
 = 1.1 =
 
 * Bugs Fixed with functionality related to Browsers
-* Improved CSS
+* Captcha Bank Improved CSS
 
 = 1.0 =
 
