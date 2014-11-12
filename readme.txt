@@ -1,6 +1,7 @@
 === Captcha Bank - Wordpress Captcha Protection ===
 Contributors: contact-banker, Gallery-Bank
-Tags: captcha bank, admin, ajax, anti-spam, antispam security, antispam, captcha, captcha numbers, protection shield, captcha plugin, captcha words, comment, comments, contact form with captcha, cpatcha, label, login, lost password, match captcha, registration, security, spam, spam protection, text captcha, web form protection, login protection, wordpress protection, shield, security, wordpress security, captcha protection, case sensitive captcha, wordpress captcha, admin comment, contact bank, plugin, register, best captcha, best wordpress captcha, simple captcha, popular captcha, spam, form
+Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=E84B89EXJXY8L
+Tags: captcha bank, admin, ajax, anti-spam, antispam security, antispam, captcha, captcha numbers, protection shield, captcha plugin, captcha words, comment, comments, contact form with captcha, cpatcha, label, login, lost password, match captcha, registration, security, spam, spam protection, text captcha, web form protection, login protection, wordpress protection, shield, security, wordpress security, captcha protection, case sensitive captcha, wordpress captcha, admin comment, contact bank, plugin, register, best captcha, best wordpress captcha, simple captcha, popular captcha, spam, form, best captcha
 Requires at least: 3.0
 Tested up to: 4.0
 Stable tag: 2.0
@@ -11,7 +12,7 @@ Captcha Bank is a Bullet Proof Advance Protection Shield for your Wordpress webs
 
 == Description ==
 
-[**WP Captcha Bank**](http://tech-banker.com/products/wp-captcha-bank/) is a powerful WordPress shield which allows you to protect your WordPress website from SPAM. You can display **Captcha** on Login Form, Registration Form, Comment Form, Admin Comment form, Contact Bank Form and Hide **Captcha** for registered users easily. 
+[**WP Captcha Bank - Best Captcha Plugin**](http://tech-banker.com/products/wp-captcha-bank/) is a powerful WordPress shield which allows you to protect your WordPress website from SPAM. You can display **Captcha** on Login Form, Registration Form, Comment Form, Admin Comment form, Contact Bank Form and Hide **Captcha** for registered users easily. 
 
 **Captcha Bank** is loaded with more than 50+ settings including advance protection features such as Login Logs, Auto IP Block, Security Protections and much more. 
 
