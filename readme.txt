@@ -1,7 +1,7 @@
 === Captcha Bank - Spam Protection ===
 Contributors: contact-banker, Gallery-Bank
 Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=E84B89EXJXY8L
-Tags: captcha bank, admin, ajax, anti-spam, antispam security, antispam, captcha, captcha numbers, protection shield, captcha plugin, captcha words, comment, comments, contact form with captcha, cpatcha, label, login, lost password, match captcha, registration, security, spam, spam protection, text captcha, web form protection, login protection, wordpress protection, shield, security, wordpress security, captcha protection, case sensitive captcha, wordpress captcha, admin comment, contact bank, plugin, register, best captcha, best wordpress captcha, simple captcha, popular captcha, spam, form, best captcha
+Tags: captcha bank, admin, ajax, anti-spam, antispam security, antispam, captcha,  protection shield, captcha plugin, comment, comments, contact form with captcha, cpatcha, label, login, lost password, registration, security, spam, spam protection, text captcha, web form protection, login protection, wordpress protection, shield, security, wordpress security, captcha protection, wordpress captcha, admin comment, contact bank, plugin, register, best captcha, best wordpress captcha, simple captcha, popular captcha, spam, form
 Requires at least: 3.0
 Tested up to: 4.0
 Stable tag: 2.0.0
@@ -16,7 +16,7 @@ Captcha Bank is a Bullet Proof Advance Protection Shield for your Wordpress webs
 
 It is loaded with more than 50+ settings including advance protection features such as Login Logs, Auto IP Block, Security Protections and much more. 
 
-It is a bullet proof validator allows you to display **captcha** in different formats such as alphabets, digits or both. Its an advance protection shield that protects your website from spam by means of **captcha logic**, easily understood by human beings. Its a protection method for Website Login, Website Registration and Comment Spam in Blogs which makes the Captcha Bank powerful.
+It is a bullet proof validator allows you to display **captcha** in different formats such as alphabets, digits or both. Its an advance protection shield that protects your website from spam by means of **captcha logic**, easily understood by human beings. Its a protection method for Website Login, Website Registration and Comment Spam in Blogs which makes it more powerful.
 
 > #### **Live Demos**
 
@@ -30,12 +30,12 @@ It is a bullet proof validator allows you to display **captcha** in different fo
 > * [**Message Settings Demo**](http://tech-banker.com/products/wp-captcha-bank/demo/message-settings/)
 > * [**Login Logs Demo**](http://tech-banker.com/products/wp-captcha-bank/demo/login-logs/)
 > * [**Plugin Settings Demo**](http://tech-banker.com/products/wp-captcha-bank/demo/plugin-settings/)
-> * [**Captcha for Login Form Demo**](http://tech-banker.com/products/wp-captcha-bank/demo/captcha-for-login-form/)
-> * [**Captcha for Registration Form Demo**](http://tech-banker.com/products/wp-captcha-bank/demo/captcha-for-registration-form/)
-> * [**Captcha for Reset Password Form Demo**](http://tech-banker.com/products/wp-captcha-bank/demo/captcha-for-reset-password-form/)
-> * [**Captcha for Comment Form Demo**](http://tech-banker.com/products/wp-captcha-bank/demo/captcha-for-comment-form/)
-> * [**Captcha for Admin Comment Form Demo**](http://tech-banker.com/products/wp-captcha-bank/demo/captcha-for-admin-comment-form/)
-> * [**Captcha for Contact Bank Form Demo**](http://tech-banker.com/products/wp-captcha-bank/demo/captcha-for-contact-bank-form/)
+> * [**Login Form Demo**](http://tech-banker.com/products/wp-captcha-bank/demo/captcha-for-login-form/)
+> * [**Registration Form Demo**](http://tech-banker.com/products/wp-captcha-bank/demo/captcha-for-registration-form/)
+> * [**Reset Password Form Demo**](http://tech-banker.com/products/wp-captcha-bank/demo/captcha-for-reset-password-form/)
+> * [**Comment Form Demo**](http://tech-banker.com/products/wp-captcha-bank/demo/captcha-for-comment-form/)
+> * [**Admin Comment Form Demo**](http://tech-banker.com/products/wp-captcha-bank/demo/captcha-for-admin-comment-form/)
+> * [**Contact Bank Form Demo**](http://tech-banker.com/products/wp-captcha-bank/demo/captcha-for-contact-bank-form/)
 > * [**System Status Demo**](http://tech-banker.com/products/wp-captcha-bank/demo/system-status/)
 
 = Useful Links =
@@ -108,7 +108,7 @@ Allows you to track the current users who are logged in into you website and sho
 
 = General Settings =
 
-Allows you to set various settings for **Captcha** which includes Title, Tooltip, number of characters, **Captcha** type, Text Case for **Captcha**, **Captcha** text case sensitivity, Width and Height
+Allows you to set various settings which includes Title, Tooltip, number of characters, type, Text Case, case sensitivity, Width and Height
 
 = Captcha For Login Form =
 
@@ -136,7 +136,7 @@ Allows you to hide **Captcha** for Admin Comment form when the user is other tha
 
 = General Settings =
 
-Allows you to set various settings for Captcha which includes Title, Tooltip, number of characters, type, Text Case, case sensitivity, Width and Height.
+Allows you to set various setting which includes Title, Tooltip, number of characters, type, Text Case, case sensitivity, Width and Height.
 
 = Layout Settings =
 
@@ -148,11 +148,11 @@ Allows you to set different Font Settings (Font Family, Font Size, and Font Colo
 
 = Message Settings =
 
-Allows you to set different settings for error messages such as **Captcha** Empty Error, **Captcha** Invalid Error, IP Block Message, Max Login Attempts and Maximum Login Exceeded Error.
+Allows you to set different settings for error messages such as Empty Error, Invalid Error, IP Block Message, Max Login Attempts and Maximum Login Exceeded Error.
 
 = Roles & Capabilities =
 
-Allows you to controls the capabilities of WP **Captcha** Bank among different roles of WordPress users.
+Allows you to controls the capabilities among different roles of WordPress users.
 
 = Captcha For Contact Bank =
 
@@ -164,7 +164,7 @@ Allows you to block the IP Addresses of the login users from the Login Logs if h
 
 = Maximum Login Attempts =
 
-Allows you to set number of login attempts left for the user incase **Captcha** code is left empty or filled invalid.
+Allows you to set number of login attempts left for the user in case **Captcha** code is left empty or filled invalid.
 
 = Auto IP Block =
 
@@ -249,21 +249,21 @@ If any problem occurs, please contact us at [support@tech-banker.com](mailto:sup
 
 == Frequently Asked Questions ==
 
-= How to set Title for Captcha? =
+= How to set Title? =
 
-To set Title for **Captcha**, locate WP **Captcha** Bank Menu on the left side of WordPress Dashboard
+To set Title, locate WP **Captcha** Bank Menu on the left side of WordPress Dashboard
 Menus and then click on **Captcha** Settings link.
 
 [Click here to view the Image](http://tech-banker.com/wp-content/uploads/2014/10/captcha-settings-menu.png)
 
-Once you click on it, this page would open. Then click on the General Settings tab and here you can set the Title for **Captcha**.
+Once you click on it, this page would open. Then click on the General Settings tab and here you can set the Title.
 
 [Click here to view the Image](http://tech-banker.com/wp-content/uploads/2014/10/captcha-title.png)
 
 
 = How to set Tooltip? =
 
-You can set Tooltip for **Captcha** which would be displayed when you hover on the **Captcha**.
+You can set Tooltip which would be displayed when you hover on the **Captcha**.
 To do so, locate WP **Captcha** Bank Menu on the left side of WordPress Dashboard Menus and then click on **Captcha** Settings link.
 
 [Click here to view the Image](http://tech-banker.com/wp-content/uploads/2014/10/captcha-settings-menu.png)
@@ -275,7 +275,7 @@ Once you click on it, this page would open. Then click on the General Settings t
 
 = How to set number of characters to be displayed? =
 
-In order to set number of characters to be displayed for **Captcha**, locate WP **Captcha** Bank Menu
+In order to set number of characters to be displayed, locate WP **Captcha** Bank Menu
 on the left side of WordPress Dashboard Menus and then click on **Captcha** Settings link.
 
 [Click here to view the Image](http://tech-banker.com/wp-content/uploads/2014/10/captcha-settings-menu.png)
