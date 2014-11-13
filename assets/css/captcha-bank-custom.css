@@ -1,0 +1,100 @@
+/********************** Custom Css for Wp Captcha Settings ******************************/
+.wpcb-page-width
+{
+	max-width:1000px;
+}
+.layout-form .wpcb-layout-controls-label {
+    vertical-align: top;
+}
+.wpcb-custom-layout-control
+{
+	margin-top: 8px;
+}
+.layout-form .wpcb-layout-controls-checkbox {
+   margin-left: 10px;
+}
+.layout-form .wpcb-custom-controls-checkbox {
+    margin-top: 8px;
+}
+.custom-label-width-captcha
+{
+	width : 200px !important;
+}
+.custom-layout-controls-captcha
+{
+	margin-left: 200px !important;
+}
+
+.rdl_captcha
+{
+	margin-top:9px;
+}
+.layout-control-group
+{
+	margin-bottom: 15px !important;
+}
+
+.layout-system-report {
+    display: none;
+    margin: 10px 0;
+    padding: 0;
+    position: relative;
+}
+.close-report
+{
+	display: none;
+}
+.layout-system-report textarea {
+    font-family: monospace;
+    width: 100%;
+    margin: 0;
+    height: 300px;
+    padding: 20px;
+    -moz-border-radius: 0;
+    -webkit-border-radius: 0;
+    border-radius: 0;
+    resize: none;
+    font-size: 12px;
+    line-height: 20px;
+    outline: 0;
+}
+
+.error_note 
+{
+    color: #e00000;
+    display:block;
+}
+
+.check-bottom
+{
+	margin-bottom: 5px;
+	display: block;
+}
+
+.log_success
+{
+	background-color:green;
+	color:white;
+	padding:5px 10px;
+	font-size:11px
+}
+.log_Failed
+{
+	background-color:red;
+	color:white;
+	padding:5px 10px;
+	font-size:11px
+}
+
+ .layout-control-label-captcha
+{
+	float: left;
+    width: 200px;
+    padding-top: 8px;
+    text-align: left;
+}
+.premium_error_note
+{
+	color: #e00000;
+}
+/************************************** End Custom Css for Wp Captcha Settings ************************************/
