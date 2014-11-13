@@ -17,6 +17,15 @@ if (!current_user_can($user_role_permission))
 }
 else
 {
+	$captcha_lang = array();
+	$captcha_translated_lang = array();
+	
+	array_push($captcha_lang, "bg_BG", "ja", "ko_KR", "ms_MY", "sl_SI", "sq_AL", "sr_RS", "es_ES", "nl_NL", "uk", "sv_SE", "fr_FR", "pt_PT", "pt_BR", "et", "it_IT",
+	"de_DE", "fi", "he_IL", "ru_RU", "be_BY", "tr", "th", "ar", "hu_HU", "cs_CZ", "pl_PL", "da_DK", "sk_SK", "zh_CN", "id_ID", "el_GR",
+	"hr", "nb", "ro_RO");
+	
+	array_push($captcha_translated_lang, "en_GB", "en_US");
+	$language = get_locale();
 	?>
 	<div id="welcome-panel" class="welcome-panel" style="width:1000px;padding:0px !important;background-color: #f9f9f9 !important">
 		<div class="welcome-panel-content">
@@ -100,6 +109,38 @@ else
 			</div>
 		</div>
 	</div>
+	<?php
+	if(in_array($language, $captcha_lang))
+	{
+		?>
+		<div class="custom-message red" style="display: block;margin-top:30px;width:963px;">
+			<span style="padding: 4px 0;">
+				<strong>
+					<p style="font:12px/1.0em Arial !important;">
+						If you would like to translate & help us, we will reward you with a free Pro Version License of WP Captcha Bank worth 12£.
+					</p>
+					<p style="font:12px/1.0em Arial !important;">Contact Us at <a target="_blank" href="http://tech-banker.com">http://tech-banker.com</a> or email us at <a href="mailto:support@tech-banker.com">support@tech-banker.com</a></p>
+				</strong>
+			</span>
+		</div>
+		<?php
+	}
+	elseif(!(in_array($language, $captcha_translated_lang)) && !(in_array($language, $captcha_lang)) && $language != "")
+	{
+		?>
+		<div class="custom-message red" style="display: block;margin-top:30px;width:963px;">
+			<span style="padding: 4px 0;">
+				<strong>
+					<p style="font:12px/1.0em Arial !important;">
+						If you would like to translate WP Captcha Bank in your native language, we will reward you with a free Pro Version License of WP Captcha Bank worth 12£.
+					</p>
+					<p style="font:12px/1.0em Arial !important;">Contact Us at <a target="_blank" href="http://tech-banker.com">http://tech-banker.com</a> or email us at <a href="mailto:support@tech-banker.com">support@tech-banker.com</a></p>
+				</strong>
+			</span>
+		</div>
+		<?php
+	}
+	?>
 	<h2 class="nav-tab-wrapper" style="max-width: 1000px;">
 		<a class="nav-tab coustom-nav-tab" id="captcha_bank" href="admin.php?page=captcha_bank">
 			<?php _e("Captcha Settings", captcha_bank);?>

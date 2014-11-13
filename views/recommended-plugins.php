@@ -211,7 +211,7 @@ else
 																			<a class="plugin-div-button install-now button" href="http://tech-banker.com/products/wp-captcha-bank/pricing/" target="_blank" >
 																				<?php _e("Premium Editions", captcha_bank); ?>
 																			</a>
-																			<a class="plugin-div-button install-now button" href="http://tech-banker.com/products/wp-gallery-bank/" target="_blank" >
+																			<a class="plugin-div-button install-now button" href="http://tech-banker.com/products/wp-captcha-bank/" target="_blank" >
 																				<?php _e("Visit Website", captcha_bank); ?>
 																			</a>
 																		<?php 

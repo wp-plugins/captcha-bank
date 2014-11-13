@@ -20,28 +20,6 @@ if($captcha_for_register == "1")
 	add_action( "register_post", "captcha_bank_register_post",10,3);
 }
 
-//Add captcha on lost password form
-if($captcha_for_reset_password == "1")
-{
-	add_action( "lostpassword_form", "captcha_bank_form" );
-	add_action( "allow_password_reset", "captcha_bank_lostpassword_post",1);
-}
-
-//Add captcha on comment form
-
-if($captcha_for_comment == "1")
-{
-	add_action( "comment_form_after_fields", "captcha_bank_form", 1);
-	add_action( "pre_comment_on_post", "captcha_bank_comment_post" );
-}
-
-//Add captcha on admin comment form
-if($captcha_for_admin_comment == "1" || $hide_captcha_for_reg_user == "0" )
-{
-	add_action("comment_form_logged_in_after", "captcha_comment_form", 1);
-	add_action( "pre_comment_on_post", "captcha_bank_comment_post" );
-}
-
 //this add captcha on login form, register form, lost password form, comment form
 if ( ! function_exists( "captcha_bank_form" ) ) 
 {
@@ -89,66 +67,7 @@ if ( ! function_exists( "captcha_bank_form" ) )
 	}
 }
 
-//this add captcha on admin comment form
 
-if ( ! function_exists( "captcha_comment_form" ) )
-{
-	function captcha_comment_form()
-	{
-		global $wpdb,$current_user;
-		$wpcb_role = $wpdb->prefix . "capabilities";
-		$current_user->role = array_keys($current_user->$wpcb_role);
-		$wpcb_role = $current_user->role[0];
-		if(file_exists(WP_CAPTCHA_BK_PLUGIN_DIR . "/lib/get-settings.php"))
-		{
-			include WP_CAPTCHA_BK_PLUGIN_DIR . "/lib/get-settings.php";
-		}
-		
-		if(($wpcb_role == "administrator" && $captcha_for_admin_comment == 1 ) || ($wpcb_role != "administrator" && $hide_captcha_for_reg_user == 0))
-		{
-		
-			$captcha_url = admin_url("admin-ajax.php"). "?captcha_code=".rand(1111,9999);
-			?>
-				<label>
-					<?php _e("Enter Code", captcha_bank); ?>
-					<span style="color: #b94a48;">*</span>
-				</label>
-				<input type="text" name="captcha_challenge_field" id="captcha_challenge_field" class="captcha_challenge_field" />
-				<label style="display:block;">
-					<?php echo $captcha_title;?>
-				</label>
-				<?php
-					if($show_border == "1")
-					{
-						?>
-						<img src="<?php echo $captcha_url;?>" class="captcha_code_img"  id="captcha_code_img" title="<?php echo $captcha_tooltip;?>" style= "margin-top:10px; cursor:pointer; border:<?php echo $border_size?>px solid <?php echo $border_color?>" />
-						<?php
-					}
-					else
-					{
-						?>
-						<img src="<?php echo $captcha_url;?>" class="captcha_code_img"  id="captcha_code_img" title="<?php echo $captcha_tooltip;?>" style= "margin-top:10px; cursor:pointer;" />
-						<?php
-					}
-				?>
-				<img style= "vertical-align: top !important; margin-top:9px; cursor:pointer;" onclick="refresh(); " alt="Reload Image" height="25" width="25" src="<?php echo plugins_url("/assets/images/refresh-icon.png",dirname(__FILE__))?>"/>
-
-				<script type="text/javascript">
-					function refresh()
-					{
-						var randNum = Math.random(111,99999); 
-						jQuery("#captcha_code_img").attr("src","<?php echo $captcha_url; ?>"+randNum);
-						return true;
-					}
-				</script>
-			<?php
-		}
-		else 
-		{
-			return;
-		}
-	}
-}
 //this function is to check captcha code in login form
 function captcha_bank_login_check($user, $password) 
 {
@@ -196,63 +115,6 @@ function captcha_bank_register_post($user,$email,$errors)
 		{
 			$errors->add("captcha_error", "The Captcha Code does not match. Please Try Again.");
 			return $errors;
-		}
-	}
-}
-
-//this function is to check captcha code in lostpassword form
-function captcha_bank_lostpassword_post($user)
-{
-	global $wpdb;
-	if(file_exists(WP_CAPTCHA_BK_PLUGIN_DIR . "/lib/get-settings.php"))
-	{
-		include WP_CAPTCHA_BK_PLUGIN_DIR . "/lib/get-settings.php";
-	}
-	global $errors;
-	$err = captcha_errors();
-	if($err)
-	{
-		if($errors == NULL) $errors;
-		if($errors == NULL) $errors = new WP_Error();
-		if($err == "empty")
-		{
-			$error = new WP_Error( "captcha_wrong", "Captcha Code is empty. Please enter captcha code.");
-			return $error;
-		}
-		else if($err == "invalid")
-		{
-			$error = new WP_Error( "captcha_wrong", "The Captcha Code does not match. Please Try Again.");
-			return $error;
-		}
-	}
-	return $user;
-}
-
-//this function is to check captcha code in comment form
-if ( ! function_exists( "captcha_bank_comment_post" ) )
-{
-	function captcha_bank_comment_post()
-	{
-		global $wpdb;
-		if(file_exists(WP_CAPTCHA_BK_PLUGIN_DIR . "/lib/get-settings.php"))
-		{
-			include WP_CAPTCHA_BK_PLUGIN_DIR . "/lib/get-settings.php";
-		}
-		$err = captcha_errors();
-		if($err)
-		{
-			if($err == "empty")
-			{
-				wp_die( "Captcha Code is empty. Please enter captcha code.");
-			}
-			else if($err == "invalid")
-			{
-				wp_die( "The Captcha Code does not match. Please Try Again.");
-			}
-		}
-		else
-		{
-			return;
 		}
 	}
 }

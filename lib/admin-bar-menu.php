@@ -60,7 +60,7 @@ switch ($wpcb_role)
 			"id" => "captcha_bank_links",
 			"title" => "<img src=\"" . plugins_url("/assets/images/icon.png",dirname(__file__)) .
 			"\" width=\"25\"
-			height=\"25\" style=\"vertical-align:text-top; margin-right:5px;\" />Captcha Bank",
+			height=\"25\" style=\"vertical-align:text-top; margin-right:5px;\" />WP Captcha Bank",
 			"href" => site_url() . "/wp-admin/admin.php?page=captcha_bank",
 		));
 		$wp_admin_bar->add_menu(array(
@@ -110,7 +110,7 @@ switch ($wpcb_role)
 		$wp_admin_bar->add_menu(array(
 			"id" => "captcha_bank_links",
 			"title" => "<img src=\"" . plugins_url("/assets/images/icon.png", dirname(__file__)) .
-			"\" width=\"25\" height=\"25\" style=\"vertical-align:text-top; margin-right:5px;\" />Captcha Bank",
+			"\" width=\"25\" height=\"25\" style=\"vertical-align:text-top; margin-right:5px;\" />WP Captcha Bank",
 			"href" => site_url() . "/wp-admin/admin.php?page=captcha_bank",
 		));
 		$wp_admin_bar->add_menu(array(

@@ -177,7 +177,7 @@ else
 			{
 				"sLengthMenu": "<span>Show entries:</span> _MENU_"
 			},
-			"aaSorting": [[ 6, "asc" ]]
+			"aaSorting": [[ 6, "desc" ]]
 		});
 		initialize();
 	});

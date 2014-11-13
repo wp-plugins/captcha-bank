@@ -430,7 +430,15 @@ After changing settings, when you click on the Save Settings button you can see 
 
 == Changelog ==
 
-= 2.0 =
+= 2.0.1 =
+
+* Udpated  Po & Mo Files
+* Updated Css Fixes
+* Updated Our Services Section
+* Optimized Code
+* Removed unwanted Files & Fonts
+
+= 2.0.0 =
 
 * Major Version Release
 * New Feature : Introduced Layout Settings in Captcha Bank which allows you to set various Layout Settings such as Background, Lines, Dots, Text Transparency, and Signature for Captcha.

@@ -21,23 +21,7 @@ else
 	{
 		include WP_CAPTCHA_BK_PLUGIN_DIR . "/lib/get-settings.php";
 	}
-	if (file_exists(WP_CAPTCHA_BK_PLUGIN_DIR . "/lib/backgrounds.php"))
-	{
-		include_once WP_CAPTCHA_BK_PLUGIN_DIR . "/lib/backgrounds.php";
-	}
-	if (file_exists(WP_CAPTCHA_BK_PLUGIN_DIR . "/lib/fonts.php"))
-	{
-		include_once WP_CAPTCHA_BK_PLUGIN_DIR . "/lib/fonts.php";
-	}
 	$captcha_url = admin_url("admin-ajax.php"). "?captcha_code=".rand(1111,9999);
-	$blocked_ip = $wpdb->get_results
-	(
-		"SELECT * FROM " . captcha_bank_block_single_ip()
-	);
-	$blocked_ip_range = $wpdb->get_results
-	(
-		"SELECT * FROM " . captcha_bank_block_range_ip()
-	);
 	?>
 	<div id="message" class="top-right message" style="display: none;">
 		<div class="message-notification"></div>
@@ -311,15 +295,24 @@ else
 														</label>
 														<div class="layout-controls custom-layout-controls-captcha ">
 														 	<select name="ux_ddl_background" id="ux_ddl_background" onchange ="captcha_background();" class="layout-span11">
-																<?php
-																foreach ($captcha_backgrounds as $val => $innerKey){
-																?>
-																<option value="<?php echo $innerKey; ?>" <?php echo $innerKey == $captcha_background ? "selected = 'selected'" : "";?> disabled="disabled">
-																	<?php echo $val; ?>
-																</option>
-																<?php
-														 			}
-														 		?>
+																<option disabled="disabled" value= "bg1.gif">Pattern 1</option>
+																<option disabled="disabled" value= "bg2.gif">Pattern 2</option>
+																<option disabled="disabled" value= "bg3.jpg">Pattern 3</option>
+																<option disabled="disabled" selected="selected" value= "bg4.jpg">Pattern 4</option>
+																<option disabled="disabled" value= "bg5.jpg">Pattern 5</option>
+																<option disabled="disabled" value= "bg6.png">Pattern 6</option>
+																<option disabled="disabled" value= "bg7.gif">Pattern 7</option>
+																<option disabled="disabled" value= "bg8.gif">Pattern 8</option>
+																<option disabled="disabled" value= "bg9.gif">Pattern 9</option>
+																<option disabled="disabled" value= "bg10.gif">Pattern 10</option>
+																<option disabled="disabled" value= "bg11.gif">Pattern 11</option>
+																<option disabled="disabled" value= "bg12.gif">Pattern 12</option>
+																<option disabled="disabled" value= "bg13.gif">Pattern 13</option>
+																<option disabled="disabled" value= "bg14.gif">Pattern 14</option>
+																<option disabled="disabled" value= "bg15.gif">Pattern 15</option>
+																<option disabled="disabled" value= "bg16.gif">Pattern 16</option>
+																<option disabled="disabled" value= "bg17.jpg">Pattern 17</option>
+																<option disabled="disabled" value= "bg18.png">Pattern 18</option>
 															</select>
 															<img  id= "captcha_background_image" src="<?php echo WP_CAPTCHA_BK_PLUGIN_REF . '/backgrounds/'.$captcha_background?>" style="margin-top:10px" height="50" width="200" />
 														</div>
@@ -568,16 +561,12 @@ else
 														</label>
 														<div class="layout-controls custom-layout-controls-captcha ">
 														 	<select name="ux_ddl_font_family" id="ux_ddl_font_family" class="layout-span11">
-																<?php
-															 	foreach ($captcha_fonts as $val => $innerKey)
-																{
-																 	?>
-																	<option value="<?php echo $innerKey; ?>" <?php echo $innerKey == $captcha_font ? "selected = 'selected'" : "";?> disabled="disabled">
-																		<?php echo $val; ?>
-																	</option>
-																	<?php
-														 		}
-														 		?>
+																<option disabled="disabled" selected="selected" value="AHGBold.ttf">Alte Haas Grotesk</option>
+																<option disabled="disabled" value="coopbl.ttf">Cooper Black</option>
+																<option disabled="disabled" value="segoepr.ttf">Segoe Print</option>
+																<option disabled="disabled" value="tahomabd.ttf">Tahoma</option>
+																<option disabled="disabled" value="trebuc.ttf">Trebuchet MS</option>
+																<option disabled="disabled" value="verdana.ttf">Verdana</option>
 															</select>
 														</div>
 													</div>
@@ -693,14 +682,6 @@ else
 														</label>
 														<div class="layout-controls custom-layout-controls-captcha ">
 														 	<select multiple="multiple" name="ux_ddl_blocked_ip" id="ux_ddl_blocked_ip" class="layout-span11" disabled="disabled">
-																<?php 
-																for($flag5=0; $flag5 < count($blocked_ip); $flag5++)
-																{
-																	?>
-																	<option value="<?php echo $blocked_ip[$flag5]->block_ip_address;?>"><?php echo $blocked_ip[$flag5]->block_ip_address;?></option>
-																<?php
-																}
-																?>
 															</select>
 															<input type="button" value="<?php _e("Delete Block IP Addresses", captcha_bank); ?>" class="btn btn-success" onclick="delete_block_ip();" style=" margin-top: 12px;"/>
 														</div>
@@ -728,15 +709,6 @@ else
 															</label>
 															<div class="layout-controls custom-layout-controls-captcha ">
 															 	<select multiple="multiple" name="ux_ddl_blocked_ip_range" id="ux_ddl_blocked_ip_range" class="layout-span11" disabled="disabled">
-																	<?php 
-																	for($flag=0; $flag < count($blocked_ip_range); $flag++)
-																	{
-																		?>
-																		<option value="<?php echo $blocked_ip_range[$flag]->block_start_range;?> - <?php echo $blocked_ip_range[$flag]->block_end_range;?>"><?php echo $blocked_ip_range[$flag]->block_start_range;?> - <?php echo $blocked_ip_range[$flag]->block_end_range;?></option>
-																	<?php
-																	}
-																	?>
-																	
 																</select>
 																<input type="button" value="<?php _e("Delete Block IP Range", captcha_bank); ?>" onclick="delete_block_ip_range();" class="btn btn-success" style=" margin-top: 12px;"/>
 															</div>

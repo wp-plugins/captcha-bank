@@ -1,10 +1,10 @@
 <?php
 /*
-Plugin Name: WP Captcha Bank Standard Edition
+Plugin Name: WP Captcha Bank Lite Edition
 Plugin URI: http://tech-banker.com
 Description: This plugin allows you to implement security captcha form into web forms to prevent spam.
 Author: Tech Banker
-Version: 2.0.0
+Version: 2.0.1
 Author URI: http://tech-banker.com
 */
 /////////////////////////////////////  Define  WP Captcha Bank  Constants  //////////////////////////////////
@@ -13,6 +13,8 @@ if (!defined("WP_CAPTCHA_BK_PLUGIN_DIR")) define("WP_CAPTCHA_BK_PLUGIN_DIR", plu
 if (!defined("WP_CAPTCHA_BK_PLUGIN_DIRNAME")) define("WP_CAPTCHA_BK_PLUGIN_DIRNAME", plugin_basename(dirname(__file__)));
 if (!defined("captcha_bank")) define("captcha_bank", "captcha-bank");
 if (!defined("WP_CAPTCHA_BK_PLUGIN_REF")) define("WP_CAPTCHA_BK_PLUGIN_REF", WP_PLUGIN_URL . "/" . WP_CAPTCHA_BK_PLUGIN_DIRNAME);
+if (!defined("WP_CAPTCHA_BK_PLUGIN_BASENAME")) define("WP_CAPTCHA_BK_PLUGIN_BASENAME", plugin_basename(__FILE__));
+if (!defined("tech_bank")) define("tech_bank", "tech-banker");
 
 ///////////////////////////////////// File Exist Function for Frontend /////////////////////////////////////
 
@@ -247,14 +249,43 @@ if(!function_exists("getIpAddress"))
 	}
 }
 /////////////////////////////////////Language Convertions//////////////////////////////////////////////////////////
+
 if(!function_exists( "plugin_load_textdomain_wp_captcha_bank" ))
 {
 	function plugin_load_textdomain_wp_captcha_bank()
 	{
-		load_plugin_textdomain(captcha_bank, false, WP_CAPTCHA_BK_PLUGIN_DIRNAME ."/languages");
+		if(function_exists( "load_plugin_textdomain" ))
+		{
+			load_plugin_textdomain(captcha_bank, false, WP_CAPTCHA_BK_PLUGIN_DIRNAME ."/languages");
+		}
 	}
 }
 
+if(!function_exists("plugin_load_textdomain_wp_captcha_bank_services"))
+{
+	function plugin_load_textdomain_wp_captcha_bank_services()
+	{
+		if(function_exists( "load_plugin_textdomain" ))
+		{
+			load_plugin_textdomain(tech_bank, false, WP_CAPTCHA_BK_PLUGIN_DIRNAME ."/tech-banker-services");
+		}
+	}
+}
+
+////////////////////////////////////Additional Links to Plugin/////////////////////////////////////////
+
+function captcha_plugin_row($links,$file)
+{
+	if ($file == WP_CAPTCHA_BK_PLUGIN_BASENAME)
+	{
+		$captcha_row_meta = array(
+		"docs"  => "<a href='".esc_url( apply_filters("wp_captcha_bank_docs_url","http://tech-banker.com/products/wp-captcha-bank/knowledge-base/"))."' title='".esc_attr(__( "View WP Captcha Bank Documentation",captcha_bank))."'>".__("Docs",captcha_bank)."</a>",
+		"gopremium" => "<a href='" .esc_url( apply_filters("wp_captcha_bank_premium_editions_url", "http://tech-banker.com/products/wp-captcha-bank/pricing/"))."' title='".esc_attr(__( "View WP Captcha Bank Editions",captcha_bank))."'>".__("Go for Premium!",captcha_bank)."</a>",
+		);
+		return array_merge($links,$captcha_row_meta);
+	}
+	return (array)$links;
+}
 ///////////////////////////////////  Call Hooks   /////////////////////////////////////////////////////
 
 // activation Hook called for installation_for_captcha bank
@@ -263,7 +294,11 @@ register_activation_hook(__file__, "plugin_install_script_for_captcha_bank");
 // activation Hook called for uninstallation_for_captcha bank
 //register_uninstall_hook(__file__, "plugin_uninstall_script_for_captcha_bank");
 
- add_action("plugins_loaded", "plugin_load_textdomain_wp_captcha_bank");
+// add_action Hook called for languages for captcha bank
+add_action("plugins_loaded", "plugin_load_textdomain_wp_captcha_bank");
+
+// add_action Hook called for languages for captcha bank services
+add_action("plugins_loaded", "plugin_load_textdomain_wp_captcha_bank_services");
 
 // add_action Hook called for function backend_plugin_css_styles_for_captcha_bank
 add_action("admin_init", "admin_panel_css_calls_for_captcha_bank");
@@ -279,5 +314,8 @@ add_action("admin_bar_menu", "create_admin_bar_menus_for_captcha_bank", 100);
 
 // add_action Hook called for function create_global_menus_for_captcha bank
 add_action("admin_menu", "create_global_menus_for_captcha_bank");
+
+// plugin_row_meta Hook called for function custom_plugin_row to add additional link to the plugin.
+add_filter("plugin_row_meta","captcha_plugin_row", 10, 2 );
 
 ?>
