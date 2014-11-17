@@ -45,7 +45,10 @@ else
 							<div class="layout-span12 responsive">
 								<div class="layout-control-group">
 									<label class="layout-control-label-captcha">
-										<?php _e("Show Captcha Plugin Menu", captcha_bank); ?> : 
+										<?php _e("Show Captcha Plugin Menu", captcha_bank); ?> :
+										<span class="hovertip" data-original-title ='<?php _e("Allows you to control the capabilities of WP Captcha Bank among different roles of WordPress users.",captcha_bank) ;?>'>
+											<img class="tooltip_img" src="<?php echo plugins_url("/assets/images/questionmark_icon.png",dirname(__FILE__))?>"/>
+										</span>
 									</label>
 									<div class="layout-controls custom-layout-controls-captcha rdl_captcha">
 										<span class="check-bottom">
@@ -82,7 +85,10 @@ else
 								</div>
 								<div class="layout-control-group">
 									<label class="layout-control-label-captcha">
-										<?php _e("Captcha Menu Top Bar", captcha_bank); ?> : 
+										<?php _e("Captcha Menu Top Bar", captcha_bank); ?> :
+										<span class="hovertip" data-original-title ='<?php _e("Allows you to enable or disable WP Captcha Bank for top menu bar among different roles of WordPress users.",captcha_bank) ;?>'>
+											<img class="tooltip_img" src="<?php echo plugins_url("/assets/images/questionmark_icon.png",dirname(__FILE__))?>"/>
+										</span>
 									</label>
 									<div class="layout-controls custom-layout-controls-captcha rdl_captcha">
 									<?php
@@ -113,6 +119,7 @@ else
 		</div>
 	</form>
 	<script type="text/javascript">
+	jQuery(".hovertip").tooltip({placement: "right"});
 	jQuery("#frm_wp_plugin_settings").validate
 	({
 		submitHandler: function(form)

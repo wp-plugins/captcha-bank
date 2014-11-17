@@ -17,6 +17,7 @@ if (!current_user_can($user_role_permission))
 }
 else
 {
+	$settings_captcha = wp_create_nonce( "captcha_settings" );
 	if (file_exists(WP_CAPTCHA_BK_PLUGIN_DIR . "/lib/get-settings.php"))
 	{
 		include WP_CAPTCHA_BK_PLUGIN_DIR . "/lib/get-settings.php";
@@ -77,7 +78,10 @@ else
 												<div class="widget-layout-body">
 													<div class="layout-control-group">
 														<label class="layout-control-label">
-															<?php _e("Captcha Title", captcha_bank); ?> : <span class="error">*</span>
+														<?php _e("Captcha Title", captcha_bank); ?> : <span class="error">*</span>
+															<span class="hovertip" data-original-title ='<?php _e("Allows you to add Title for the Captcha which is displayed above the Captcha Image.",captcha_bank) ;?>'>
+																<img class="tooltip_img" src="<?php echo plugins_url("/assets/images/questionmark_icon.png",dirname(__FILE__))?>"/>
+															</span>
 														</label>
 														<div class="layout-controls custom-layout-controls-captcha ">
 												 			<input type="text" class="layout-span11" id="ux_txt_title" name="ux_txt_title" value="<?php _e( $captcha_title,captcha_bank); ?>" placeholder="<?php _e( "Enter the title for your captcha here.",captcha_bank); ?>"/>
@@ -86,6 +90,9 @@ else
 													<div class="layout-control-group">
 														<label class="layout-control-label">
 															<?php _e("Captcha Tooltip", captcha_bank); ?> : <span class="error">*</span>
+															<span class="hovertip" data-original-title ='<?php _e("Allows you to add Tooltip for Captcha which would be displayed when you hover on the Captcha Image.",captcha_bank) ;?>'>
+																<img class="tooltip_img" src="<?php echo plugins_url("/assets/images/questionmark_icon.png",dirname(__FILE__))?>"/>
+															</span>
 														</label>
 														<div class="layout-controls custom-layout-controls-captcha">
 															<input type="text" class="layout-span11" id="ux_txt_tooltip" name="ux_txt_tooltip" value="<?php _e($captcha_tooltip,captcha_bank); ?>" placeholder="<?php _e( "Enter the tooltip for your captcha.",captcha_bank); ?>"/>
@@ -93,7 +100,10 @@ else
 													</div>
 													<div class="layout-control-group">
 														<label class="layout-control-label">
-															<?php _e("Captcha Characters", captcha_bank); ?> : <span class="error">*</span> 
+															<?php _e("Captcha Characters", captcha_bank); ?> : <span class="error">*</span>
+															<span class="hovertip" data-original-title ='<?php _e("Allows you to enter the number of characters to be displayed on Captcha Image.",captcha_bank) ;?>'>
+																<img class="tooltip_img" src="<?php echo plugins_url("/assets/images/questionmark_icon.png",dirname(__FILE__))?>"/>
+															</span>
 														</label>
 														<div class="layout-controls custom-layout-controls-captcha ">
 														 	<input type="text" class="layout-span11" id="ux_txt_char" onkeypress="return OnlyNumbers(event)" name="ux_txt_char" value="<?php echo $captcha_characters;?>" placeholder="<?php _e( "Enter the number of characters you want to display on your captcha.",captcha_bank); ?>" />
@@ -102,6 +112,9 @@ else
 													<div class="layout-control-group">
 														<label class="layout-control-label">
 															<?php _e("Captcha Type", captcha_bank); ?> : 
+															<span class="hovertip" data-original-title ='<?php _e("Allows you to select type of Captcha to be displayed i.e. Only alphabets, Only Digits and both Alphabets and Digits.",captcha_bank) ;?>'>
+																<img class="tooltip_img" src="<?php echo plugins_url("/assets/images/questionmark_icon.png",dirname(__FILE__))?>"/>
+															</span>
 														</label>
 														<div class="layout-controls custom-layout-controls-captcha ">
 														 	<select name="ux_ddl_action" id="ux_ddl_action" class="layout-span11">
@@ -119,7 +132,10 @@ else
 													</div>
 													<div class="layout-control-group">
 														<label class="layout-control-label">
-															<?php _e("Text Case", captcha_bank); ?> : 
+															<?php _e("Text Case", captcha_bank); ?> :
+															<span class="hovertip" data-original-title ='<?php _e("Allows you to set type of Captcha characters in three different cases i.e. Upper Case, Lower Case or Ramdom.",captcha_bank) ;?>'>
+																<img class="tooltip_img" src="<?php echo plugins_url("/assets/images/questionmark_icon.png",dirname(__FILE__))?>"/>
+															</span>
 														</label>
 														<div class="layout-controls custom-layout-controls-captcha rdl_captcha">
 															<?php 
@@ -152,23 +168,32 @@ else
 													</div>
 													<div class="layout-control-group">
 														<label class="layout-control-label">
-															<?php _e("Captcha Width", captcha_bank); ?> : <span class="error">*</span> 
+															<?php _e("Captcha Width", captcha_bank); ?> : <span class="error">*</span>
+															<span class="hovertip" data-original-title ='<?php _e("Allows you to set the width of Captcha Image as per the requirement.",captcha_bank) ;?>'>
+																<img class="tooltip_img" src="<?php echo plugins_url("/assets/images/questionmark_icon.png",dirname(__FILE__))?>"/>
+															</span>
 														</label>
 														<div class="layout-controls custom-layout-controls-captcha ">
-														 	<input type="text" class="layout-span11" id="ux_txt_width" onkeypress="return OnlyNumbers(event)" name="ux_txt_width" value="<?php  echo $captcha_width;?>" placeholder="<?php _e( "Enter the width for your captcha image.",captcha_bank); ?>"/>
+														 	<input type="text" class="layout-span11" id="ux_txt_width" onkeypress="return OnlyNumbers(event)" name="ux_txt_width" value="<?php  echo $captcha_width;?>" placeholder="<?php _e( "Enter the width for the captcha image.",captcha_bank); ?>"/>
 														</div>
 													</div>
 													<div class="layout-control-group">
 														<label class="layout-control-label">
-															<?php _e("Captcha Height", captcha_bank); ?> : <span class="error">*</span> 
+															<?php _e("Captcha Height", captcha_bank); ?> : <span class="error">*</span>
+															<span class="hovertip" data-original-title ='<?php _e("Allows you to set the height of Captcha Image as per the requirement.",captcha_bank) ;?>'>
+																<img class="tooltip_img" src="<?php echo plugins_url("/assets/images/questionmark_icon.png",dirname(__FILE__))?>"/>
+															</span>
 														</label>
 														<div class="layout-controls custom-layout-controls-captcha ">
-														 	<input type="text" class="layout-span11" id="ux_txt_height" onkeypress="return OnlyNumbers(event)" name="ux_txt_height" value="<?php echo  $captcha_height; ?>" placeholder="<?php _e( "Enter the height for your captcha image.",captcha_bank); ?>"/>
+														 	<input type="text" class="layout-span11" id="ux_txt_height" onkeypress="return OnlyNumbers(event)" name="ux_txt_height" value="<?php echo  $captcha_height; ?>" placeholder="<?php _e( "Enter the height for the captcha image.",captcha_bank); ?>"/>
 														</div>
 													</div>
 													<div class="layout-control-group">
 														<label class="layout-control-label">
-															<?php _e("Case Sensitive", captcha_bank); ?> : 
+															<?php _e("Case Sensitive", captcha_bank); ?> :
+															<span class="hovertip" data-original-title ='<?php _e("Allows you make the Captcha text Case Sensitive while typing the Captcha Code.",captcha_bank) ;?>'>
+																<img class="tooltip_img" src="<?php echo plugins_url("/assets/images/questionmark_icon.png",dirname(__FILE__))?>"/>
+															</span> 
 														</label>
 														<div class="layout-controls custom-layout-controls-captcha rdl_captcha">
 															<input type="checkbox" id="ux_chk_case" value="1" <?php echo $captcha_case_sensitive == "1" ? "checked=\"checked\"" : "";?> /><label class="wpcb-layout-controls-label"><?php _e("Yes, make it case sensitive.", captcha_bank); ?>  </label>
@@ -177,6 +202,9 @@ else
 													<div class="layout-control-group">
 														<label class="layout-control-label">
 															<?php _e("Captcha Preview", captcha_bank); ?> : 
+															<span class="hovertip" data-original-title ='<?php _e("Allows you to preview the Captcha Image once the above settings are saved.",captcha_bank) ;?>'>
+																<img class="tooltip_img" src="<?php echo plugins_url("/assets/images/questionmark_icon.png",dirname(__FILE__))?>"/>
+															</span>
 														</label>
 														<div class="layout-controls custom-layout-controls-captcha">
 															<?php
@@ -209,7 +237,10 @@ else
 												<div class="widget-layout-body">
 													<div class="layout-control-group">
 														<label class="layout-control-label">
-															<?php _e("Enable Captcha For", captcha_bank); ?> : 
+															<?php _e("Enable Captcha For", captcha_bank); ?> :
+															<span class="hovertip" data-original-title ='<?php _e("Allows you to display Captcha on Login Form, Registration Form, Comment Form, Admin Comment Form, Contact Bank Form, Reset Password Form and Hide Captcha for Registered User.",captcha_bank) ;?>'>
+																<img class="tooltip_img" src="<?php echo plugins_url("/assets/images/questionmark_icon.png",dirname(__FILE__))?>"/>
+															</span>
 														</label>
 														<div class="layout-controls custom-layout-controls-captcha rdl_captcha">
 															<span class="check-bottom">
@@ -258,7 +289,10 @@ else
 													</div>
 													<div class="layout-control-group">
 														<label class="layout-control-label">
-															<?php _e("Captcha Preview", captcha_bank); ?> : 
+															<?php _e("Captcha Preview", captcha_bank); ?> :
+															<span class="hovertip" data-original-title ='<?php _e("Allows you to preview the Captcha Image once the above settings are saved.",captcha_bank) ;?>'>
+																<img class="tooltip_img" src="<?php echo plugins_url("/assets/images/questionmark_icon.png",dirname(__FILE__))?>"/>
+															</span>
 														</label>
 														<div class="layout-controls custom-layout-controls-captcha">
 															<?php
@@ -291,7 +325,10 @@ else
 												<div class="widget-layout-body">
 													<div class="layout-control-group">
 														<label class="layout-control-label">
-															<?php _e("Captcha Background", captcha_bank); ?> : 
+															<?php _e("Captcha Background", captcha_bank); ?> :
+															<span class="hovertip" data-original-title ='<?php _e("Allows you to set Background Image for the Captcha.",captcha_bank) ;?>'>
+																<img class="tooltip_img" src="<?php echo plugins_url("/assets/images/questionmark_icon.png",dirname(__FILE__))?>"/>
+															</span>
 														</label>
 														<div class="layout-controls custom-layout-controls-captcha ">
 														 	<select name="ux_ddl_background" id="ux_ddl_background" onchange ="captcha_background();" class="layout-span11">
@@ -318,7 +355,12 @@ else
 														</div>
 													</div>
 													<div class="layout-control-group">
-														<label class="layout-control-label"><?php _e("Show Border", captcha_bank); ?> : </label>
+														<label class="layout-control-label">
+															<?php _e("Show Border", captcha_bank); ?> :
+															<span class="hovertip" data-original-title ='<?php _e("Allows you to set Border with different size and color for the Captcha Image.",captcha_bank) ;?>'>
+																<img class="tooltip_img" src="<?php echo plugins_url("/assets/images/questionmark_icon.png",dirname(__FILE__))?>"/>
+															</span>
+														</label>
 														<div class="layout-controls custom-layout-controls-captcha rdl_captcha">
 															<?php
 																if($show_border == "1")
@@ -361,7 +403,12 @@ else
 														</div>
 													</div>
 													<div class="layout-control-group">
-														<label class="layout-control-label"><?php _e("Show Lines", captcha_bank); ?> : </label>
+														<label class="layout-control-label">
+															<?php _e("Show Lines", captcha_bank); ?> :
+															<span class="hovertip" data-original-title ='<?php _e("Allows you to set different colors and number of lines on the Captcha Image.",captcha_bank) ;?>'>
+																<img class="tooltip_img" src="<?php echo plugins_url("/assets/images/questionmark_icon.png",dirname(__FILE__))?>"/>
+															</span>
+														</label>
 														<div class="layout-controls custom-layout-controls-captcha rdl_captcha">
 															<?php
 																if($show_lines == "1")
@@ -404,7 +451,12 @@ else
 														</div>
 													</div>
 													<div class="layout-control-group">
-														<label class="layout-control-label"><?php _e("Show Noise", captcha_bank); ?> : </label>
+														<label class="layout-control-label">
+															<?php _e("Show Noise", captcha_bank); ?> :
+															<span class="hovertip" data-original-title ='<?php _e("Allows you to set different colors and number of dots on the Captcha Image.",captcha_bank) ;?>'>
+																<img class="tooltip_img" src="<?php echo plugins_url("/assets/images/questionmark_icon.png",dirname(__FILE__))?>"/>
+															</span>
+														</label>
 														<div class="layout-controls custom-layout-controls-captcha rdl_captcha">
 																<?php
 																if($show_noise == "1")
@@ -448,7 +500,10 @@ else
 													</div>
 													<div class="layout-control-group">
 														<label class="layout-control-label">
-															<?php _e("Text Transparency", captcha_bank); ?> : 
+															<?php _e("Text Transparency", captcha_bank); ?> :
+															<span class="hovertip" data-original-title ='<?php _e("Allows you to set the transparency of the Captcha text in percentage as per the requirement.",captcha_bank) ;?>'>
+																<img class="tooltip_img" src="<?php echo plugins_url("/assets/images/questionmark_icon.png",dirname(__FILE__))?>"/>
+															</span>
 														</label>
 														<div class="layout-controls custom-layout-controls-captcha rdl_captcha">
 															<?php
@@ -482,6 +537,9 @@ else
 													<div class="layout-control-group">
 														<label class="layout-control-label">
 															<?php _e("Signature", captcha_bank); ?> :
+															<span class="hovertip" data-original-title ='<?php _e("Allows you to set the Captcha Signature (a small text) below the captcha characters.",captcha_bank) ;?>'>
+																<img class="tooltip_img" src="<?php echo plugins_url("/assets/images/questionmark_icon.png",dirname(__FILE__))?>"/>
+															</span>
 														</label>
 														<div class="layout-controls custom-layout-controls-captcha rdl_captcha">
 															<?php
@@ -526,7 +584,10 @@ else
 													</div>
 													<div class="layout-control-group">
 														<label class="layout-control-label">
-															<?php _e("Captcha Preview", captcha_bank); ?> : 
+															<?php _e("Captcha Preview", captcha_bank); ?> :
+															<span class="hovertip" data-original-title ='<?php _e("Allows you to preview the Captcha Image once the above settings are saved.",captcha_bank) ;?>'>
+																<img class="tooltip_img" src="<?php echo plugins_url("/assets/images/questionmark_icon.png",dirname(__FILE__))?>"/>
+															</span>
 														</label>
 														<div class="layout-controls custom-layout-controls-captcha">
 														<?php
@@ -557,7 +618,10 @@ else
 												<div class="widget-layout-body">
 													<div class="layout-control-group">
 														<label class="layout-control-label">
-															<?php _e("Font Family", captcha_bank); ?> : 
+															<?php _e("Font Family", captcha_bank); ?> :
+															<span class="hovertip" data-original-title ='<?php _e("Allows you to select Font Family for the Captcha Text.",captcha_bank) ;?>'>
+																<img class="tooltip_img" src="<?php echo plugins_url("/assets/images/questionmark_icon.png",dirname(__FILE__))?>"/>
+															</span>
 														</label>
 														<div class="layout-controls custom-layout-controls-captcha ">
 														 	<select name="ux_ddl_font_family" id="ux_ddl_font_family" class="layout-span11">
@@ -572,7 +636,10 @@ else
 													</div>
 													<div class="layout-control-group">
 														<label class="layout-control-label">
-															<?php _e("Font Size", captcha_bank); ?> : 
+															<?php _e("Font Size", captcha_bank); ?> :
+															<span class="hovertip" data-original-title ='<?php _e("Allows you to select Font Size for the Captcha Text.",captcha_bank) ;?>'>
+																<img class="tooltip_img" src="<?php echo plugins_url("/assets/images/questionmark_icon.png",dirname(__FILE__))?>"/>
+															</span> 
 														</label>
 														<div class="layout-controls custom-layout-controls-captcha ">
 														 	<select name="ux_ddl_font_size" id="ux_ddl_font_size" class="layout-span11">
@@ -593,7 +660,10 @@ else
 													</div>
 													<div class="layout-control-group">
 														<label class="layout-control-label">
-															<?php _e("Font Color", captcha_bank); ?> : <span class="error">*</span> 
+															<?php _e("Font Color", captcha_bank); ?> : <span class="error">*</span>
+															<span class="hovertip" data-original-title ='<?php _e("Allows you to select Font Color for the Captcha text making it more creative and attractive.",captcha_bank) ;?>'>
+																<img class="tooltip_img" src="<?php echo plugins_url("/assets/images/questionmark_icon.png",dirname(__FILE__))?>"/>
+															</span>
 														</label>
 														<div class="layout-controls custom-layout-controls-captcha">
 															<input type="text" class="layout-span11" name="ux_txt_color" id="ux_txt_color" disabled="disabled" placeholder="<?php _e( "Select the color for Captcha Text.",captcha_bank); ?>"
@@ -605,7 +675,10 @@ else
 													</div>
 													<div class="layout-control-group">
 														<label class="layout-control-label">
-															<?php _e("Captcha Preview", captcha_bank); ?> : 
+															<?php _e("Captcha Preview", captcha_bank); ?> :
+															<span class="hovertip" data-original-title ='<?php _e("Allows you to preview the Captcha Image once the above settings are saved.",captcha_bank) ;?>'>
+																<img class="tooltip_img" src="<?php echo plugins_url("/assets/images/questionmark_icon.png",dirname(__FILE__))?>"/>
+															</span>
 														</label>
 														<div class="layout-controls custom-layout-controls-captcha">
 														<?php
@@ -636,7 +709,10 @@ else
 												<div class="widget-layout-body">
 													<div class="layout-control-group">
 														<label class="layout-control-label">
-															<?php _e("Auto IP Block", captcha_bank); ?> : 
+															<?php _e("Auto IP Block", captcha_bank); ?> :
+															<span class="hovertip" data-original-title ='<?php _e("Allows you to Blocks IP addresses for next 24 hours when the limit of login attempts is reached.",captcha_bank) ;?>'>
+																<img class="tooltip_img" src="<?php echo plugins_url("/assets/images/questionmark_icon.png",dirname(__FILE__))?>"/>
+															</span>
 														</label>
 														<div class="layout-controls custom-layout-controls-captcha rdl_captcha">
 														<?php
@@ -661,6 +737,9 @@ else
 														<div class="layout-control-group">
 															<label class="layout-control-label">
 																<?php _e("Max Login Attempts", captcha_bank); ?> : <span class="error">*</span>
+																<span class="hovertip" data-original-title ='<?php _e("Allows you to set number of login attempts left for the user incase Captcha code is left empty or filled invalid.",captcha_bank) ;?>'>
+																	<img class="tooltip_img" src="<?php echo plugins_url("/assets/images/questionmark_icon.png",dirname(__FILE__))?>"/>
+																</span>
 															</label>
 															<div class="layout-controls custom-layout-controls-captcha">
 																<input type="text" class="layout-span11" id="ux_txt_login_attempts" name="ux_txt_login_attempts"  disabled="disabled" onkeypress="return OnlyNumbers(event)" value="<?php echo $max_login_attempts;?>" placeholder="<?php _e( "Enter the number of login attempts for the user.",captcha_bank); ?>"/>
@@ -669,7 +748,10 @@ else
 													</div>
 														<div class="layout-control-group">
 														<label class="layout-control-label">
-															<?php _e("Block IP Address", captcha_bank); ?> : 
+															<?php _e("Block IP Address", captcha_bank); ?> :
+															<span class="hovertip" data-original-title ='<?php _e("Allows you to add single IP Addresses for blocking it that are considered undesirable or hostile.",captcha_bank) ;?>'>
+																<img class="tooltip_img" src="<?php echo plugins_url("/assets/images/questionmark_icon.png",dirname(__FILE__))?>"/>
+															</span>
 														</label>
 														<div class="layout-controls custom-layout-controls-captcha ">
 															<input disabled="disabled" type="text" class="layout-span8" id="ux_txt_block_ip" onkeypress ="return OnlyDigitsDots(event);" name="ux_txt_block_ip" maxlength="15" placeholder="<?php _e( "Enter the IP Address here which you want to block.",captcha_bank); ?>"/>
@@ -678,7 +760,10 @@ else
 													</div>
 													<div class="layout-control-group">
 														<label class="layout-control-label">
-															<?php _e("Blocked IP Addresses", captcha_bank); ?> : 
+															<?php _e("Blocked IP Addresses", captcha_bank); ?> :
+															<span class="hovertip" data-original-title ='<?php _e("Blocked IP Addresses shows the complete list of IP Addresses that are blocked by the user. You can also delete these IP Addresses by selecting (multiple) it and the click on Delete Button.",captcha_bank) ;?>'>
+																<img class="tooltip_img" src="<?php echo plugins_url("/assets/images/questionmark_icon.png",dirname(__FILE__))?>"/>
+															</span>
 														</label>
 														<div class="layout-controls custom-layout-controls-captcha ">
 														 	<select multiple="multiple" name="ux_ddl_blocked_ip" id="ux_ddl_blocked_ip" class="layout-span11" disabled="disabled">
@@ -688,7 +773,10 @@ else
 													</div>
 													<div class="layout-control-group">
 															<label class="layout-control-label">
-																<?php _e("Block Start IP Range", captcha_bank); ?> : 
+																<?php _e("Block Start IP Range", captcha_bank); ?> :
+																<span class="hovertip" data-original-title ='<?php _e("Allows you to enter Start IP Address of the IP Address Range to be blocked.",captcha_bank) ;?>'>
+																	<img class="tooltip_img" src="<?php echo plugins_url("/assets/images/questionmark_icon.png",dirname(__FILE__))?>"/>
+																</span>
 															</label>
 															<div class="layout-controls custom-layout-controls-captcha ">
 																<input disabled="disabled" type="text" class="layout-span11" id="ux_txt_start_ip" name="ux_txt_start_ip" maxlength="15" placeholder="<?php _e( "Enter the Start IP Range to be blocked.",captcha_bank); ?>"/>
@@ -696,7 +784,10 @@ else
 														</div>
 														<div class="layout-control-group">
 															<label class="layout-control-label">
-																<?php _e("Block End IP Range", captcha_bank); ?> : 
+																<?php _e("Block End IP Range", captcha_bank); ?> :
+																<span class="hovertip" data-original-title ='<?php _e("Allows you to enter End IP Address of the IP Address Range to be blocked.",captcha_bank) ;?>'>
+																	<img class="tooltip_img" src="<?php echo plugins_url("/assets/images/questionmark_icon.png",dirname(__FILE__))?>"/>
+																</span>
 															</label>
 															<div class="layout-controls custom-layout-controls-captcha ">
 																<input disabled="disabled" type="text" class="layout-span11" id="ux_txt_end_ip" name="ux_txt_end_ip" maxlength="15" placeholder="<?php _e( "Enter the End IP Range to be blocked.",captcha_bank); ?>" />
@@ -706,6 +797,9 @@ else
 														<div class="layout-control-group">
 															<label class="layout-control-label">
 																<?php _e("Blocked IP Range", captcha_bank); ?> :
+																<span class="hovertip" data-original-title ='<?php _e("Blocked IP Range show the list of all the IP Addresses range that are blocked by the user. You can also delete these IP Addresses by selecting (multiple) it and the click on Delete Button.",captcha_bank) ;?>'>
+																	<img class="tooltip_img" src="<?php echo plugins_url("/assets/images/questionmark_icon.png",dirname(__FILE__))?>"/>
+																</span>
 															</label>
 															<div class="layout-controls custom-layout-controls-captcha ">
 															 	<select multiple="multiple" name="ux_ddl_blocked_ip_range" id="ux_ddl_blocked_ip_range" class="layout-span11" disabled="disabled">
@@ -714,7 +808,12 @@ else
 															</div>
 														</div>
 													<div class="layout-control-group">
-														<label class="layout-control-label"><?php _e("Captcha Preview", captcha_bank); ?> : </label>
+														<label class="layout-control-label">
+															<?php _e("Captcha Preview", captcha_bank); ?> :
+															<span class="hovertip" data-original-title ='<?php _e("Allows you to preview the Captcha Image once the above settings are saved.",captcha_bank) ;?>'>
+																<img class="tooltip_img" src="<?php echo plugins_url("/assets/images/questionmark_icon.png",dirname(__FILE__))?>"/>
+															</span>
+														</label>
 														<div class="layout-controls custom-layout-controls-captcha">
 														<?php
 															if($show_border == "1")
@@ -743,16 +842,22 @@ else
 												</div>
 												<div class="widget-layout-body">
 													<div class="layout-control-group">
-														<label class="layout-control-label">
+														<label class="layout-control-label-captcha">
 															<?php _e("Captcha Empty Error", captcha_bank); ?> : <span class="error">*</span>
+															<span class="hovertip" data-original-title ='<?php _e("Allows you to set error message for captcha which is displayed when user fills the Captcha code empty.",captcha_bank) ;?>'>
+																<img class="tooltip_img" src="<?php echo plugins_url("/assets/images/questionmark_icon.png",dirname(__FILE__))?>"/>
+															</span>
 														</label>
 														<div class="layout-controls custom-layout-controls-captcha ">
 												 			<textarea  disabled="disabled" class="layout-span11" id="ux_txt_empty_err" name="ux_txt_empty_err" placeholder="<?php _e( "Enter the error message here for the users who fill the captcha code empty.",captcha_bank); ?>"><?php _e( $captcha_empty_msg,captcha_bank); ?></textarea>
 														</div>
 													</div>
 													<div class="layout-control-group">
-														<label class="layout-control-label">
+														<label class="layout-control-label-captcha">
 															<?php _e("Captcha Invalid Error", captcha_bank); ?> : <span class="error">*</span>
+															<span class="hovertip" data-original-title ='<?php _e("Allows you to set error message for captcha which is displayed when user fills the Captcha code invalid.",captcha_bank) ;?>'>
+																<img class="tooltip_img" src="<?php echo plugins_url("/assets/images/questionmark_icon.png",dirname(__FILE__))?>"/>
+															</span>
 														</label>
 														<div class="layout-controls custom-layout-controls-captcha">
 															<textarea disabled="disabled" class="layout-span11" id="ux_txt_invalid_err" name="ux_txt_invalid_err" placeholder="<?php _e( "Enter the error message here for the users who fill the captcha code invalid.",captcha_bank); ?>"><?php _e( $captcha_invalid_msg,captcha_bank); ?></textarea>
@@ -761,14 +866,20 @@ else
 													<div class="layout-control-group">
 														<label class="layout-control-label">
 															<?php _e("IP Block Message", captcha_bank); ?> : <span class="error">*</span>
+															<span class="hovertip" data-original-title ='<?php _e("Allows you to set error message when IP Address is blocked from Login Logs or from Security Settings.",captcha_bank) ;?>'>
+																<img class="tooltip_img" src="<?php echo plugins_url("/assets/images/questionmark_icon.png",dirname(__FILE__))?>"/>
+															</span>
 														</label>
 														<div class="layout-controls custom-layout-controls-captcha ">
 												 			<textarea disabled="disabled" class="layout-span11" id="ux_txt_blockip_err" name="ux_txt_blockip_err" placeholder="<?php _e( "Enter the error message here when the IP is Blocked.",captcha_bank); ?>"><?php _e( $ip_block_msg,captcha_bank); ?></textarea>
 														</div>
 													</div>
 													<div class="layout-control-group">
-														<label class="layout-control-label">
+														<label class="layout-control-label-captcha">
 															<?php _e("Max Login Attempts", captcha_bank); ?> : <span class="error">*</span>
+															<span class="hovertip" data-original-title ='<?php _e("Allows you to set error message for login attempts left incase the Captcha code is left empty or filled invalid by the user.",captcha_bank) ;?>'>
+																<img class="tooltip_img" src="<?php echo plugins_url("/assets/images/questionmark_icon.png",dirname(__FILE__))?>"/>
+															</span>
 														</label>
 														<div class="layout-controls custom-layout-controls-captcha">
 															<textarea disabled="disabled" class="layout-span11" id="ux_txt_login_attempts_err" name="ux_txt_login_attempts_err" placeholder="<?php _e( "Enter the error message here for Maxium login Attempts.",captcha_bank); ?>"><?php _e( $max_login_msg,captcha_bank); ?></textarea>
@@ -777,13 +888,21 @@ else
 													<div class="layout-control-group">
 														<label class="layout-control-label-captcha">
 															<?php _e("Max Login Exceeded Error", captcha_bank); ?> : <span class="error">*</span>
+															<span class="hovertip" data-original-title ='<?php _e("Allows you to set error message which is displayed when the user exceed the maximum login attempts and the IP gets blocked for 24 hours.",captcha_bank) ;?>'>
+																<img class="tooltip_img" src="<?php echo plugins_url("/assets/images/questionmark_icon.png",dirname(__FILE__))?>"/>
+															</span>
 														</label>
 														<div class="layout-controls custom-layout-controls-captcha">
 															<textarea disabled="disabled" class="layout-span11" id="ux_txt_login_exceeded_err" name="ux_txt_login_exceeded_err" rows="4" placeholder="<?php _e( "Enter the error message here for Maxium login Exceeded.",captcha_bank); ?>"><?php _e( $max_login_exceeded_msg,captcha_bank); ?></textarea>
 														</div>
 													</div>
 													<div class="layout-control-group">
-														<label class="layout-control-label"><?php _e("Captcha Preview", captcha_bank); ?> : </label>
+														<label class="layout-control-label">
+															<?php _e("Captcha Preview", captcha_bank); ?> :
+															<span class="hovertip" data-original-title ='<?php _e("Allows you to preview the Captcha Image once the above settings are saved.",captcha_bank) ;?>'>
+																<img class="tooltip_img" src="<?php echo plugins_url("/assets/images/questionmark_icon.png",dirname(__FILE__))?>"/>
+															</span>
+														</label>
 														<div class="layout-controls custom-layout-controls-captcha">
 														<?php
 															if($show_border == "1")
@@ -818,7 +937,7 @@ else
 	</form>
 	<script type="text/javascript">
 		var captcha_settings_array = [];
-		var count_error = 0;
+		jQuery(".hovertip").tooltip({placement: "right"});
 		jQuery(document).ready(function()
 		{
 			jQuery("#ux_ddl_action").val("<?php echo $captcha_type;?>");
@@ -905,7 +1024,7 @@ else
 				captcha_settings_array.push({"captcha_height": jQuery("#ux_txt_height").val() == "" ? "80" : jQuery("#ux_txt_height").val()});
 				captcha_settings_array.push({"captcha_case_sensitive": jQuery("#ux_chk_case").prop("checked") == true ? "1" : "0"});
 				jQuery.post(ajaxurl, "captcha_settings_array=" + encodeURIComponent(JSON.stringify(captcha_settings_array)) +
-				"&param=update_captcha_settings&action=captcha_settings_library", function (data)
+				"&param=update_captcha_settings&action=captcha_settings_library&_wpnonce=<?php echo $settings_captcha;?>", function (data)
 				{
 					jQuery("body,html").animate({scrollTop: jQuery("body,html").position().top}, "slow");
 					setTimeout(function () 

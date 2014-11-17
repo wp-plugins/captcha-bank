@@ -96,21 +96,39 @@ else
 									<tr>
 										<th style="width:10%">
 											<?php _e( "Username", captcha_bank ); ?>
+											<span class="hovertip" data-original-title ='<?php _e("Allows you to view the username of recent logged in users.",captcha_bank) ;?>'>
+												<img class="tooltip_img" src="<?php echo plugins_url("/assets/images/questionmark_icon.png",dirname(__FILE__))?>"/>
+											</span>
 										</th>
 										<th style="width:14%">
 											<?php _e( "IP Address", captcha_bank ); ?>
+											<span class="hovertip" data-original-title ='<?php _e("Allows you to view the IP Address of the logged in users.",captcha_bank) ;?>'>
+												<img class="tooltip_img" src="<?php echo plugins_url("/assets/images/questionmark_icon.png",dirname(__FILE__))?>"/>
+											</span>
 										</th>
 										<th style="width:13%">
 											<?php _e( "Location", captcha_bank ); ?>
+											<span class="hovertip" data-original-title ='<?php _e("Allows you to view the current location of the logged in users.",captcha_bank) ;?>'>
+												<img class="tooltip_img" src="<?php echo plugins_url("/assets/images/questionmark_icon.png",dirname(__FILE__))?>"/>
+											</span>
 										</th>
 										<th style="width:16%">
 											<?php _e( "Login Date & Time", captcha_bank ); ?>
+											<span class="hovertip" data-original-title ='<?php _e("Allows you to view the logged in date and time of the users.",captcha_bank) ;?>'>
+												<img class="tooltip_img" src="<?php echo plugins_url("/assets/images/questionmark_icon.png",dirname(__FILE__))?>"/>
+											</span>
 										</th>
 										<th style="width:10%; text-align: center;">
 											<?php _e( "Status", captcha_bank ); ?>
+											<span class="hovertip" data-original-title ='<?php _e("Lets, you know the status of the users, whether they have successfully logged in or not.",captcha_bank) ;?>'>
+												<img class="tooltip_img" src="<?php echo plugins_url("/assets/images/questionmark_icon.png",dirname(__FILE__))?>"/>
+											</span>
 										</th>
 										<th style="width:14%;">
 											<?php _e( "Action", captcha_bank ); ?>
+											<span class="hovertip" data-original-title ='<?php _e("Allows you to block or whitelist IP Addresses for the logged in users as per your requirement.",captcha_bank) ;?>'>
+												<img class="tooltip_img" src="<?php echo plugins_url("/assets/images/questionmark_icon.png",dirname(__FILE__))?>"/>
+											</span>
 										</th>
 									</tr>
 								</thead>
@@ -165,6 +183,7 @@ else
 		</div>
 	</div>
 	<script type="text/javascript">
+	jQuery(".hovertip").tooltip({placement: "right"});
 	jQuery(document).ready(function()
 	{
 		var oTable = jQuery("#data-table-logs").dataTable

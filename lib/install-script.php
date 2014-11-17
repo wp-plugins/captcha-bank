@@ -281,10 +281,6 @@ if($version == "")
 			$insert_plugin_settings->insert_data(captcha_bank_plugin_settings(),$plugin_setting_value);
 		}
 	}
-	update_option("captcha-bank-version-number","2.1");
 }
-else
-{
-	
-}
+update_option("captcha-bank-version-number","2.0.2");
  ?>

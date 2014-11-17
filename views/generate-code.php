@@ -129,7 +129,7 @@ imagettftext($image, $size_font, 0, $x, $y, $image_text_color, $captcha_font , $
 /* generating background image for Captcha*/
 function set_background($image,$captcha_width, $captcha_height, $captcha_background)
 {
-	$bg_img =  WP_CAPTCHA_BK_PLUGIN_REF . "/backgrounds/".$captcha_background;
+	$bg_img =  WP_CAPTCHA_BK_PLUGIN_DIR . "/backgrounds/".$captcha_background;
 	$dat = @getimagesize($bg_img);
 	if($dat == false) 
 	{

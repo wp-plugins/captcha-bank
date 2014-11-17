@@ -31,7 +31,7 @@ else
 	}
 	if(isset($_REQUEST["param"]))
 	{
-		if($_REQUEST["param"] == "update_captcha_settings")
+		if(wp_verify_nonce( $_REQUEST["_wpnonce"], "captcha_settings") && ($_REQUEST["param"] == "update_captcha_settings"))
 		{
 			$update = new save_captcha_setting();
 			$setting_value = array();

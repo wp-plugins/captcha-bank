@@ -79,7 +79,7 @@ else
 		<div class="layout-span12">
 			<div class="widget-layout">
 				<div class="widget-layout-title">
-					<h4><?php _e("Recommendations", captcha_bank); ?></h4>
+					<h4><?php _e("Recommendations", tech_bank); ?></h4>
 				</div>
 				<div class="widget-layout-body">
 					<div class="fluid-layout wpcb-page-width">
@@ -161,16 +161,16 @@ else
 													</a>
 													<div class="name column-name">
 														<h4>
-															<a href="<?php echo esc_url( $details_link ); ?>" class="thickbox"><?php _e( $title,captcha_bank); ?></a>
+															<a href="<?php echo esc_url( $details_link ); ?>" class="thickbox"><?php echo $title; ?></a>
 														</h4>
 													</div>
 													<div class="desc column-description">
 														<p>
-															<?php _e( $description,captcha_bank); ?>
+															<?php echo $description; ?>
 														</p>
 														<p class="authors">
 															<cite>
-																By <?php _e( $author,captcha_bank); ?>
+																<?php _e( "By ",tech_bank); echo $author;?>
 															</cite>
 														</p>
 													</div>
@@ -189,40 +189,40 @@ else
 																	case "gallery-bank" :
 																		?>
 																			<a class="plugin-div-button install-now button" href="http://tech-banker.com/products/wp-gallery-bank/pricing/" target="_blank" >
-																				<?php _e("Premium Editions", captcha_bank); ?>
+																				<?php _e("Premium Editions", tech_bank); ?>
 																			</a>
 																			<a class="plugin-div-button install-now button" href="http://tech-banker.com/products/wp-gallery-bank/" target="_blank" >
-																				<?php _e("Visit Website", captcha_bank); ?>
+																				<?php _e("Visit Website", tech_bank); ?>
 																			</a>
 																		<?php
 																	break;
 																	case "contact-bank" :
 																		?>
 																			<a class="plugin-div-button install-now button" href="http://tech-banker.com/products/wp-contact-bank/pricing/" target="_blank" >
-																				<?php _e("Premium Editions", captcha_bank); ?>
+																				<?php _e("Premium Editions", tech_bank); ?>
 																			</a>
 																			<a class="plugin-div-button install-now button" href="http://tech-banker.com/products/wp-contact-bank/" target="_blank" >
-																				<?php _e("Visit Website", captcha_bank); ?>
+																				<?php _e("Visit Website", tech_bank); ?>
 																			</a>
 																		<?php
 																	break;
 																	case "captcha-bank" :
 																		?>
 																			<a class="plugin-div-button install-now button" href="http://tech-banker.com/products/wp-captcha-bank/pricing/" target="_blank" >
-																				<?php _e("Premium Editions", captcha_bank); ?>
+																				<?php _e("Premium Editions", tech_bank); ?>
 																			</a>
 																			<a class="plugin-div-button install-now button" href="http://tech-banker.com/products/wp-captcha-bank/" target="_blank" >
-																				<?php _e("Visit Website", captcha_bank); ?>
+																				<?php _e("Visit Website", tech_bank); ?>
 																			</a>
 																		<?php 
 																	break;
 																	case "wp-clean-up-optimizer" :
 																		?>
 																			<a class="plugin-div-button install-now button" href="http://tech-banker.com/products/wp-clean-up-optimizer/pricing/" target="_blank" >
-																				<?php _e("Premium Editions", captcha_bank); ?>
+																				<?php _e("Premium Editions", tech_bank); ?>
 																			</a>
 																			<a class="plugin-div-button install-now button" href="http://tech-banker.com/products/wp-clean-up-optimizer/" target="_blank" >
-																				<?php _e("Visit Website", captcha_bank); ?>
+																				<?php _e("Visit Website", tech_bank); ?>
 																			</a>
 																		<?php 
 																	break;

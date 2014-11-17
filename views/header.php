@@ -59,7 +59,7 @@ else
 						</li>
 						<li>
 							<a href="http://tech-banker.com/products/wp-captcha-bank/pricing/" target="_blank" class="welcome-icon">
-								<?php _e("Why Go for Premium ?", captcha_bank); ?>
+								<?php _e("Premium Pricing Plans", captcha_bank); ?>
 							</a>
 						</li>
 					</ul>
@@ -90,8 +90,8 @@ else
 					<h4 class="welcome-screen-margin"><?php _e("More Actions", captcha_bank); ?></h4>
 					<ul>
 						<li>
-							<a href="http://tech-banker.com/products/wp-captcha-bank/pricing/" target="_blank" class="welcome-icon">
-								<?php _e("Premium Pricing Plans", captcha_bank); ?>
+							<a href="http://tech-banker.com/shop/uncategorized/order-customization-wp-captcha-bank/" target="_blank" class="welcome-icon">
+								<?php _e("Plugin Customization", captcha_bank); ?>
 							</a>
 						</li>
 						<li>

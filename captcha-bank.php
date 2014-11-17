@@ -4,13 +4,13 @@ Plugin Name: WP Captcha Bank Lite Edition
 Plugin URI: http://tech-banker.com
 Description: This plugin allows you to implement security captcha form into web forms to prevent spam.
 Author: Tech Banker
-Version: 2.0.1
+Version: 2.0.2
 Author URI: http://tech-banker.com
 */
 /////////////////////////////////////  Define  WP Captcha Bank  Constants  //////////////////////////////////
 
-if (!defined("WP_CAPTCHA_BK_PLUGIN_DIR")) define("WP_CAPTCHA_BK_PLUGIN_DIR", plugin_dir_path(__file__));
-if (!defined("WP_CAPTCHA_BK_PLUGIN_DIRNAME")) define("WP_CAPTCHA_BK_PLUGIN_DIRNAME", plugin_basename(dirname(__file__)));
+if (!defined("WP_CAPTCHA_BK_PLUGIN_DIR")) define("WP_CAPTCHA_BK_PLUGIN_DIR", plugin_dir_path(__FILE__));
+if (!defined("WP_CAPTCHA_BK_PLUGIN_DIRNAME")) define("WP_CAPTCHA_BK_PLUGIN_DIRNAME", plugin_basename(dirname(__FILE__)));
 if (!defined("captcha_bank")) define("captcha_bank", "captcha-bank");
 if (!defined("WP_CAPTCHA_BK_PLUGIN_REF")) define("WP_CAPTCHA_BK_PLUGIN_REF", WP_PLUGIN_URL . "/" . WP_CAPTCHA_BK_PLUGIN_DIRNAME);
 if (!defined("WP_CAPTCHA_BK_PLUGIN_BASENAME")) define("WP_CAPTCHA_BK_PLUGIN_BASENAME", plugin_basename(__FILE__));
@@ -45,6 +45,7 @@ if(!function_exists("admin_panel_js_calls_for_captcha_bank"))
 		wp_enqueue_script("jquery.validate.min.js", plugins_url("/assets/js/jquery.validate.min.js", __file__));
 		wp_enqueue_script("jquery.dataTables.min.js", plugins_url("/assets/js/jquery.dataTables.min.js", __file__));
 		wp_enqueue_script("jquery_google_map.js", plugins_url("/assets/js/jquery_google_map.js", __file__));
+		wp_enqueue_script("jquery.Tooltip.js", plugins_url("/assets/js/jquery.Tooltip.js", __file__));
 	}
 }
 
@@ -289,10 +290,10 @@ function captcha_plugin_row($links,$file)
 ///////////////////////////////////  Call Hooks   /////////////////////////////////////////////////////
 
 // activation Hook called for installation_for_captcha bank
-register_activation_hook(__file__, "plugin_install_script_for_captcha_bank");
+register_activation_hook(__FILE__, "plugin_install_script_for_captcha_bank");
 
 // activation Hook called for uninstallation_for_captcha bank
-//register_uninstall_hook(__file__, "plugin_uninstall_script_for_captcha_bank");
+//register_uninstall_hook(__FILE__, "plugin_uninstall_script_for_captcha_bank");
 
 // add_action Hook called for languages for captcha bank
 add_action("plugins_loaded", "plugin_load_textdomain_wp_captcha_bank");
