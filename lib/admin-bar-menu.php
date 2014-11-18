@@ -3,7 +3,7 @@ if (!is_user_logged_in())
 {
 	return;
 }
-switch ($wpcb_role) 
+switch ($role) 
 {
 	case "administrator":
 		$wp_admin_bar->add_menu(array(

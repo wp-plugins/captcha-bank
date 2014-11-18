@@ -2,7 +2,7 @@
 //--------------------------------------------------------------------------------------------------------------//
 // CODE FOR CREATING MENUS
 //---------------------------------------------------------------------------------------------------------------//
-switch($wpcb_role)
+switch($role)
 {
 	case "administrator":
 		add_menu_page("Captcha Bank","WP Captcha Bank", "read", "captcha_bank", "", plugins_url("/assets/images/icon.png" , dirname(__FILE__)));
@@ -45,9 +45,9 @@ if(!function_exists("captcha_bank"))
 	function captcha_bank()
 	{
 		global $wpdb,$current_user,$user_role_permission;
-		$wpcb_role = $wpdb->prefix . "capabilities";
-		$current_user->role = array_keys($current_user->$wpcb_role);
-		$wpcb_role = $current_user->role[0];
+		$role = $wpdb->prefix . "capabilities";
+		$current_user->role = array_keys($current_user->$role);
+		$role = $current_user->role[0];
 		if(file_exists(WP_CAPTCHA_BK_PLUGIN_DIR . "/views/header.php"))
 		{
 			include_once WP_CAPTCHA_BK_PLUGIN_DIR . "/views/header.php";
@@ -63,9 +63,9 @@ if(!function_exists("wpcb_system_status"))
 	function wpcb_system_status()
 	{
 		global $wpdb,$current_user,$user_role_permission,$wp_version;
-		$wpcb_role = $wpdb->prefix . "capabilities";
-		$current_user->role = array_keys($current_user->$wpcb_role);
-		$wpcb_role = $current_user->role[0];
+		$role = $wpdb->prefix . "capabilities";
+		$current_user->role = array_keys($current_user->$role);
+		$role = $current_user->role[0];
 		if(file_exists(WP_CAPTCHA_BK_PLUGIN_DIR . "/views/header.php"))
 		{
 			include_once WP_CAPTCHA_BK_PLUGIN_DIR . "/views/header.php";
@@ -82,9 +82,9 @@ if(!function_exists("wpcb_login_logs"))
 	function wpcb_login_logs()
 	{
 		global $wpdb,$current_user,$user_role_permission,$wp_version;
-		$wpcb_role = $wpdb->prefix . "capabilities";
-		$current_user->role = array_keys($current_user->$wpcb_role);
-		$wpcb_role = $current_user->role[0];
+		$role = $wpdb->prefix . "capabilities";
+		$current_user->role = array_keys($current_user->$role);
+		$role = $current_user->role[0];
 		if(file_exists(WP_CAPTCHA_BK_PLUGIN_DIR . "/views/header.php"))
 		{
 			include_once WP_CAPTCHA_BK_PLUGIN_DIR . "/views/header.php";
@@ -100,9 +100,9 @@ if(!function_exists("wpcb_recommended_plugins"))
 	function wpcb_recommended_plugins()
 	{
 		global $wpdb,$current_user,$user_role_permission,$wp_version;
-		$wpcb_role = $wpdb->prefix . "capabilities";
-		$current_user->role = array_keys($current_user->$wpcb_role);
-		$wpcb_role = $current_user->role[0];
+		$role = $wpdb->prefix . "capabilities";
+		$current_user->role = array_keys($current_user->$role);
+		$role = $current_user->role[0];
 		if(file_exists(WP_CAPTCHA_BK_PLUGIN_DIR . "/views/header.php"))
 		{
 			include_once WP_CAPTCHA_BK_PLUGIN_DIR . "/views/header.php";
@@ -118,9 +118,9 @@ if(!function_exists("wpcb_purchase_premium_edition"))
 	function wpcb_purchase_premium_edition()
 	{
 		global $wpdb,$current_user,$user_role_permission,$wp_version;
-		$wpcb_role = $wpdb->prefix . "capabilities";
-		$current_user->role = array_keys($current_user->$wpcb_role);
-		$wpcb_role = $current_user->role[0];
+		$role = $wpdb->prefix . "capabilities";
+		$current_user->role = array_keys($current_user->$role);
+		$role = $current_user->role[0];
 		if(file_exists(WP_CAPTCHA_BK_PLUGIN_DIR . "/views/header.php"))
 		{
 			include_once WP_CAPTCHA_BK_PLUGIN_DIR . "/views/header.php";
@@ -136,9 +136,9 @@ if(!function_exists("wpcb_other_services"))
 	function wpcb_other_services()
 	{
 		global $wpdb,$current_user,$user_role_permission,$wp_version;
-		$wpcb_role = $wpdb->prefix . "capabilities";
-		$current_user->role = array_keys($current_user->$wpcb_role);
-		$wpcb_role = $current_user->role[0];
+		$role = $wpdb->prefix . "capabilities";
+		$current_user->role = array_keys($current_user->$role);
+		$role = $current_user->role[0];
 		if(file_exists(WP_CAPTCHA_BK_PLUGIN_DIR . "/views/header.php"))
 		{
 			include_once WP_CAPTCHA_BK_PLUGIN_DIR . "/views/header.php";
@@ -154,9 +154,9 @@ if(!function_exists("wpcb_plugin_settings"))
 	function wpcb_plugin_settings()
 	{
 		global $wpdb,$current_user,$user_role_permission,$wp_version;
-		$wpcb_role = $wpdb->prefix . "capabilities";
-		$current_user->role = array_keys($current_user->$wpcb_role);
-		$wpcb_role = $current_user->role[0];
+		$role = $wpdb->prefix . "capabilities";
+		$current_user->role = array_keys($current_user->$role);
+		$role = $current_user->role[0];
 		if(file_exists(WP_CAPTCHA_BK_PLUGIN_DIR . "/views/header.php"))
 		{
 			include_once WP_CAPTCHA_BK_PLUGIN_DIR . "/views/header.php";

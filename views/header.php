@@ -1,5 +1,5 @@
 <?php 
-switch($wpcb_role)
+switch($role)
 {
 	case "administrator":
 		$user_role_permission = "manage_options";
@@ -90,11 +90,6 @@ else
 					<h4 class="welcome-screen-margin"><?php _e("More Actions", captcha_bank); ?></h4>
 					<ul>
 						<li>
-							<a href="http://tech-banker.com/shop/uncategorized/order-customization-wp-captcha-bank/" target="_blank" class="welcome-icon">
-								<?php _e("Plugin Customization", captcha_bank); ?>
-							</a>
-						</li>
-						<li>
 							<a href="admin.php?page=wpcb_recommended_plugins" class="welcome-icon">
 								<?php _e("Recommendations", captcha_bank); ?>
 							</a>
@@ -102,6 +97,11 @@ else
 						<li>
 							<a href="admin.php?page=wpcb_other_services" class="welcome-icon">
 								<?php _e("Our Other Services", captcha_bank); ?>
+							</a>
+						</li>
+						<li>
+							<a href="http://tech-banker.com/shop/uncategorized/order-customization-wp-captcha-bank/" target="_blank" class="welcome-icon">
+								<?php _e("Plugin Customization", captcha_bank); ?>
 							</a>
 						</li>
 					</ul>

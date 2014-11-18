@@ -1,5 +1,5 @@
 <?php 
-switch($wpcb_role)
+switch($role)
 {
 	case "administrator":
 		$user_role_permission = "manage_options";
@@ -27,7 +27,7 @@ else
 	<div id="message" class="top-right message" style="display: none;">
 		<div class="message-notification"></div>
 		<div class="message-notification ui-corner-all growl-success" >
-			<div onclick="message_close();" id="close-message" class="message-close">x</div>
+			<div onclick="message_close('message');" id="close-message" class="message-close">x</div>
 			<div class="message-header"><?php _e("Success!",  captcha_bank); ?></div>
 			<div class="message-message"><?php _e("Settings has been updated",  captcha_bank); ?></div>
 		</div>
@@ -964,19 +964,19 @@ else
 		function add_block_ip()
 		{
 			jQuery("#top-error").remove();
-			var error_message = jQuery("<div id=\"top-error\" class=\"top-right top-error\" style=\"display: block;\"><div class=\"top-error-notification\"></div><div class=\"top-error-notification ui-corner-all growl-top-error\" ><div onclick=\"error_message_close();\" id=\"close-top-error\" class=\"top-error-close\">x</div><div class=\"top-error-header\"><?php _e("Error!",  captcha_bank); ?></div><div class=\"top-error-top-error\"><?php _e( "This Feature is Available in Premium Editions!", captcha_bank ); ?></div></div></div>");
+			var error_message = jQuery("<div id=\"top-error\" class=\"top-right top-error\" style=\"display: block;\"><div class=\"top-error-notification\"></div><div class=\"top-error-notification ui-corner-all growl-top-error\" ><div onclick=\"message_close('top-error');\" id=\"close-top-error\" class=\"top-error-close\">x</div><div class=\"top-error-header\"><?php _e("Error!",  captcha_bank); ?></div><div class=\"top-error-top-error\"><?php _e( "This Feature is Available in Premium Editions!", captcha_bank ); ?></div></div></div>");
 			jQuery("body").append(error_message);
 		}
 		function delete_block_ip()
 		{
 			jQuery("#top-error").remove();
-			var error_message = jQuery("<div id=\"top-error\" class=\"top-right top-error\" style=\"display: block;\"><div class=\"top-error-notification\"></div><div class=\"top-error-notification ui-corner-all growl-top-error\" ><div onclick=\"error_message_close();\" id=\"close-top-error\" class=\"top-error-close\">x</div><div class=\"top-error-header\"><?php _e("Error!",  captcha_bank); ?></div><div class=\"top-error-top-error\"><?php _e( "This Feature is Available in Premium Editions!", captcha_bank ); ?></div></div></div>");
+			var error_message = jQuery("<div id=\"top-error\" class=\"top-right top-error\" style=\"display: block;\"><div class=\"top-error-notification\"></div><div class=\"top-error-notification ui-corner-all growl-top-error\" ><div onclick=\"message_close('top-error');\" id=\"close-top-error\" class=\"top-error-close\">x</div><div class=\"top-error-header\"><?php _e("Error!",  captcha_bank); ?></div><div class=\"top-error-top-error\"><?php _e( "This Feature is Available in Premium Editions!", captcha_bank ); ?></div></div></div>");
 			jQuery("body").append(error_message);
 		}
 		function add_block_ip_range()
 		{
 			jQuery("#top-error").remove();
-			var error_message = jQuery("<div id=\"top-error\" class=\"top-right top-error\" style=\"display: block;\"><div class=\"top-error-notification\"></div><div class=\"top-error-notification ui-corner-all growl-top-error\" ><div onclick=\"error_message_close();\" id=\"close-top-error\" class=\"top-error-close\">x</div><div class=\"top-error-header\"><?php _e("Error!",  captcha_bank); ?></div><div class=\"top-error-top-error\"><?php _e( "This Feature is Available in Premium Editions!", captcha_bank ); ?></div></div></div>");
+			var error_message = jQuery("<div id=\"top-error\" class=\"top-right top-error\" style=\"display: block;\"><div class=\"top-error-notification\"></div><div class=\"top-error-notification ui-corner-all growl-top-error\" ><div onclick=\"message_close('top-error');\" id=\"close-top-error\" class=\"top-error-close\">x</div><div class=\"top-error-header\"><?php _e("Error!",  captcha_bank); ?></div><div class=\"top-error-top-error\"><?php _e( "This Feature is Available in Premium Editions!", captcha_bank ); ?></div></div></div>");
 			jQuery("body").append(error_message);
 		}
 		function ux_clr_text()
@@ -988,7 +988,7 @@ else
 		function delete_block_ip_range()
 		{
 			jQuery("#top-error").remove();
-			var error_message = jQuery("<div id=\"top-error\" class=\"top-right top-error\" style=\"display: block;\"><div class=\"top-error-notification\"></div><div class=\"top-error-notification ui-corner-all growl-top-error\" ><div onclick=\"error_message_close();\" id=\"close-top-error\" class=\"top-error-close\">x</div><div class=\"top-error-header\"><?php _e("Error!",  captcha_bank); ?></div><div class=\"top-error-top-error\"><?php _e( "This Feature is Available in Premium Editions!", captcha_bank ); ?></div></div></div>");
+			var error_message = jQuery("<div id=\"top-error\" class=\"top-right top-error\" style=\"display: block;\"><div class=\"top-error-notification\"></div><div class=\"top-error-notification ui-corner-all growl-top-error\" ><div onclick=\"message_close('top-error');\" id=\"close-top-error\" class=\"top-error-close\">x</div><div class=\"top-error-header\"><?php _e("Error!",  captcha_bank); ?></div><div class=\"top-error-top-error\"><?php _e( "This Feature is Available in Premium Editions!", captcha_bank ); ?></div></div></div>");
 			jQuery("body").append(error_message);	
 		}
 		jQuery("#ux_txt_color").blur(function ()
@@ -1041,15 +1041,13 @@ else
 				});
 			}
 		});
-		function message_close()
+		if (typeof(message_close) != "function")
 		{
-			jQuery("#message").css("display", "none");
+			function message_close(id)
+			{
+				jQuery("#"+id).css("display", "none");
+			}
 		}
-		function error_message_close()
-		{
-			jQuery("#top-error").remove();
-		}
-		
 	</script>
 <?php
 }

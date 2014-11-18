@@ -4,7 +4,7 @@ Plugin Name: WP Captcha Bank Lite Edition
 Plugin URI: http://tech-banker.com
 Description: This plugin allows you to implement security captcha form into web forms to prevent spam.
 Author: Tech Banker
-Version: 2.0.2
+Version: 2.0.3
 Author URI: http://tech-banker.com
 */
 /////////////////////////////////////  Define  WP Captcha Bank  Constants  //////////////////////////////////
@@ -71,10 +71,10 @@ if(!function_exists("create_admin_bar_menus_for_captcha_bank"))
 	function create_admin_bar_menus_for_captcha_bank($meta = true)
 	{
 		global $wp_admin_bar, $wpdb, $current_user;
-		$wpcb_role = $wpdb->prefix . "capabilities";
-		$current_user->role = array_keys($current_user->$wpcb_role);
-		$wpcb_role = $current_user->role[0];
-		switch($wpcb_role)
+		$role = $wpdb->prefix . "capabilities";
+		$current_user->role = array_keys($current_user->$role);
+		$role = $current_user->role[0];
+		switch($role)
 		{
 			case "administrator":
 				if (file_exists(WP_CAPTCHA_BK_PLUGIN_DIR . "/lib/admin-bar-menu.php"))
@@ -104,10 +104,10 @@ if(!function_exists("create_global_menus_for_captcha_bank"))
 	function create_global_menus_for_captcha_bank()
 	{
 		global $wpdb,$current_user;
-		$wpcb_role = $wpdb->prefix . "capabilities";
-		$current_user->role = array_keys($current_user->$wpcb_role);
-		$wpcb_role = $current_user->role[0];
-		switch($wpcb_role)
+		$role = $wpdb->prefix . "capabilities";
+		$current_user->role = array_keys($current_user->$role);
+		$role = $current_user->role[0];
+		switch($role)
 		{
 			case "administrator":
 				if (file_exists(WP_CAPTCHA_BK_PLUGIN_DIR . "/lib/menus.php"))
@@ -207,9 +207,9 @@ if (isset($_REQUEST["action"]))
 			function captcha_settings_library() 
 			{
 				global $wpdb, $current_user, $user_role_permission;
-				$wpcb_role = $wpdb->prefix . "capabilities";
-				$current_user->role = array_keys($current_user->$wpcb_role);
-				$wpcb_role = $current_user->role[0];
+				$role = $wpdb->prefix . "capabilities";
+				$current_user->role = array_keys($current_user->$role);
+				$role = $current_user->role[0];
 				if (file_exists(WP_CAPTCHA_BK_PLUGIN_DIR . "/lib/settings-class.php"))
 				{
 					include_once WP_CAPTCHA_BK_PLUGIN_DIR . "/lib/settings-class.php";

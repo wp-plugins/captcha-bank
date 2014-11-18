@@ -1,5 +1,5 @@
 <?php 
-switch($wpcb_role)
+switch($role)
 {
 	case "administrator":
 		$user_role_permission = "manage_options";
@@ -1036,7 +1036,7 @@ else
 									<li class="css3_grid_row_24 footer_row css3_grid_row_24_responsive">
 										<span class="css3_grid_vertical_align_table">
 											<span class="css3_grid_vertical_align">
-												<a href="http://tech-banker.com/shop/wp-captcha-bank/wp-captcha-bank-eco-edition/" class="sign_up sign_up_orange radius3">
+												<a href="http://tech-banker.com/shop/wp-captcha-bank/wp-captcha-bank-eco-edition/" target="_blank" class="sign_up sign_up_orange radius3">
 													<?php _e("Order Now!", captcha_bank); ?>
 												</a>
 											</span>
@@ -1340,7 +1340,7 @@ else
 									<li class="css3_grid_row_24 footer_row css3_grid_row_24_responsive">
 										<span class="css3_grid_vertical_align_table">
 											<span class="css3_grid_vertical_align">
-												<a href="http://tech-banker.com/shop/wp-captcha-bank/captcha-bank-pro-edition/" class="sign_up sign_up_orange radius3">
+												<a href="http://tech-banker.com/shop/wp-captcha-bank/captcha-bank-pro-edition/" target="_blank" class="sign_up sign_up_orange radius3">
 													<?php _e("Order Now!", captcha_bank); ?>
 												</a>
 											</span>
@@ -1644,7 +1644,7 @@ else
 									<li class="css3_grid_row_24 footer_row css3_grid_row_24_responsive">
 										<span class="css3_grid_vertical_align_table">
 											<span class="css3_grid_vertical_align">
-												<a href="http://tech-banker.com/shop/wp-captcha-bank/captcha-bank-developer-edition/" class="sign_up sign_up_orange radius3">
+												<a href="http://tech-banker.com/shop/wp-captcha-bank/captcha-bank-developer-edition/" target="_blank" class="sign_up sign_up_orange radius3">
 													<?php _e("Order Now!", captcha_bank); ?>
 												</a>
 											</span>
@@ -1953,7 +1953,7 @@ else
 									<li class="css3_grid_row_24 footer_row css3_grid_row_24_responsive">
 										<span class="css3_grid_vertical_align_table">
 											<span class="css3_grid_vertical_align">
-												<a href="http://tech-banker.com/shop/wp-captcha-bank/captcha-bank-extended-edition/" class="sign_up sign_up_orange radius3">
+												<a href="http://tech-banker.com/shop/wp-captcha-bank/captcha-bank-extended-edition/" target="_blank" class="sign_up sign_up_orange radius3">
 												<?php _e("Order Now!", captcha_bank); ?>
 												</a>
 											</span>

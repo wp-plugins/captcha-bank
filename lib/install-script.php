@@ -282,5 +282,5 @@ if($version == "")
 		}
 	}
 }
-update_option("captcha-bank-version-number","2.0.2");
+update_option("captcha-bank-version-number","2.0");
  ?>

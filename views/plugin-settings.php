@@ -1,5 +1,5 @@
 <?php
-switch($wpcb_role)
+switch($role)
 {
 	case "administrator":
 		$user_role_permission = "manage_options";
