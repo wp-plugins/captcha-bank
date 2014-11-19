@@ -432,8 +432,8 @@ After changing settings, when you click on the Save Settings button you can see 
 
 = 2.0.4 =
 
-* Implemented Code for updtae now option
-* Fixed Black Image Bud
+* Bug Fixed for Updation from Version previous to 2.0
+* Fixed Black Image Bug
 * Optimized Code
 * Fixed other Bugs & Errors
 
