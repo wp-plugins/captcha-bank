@@ -43,13 +43,13 @@ if ( ! function_exists( "captcha_bank_form" ) )
 			if($show_border == "1")
 			{
 				?>
-				<img src="<?php echo $captcha_url;?>" class="captcha_code_img"  id="captcha_code_img" title="<?php echo $captcha_tooltip;?>" style= "margin-top:10px; cursor:pointer; border:<?php echo $border_size?>px solid <?php echo $border_color?>" />
+				<img src="<?php echo $captcha_url . rand(111,99999);?>" class="captcha_code_img"  id="captcha_code_img" title="<?php echo $captcha_tooltip;?>" style= "margin-top:10px; cursor:pointer; border:<?php echo $border_size?>px solid <?php echo $border_color?>" />
 				<?php
 			}
 			else
 			{
 				?>
-				<img src="<?php echo $captcha_url;?>" class="captcha_code_img"  id="captcha_code_img" title="<?php echo $captcha_tooltip;?>" style= "margin-top:10px; cursor:pointer;" />
+				<img src="<?php echo $captcha_url . rand(111,99999);?>" class="captcha_code_img"  id="captcha_code_img" title="<?php echo $captcha_tooltip;?>" style= "margin-top:10px; cursor:pointer;" />
 				<?php
 			}
 		?>
@@ -58,7 +58,7 @@ if ( ! function_exists( "captcha_bank_form" ) )
 		<script type="text/javascript">
 			function refresh()
 			{
-				var randNum = Math.random(111,99999); 
+				var randNum = Math.floor((Math.random() * 99999) + 1);
 				jQuery("#captcha_code_img").attr("src","<?php echo $captcha_url; ?>"+randNum);
 				return true;
 			}
