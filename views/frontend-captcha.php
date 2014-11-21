@@ -25,7 +25,6 @@ if ( ! function_exists( "captcha_bank_form" ) )
 {
 	function captcha_bank_form() 
 	{
-		
 		global $wpdb;
 		if(file_exists(WP_CAPTCHA_BK_PLUGIN_DIR . "/lib/get-settings.php"))
 		{

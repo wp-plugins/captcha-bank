@@ -117,7 +117,7 @@ if($version == "")
 		
 		if (file_exists(WP_CAPTCHA_BK_PLUGIN_DIR . "/lib/settings-include.php"))
 		{
-			include_once WP_CAPTCHA_BK_PLUGIN_DIR . "/lib/settings-include.php";
+			include WP_CAPTCHA_BK_PLUGIN_DIR . "/lib/settings-include.php";
 		}
 	}
 	else

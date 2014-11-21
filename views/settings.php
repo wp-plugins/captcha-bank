@@ -22,7 +22,7 @@ else
 	{
 		include WP_CAPTCHA_BK_PLUGIN_DIR . "/lib/get-settings.php";
 	}
-	$captcha_url = admin_url("admin-ajax.php"). "?captcha_code=".rand(111,99999);
+	$captcha_url = admin_url("admin-ajax.php"). "?captcha_code=";
 	?>
 	<div id="message" class="top-right message" style="display: none;">
 		<div class="message-notification"></div>

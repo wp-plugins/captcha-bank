@@ -4,7 +4,7 @@ Plugin Name: WP Captcha Bank Lite Edition
 Plugin URI: http://tech-banker.com
 Description: This plugin allows you to implement security captcha form into web forms to prevent spam.
 Author: Tech Banker
-Version: 2.0.4
+Version: 2.0.5
 Author URI: http://tech-banker.com
 */
 /////////////////////////////////////  Define  WP Captcha Bank  Constants  //////////////////////////////////
@@ -17,11 +17,10 @@ if (!defined("WP_CAPTCHA_BK_PLUGIN_BASENAME")) define("WP_CAPTCHA_BK_PLUGIN_BASE
 if (!defined("tech_bank")) define("tech_bank", "tech-banker");
 
 ///////////////////////////////////// File Exist Function for Frontend /////////////////////////////////////
-
 if (file_exists(WP_CAPTCHA_BK_PLUGIN_DIR . "views/frontend-captcha.php")) 
 {
 	global $wpdb;
-	include_once WP_CAPTCHA_BK_PLUGIN_DIR . "views/frontend-captcha.php";
+	include WP_CAPTCHA_BK_PLUGIN_DIR . "views/frontend-captcha.php";
 }
 
 ///////////////////////////////////// This Function created for using JavaScript at Frontend. ////////////////////////////////////////
@@ -71,29 +70,36 @@ if(!function_exists("create_admin_bar_menus_for_captcha_bank"))
 	function create_admin_bar_menus_for_captcha_bank($meta = true)
 	{
 		global $wp_admin_bar, $wpdb, $current_user;
-		$role = $wpdb->prefix . "capabilities";
-		$current_user->role = array_keys($current_user->$role);
-		$role = $current_user->role[0];
+		if(is_super_admin())
+		{
+			$role = "administrator";
+		}
+		else
+		{
+			$role = $wpdb->prefix . "capabilities";
+			$current_user->role = array_keys($current_user->$role);
+			$role = $current_user->role[0];
+		}
 		switch($role)
 		{
 			case "administrator":
 				if (file_exists(WP_CAPTCHA_BK_PLUGIN_DIR . "/lib/admin-bar-menu.php"))
 				{
-					include_once WP_CAPTCHA_BK_PLUGIN_DIR . "/lib/admin-bar-menu.php";
+					include WP_CAPTCHA_BK_PLUGIN_DIR . "/lib/admin-bar-menu.php";
 				}
-			break;
+				break;
 			case "editor":
 				if (file_exists(WP_CAPTCHA_BK_PLUGIN_DIR . "/lib/admin-bar-menu.php"))
 				{
-					include_once WP_CAPTCHA_BK_PLUGIN_DIR . "/lib/admin-bar-menu.php";
+					include WP_CAPTCHA_BK_PLUGIN_DIR . "/lib/admin-bar-menu.php";
 				}
-			break;
+				break;
 			case "author":
 				if (file_exists(WP_CAPTCHA_BK_PLUGIN_DIR . "/lib/admin-bar-menu.php"))
 				{
-					include_once WP_CAPTCHA_BK_PLUGIN_DIR . "/lib/admin-bar-menu.php";
+					include WP_CAPTCHA_BK_PLUGIN_DIR . "/lib/admin-bar-menu.php";
 				}
-			break;
+				break;
 		}
 	}
 }
@@ -103,30 +109,37 @@ if(!function_exists("create_global_menus_for_captcha_bank"))
 {
 	function create_global_menus_for_captcha_bank()
 	{
-		global $wpdb,$current_user;
-		$role = $wpdb->prefix . "capabilities";
-		$current_user->role = array_keys($current_user->$role);
-		$role = $current_user->role[0];
+		global $wpdb,$current_user,$user_role_permission;
+		if(is_super_admin())
+		{
+			$role = "administrator";
+		}
+		else
+		{
+			$role = $wpdb->prefix . "capabilities";
+			$current_user->role = array_keys($current_user->$role);
+			$role = $current_user->role[0];
+		}
 		switch($role)
 		{
 			case "administrator":
 				if (file_exists(WP_CAPTCHA_BK_PLUGIN_DIR . "/lib/menus.php"))
 				{
-					include_once WP_CAPTCHA_BK_PLUGIN_DIR . "/lib/menus.php";
+					include WP_CAPTCHA_BK_PLUGIN_DIR . "/lib/menus.php";
 				}
-			break;
+				break;
 			case "editor":
 				if (file_exists(WP_CAPTCHA_BK_PLUGIN_DIR . "/lib/menus.php"))
 				{
-					include_once WP_CAPTCHA_BK_PLUGIN_DIR . "/lib/menus.php";
+					include WP_CAPTCHA_BK_PLUGIN_DIR . "/lib/menus.php";
 				}
-			break;
+				break;
 			case "author":
 				if (file_exists(WP_CAPTCHA_BK_PLUGIN_DIR . "/lib/menus.php"))
 				{
-					include_once WP_CAPTCHA_BK_PLUGIN_DIR . "/lib/menus.php";
+					include WP_CAPTCHA_BK_PLUGIN_DIR . "/lib/menus.php";
 				}
-			break;
+				break;
 		}
 	}
 }
@@ -174,9 +187,26 @@ if(!function_exists("plugin_install_script_for_captcha_bank"))
 {
 	function plugin_install_script_for_captcha_bank()
 	{
-		if (file_exists(WP_CAPTCHA_BK_PLUGIN_DIR . "/lib/install-script.php"))
+		global $wpdb;
+		if (is_multisite())
 		{
-			include_once WP_CAPTCHA_BK_PLUGIN_DIR . "/lib/install-script.php";
+			$blog_ids = $wpdb->get_col("SELECT blog_id FROM $wpdb->blogs");
+			foreach($blog_ids as $blog_id)
+			{
+				switch_to_blog($blog_id);
+				if(file_exists(WP_CAPTCHA_BK_PLUGIN_DIR . "/lib/install-script.php"))
+				{
+					include WP_CAPTCHA_BK_PLUGIN_DIR . "/lib/install-script.php";
+				}
+				restore_current_blog();
+			}
+		}
+		else
+		{
+			if(file_exists(WP_CAPTCHA_BK_PLUGIN_DIR . "/lib/install-script.php"))
+			{
+				include_once WP_CAPTCHA_BK_PLUGIN_DIR . "/lib/install-script.php";
+			}
 		}
 	}
 }
@@ -207,12 +237,19 @@ if (isset($_REQUEST["action"]))
 			function captcha_settings_library() 
 			{
 				global $wpdb, $current_user, $user_role_permission;
-				$role = $wpdb->prefix . "capabilities";
-				$current_user->role = array_keys($current_user->$role);
-				$role = $current_user->role[0];
+				if(is_super_admin())
+				{
+					$role = "administrator";
+				}
+				else
+				{
+					$role = $wpdb->prefix . "capabilities";
+					$current_user->role = array_keys($current_user->$role);
+					$role = $current_user->role[0];
+				}
 				if (file_exists(WP_CAPTCHA_BK_PLUGIN_DIR . "/lib/settings-class.php"))
 				{
-					include_once WP_CAPTCHA_BK_PLUGIN_DIR . "/lib/settings-class.php";
+					include WP_CAPTCHA_BK_PLUGIN_DIR . "/lib/settings-class.php";
 				}
 			}
 		break;
@@ -225,7 +262,7 @@ else
 		global $wpdb;
 		if (file_exists(WP_CAPTCHA_BK_PLUGIN_DIR . "/views/generate-code.php"))
 		{
-			include_once WP_CAPTCHA_BK_PLUGIN_DIR . "/views/generate-code.php";
+			include WP_CAPTCHA_BK_PLUGIN_DIR . "/views/generate-code.php";
 		}
 		die();
 	}
@@ -328,4 +365,5 @@ add_action("admin_menu", "create_global_menus_for_captcha_bank");
 // plugin_row_meta Hook called for function custom_plugin_row to add additional link to the plugin.
 add_filter("plugin_row_meta","captcha_plugin_row", 10, 2 );
 
+add_action( "network_admin_menu", "create_global_menus_for_captcha_bank" );
 ?>

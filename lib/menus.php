@@ -24,10 +24,17 @@ else
 	{
 		function captcha_bank()
 		{
-			global $wpdb,$current_user,$user_role_permission;
-			$role = $wpdb->prefix . "capabilities";
-			$current_user->role = array_keys($current_user->$role);
-			$role = $current_user->role[0];
+			global $wpdb,$current_user,$user_role_permission,$wp_version;
+			if(is_super_admin())
+			{
+				$role = "administrator";
+			}
+			else
+			{
+				$role = $wpdb->prefix . "capabilities";
+				$current_user->role = array_keys($current_user->$role);
+				$role = $current_user->role[0];
+			}
 			if(file_exists(WP_CAPTCHA_BK_PLUGIN_DIR . "/views/header.php"))
 			{
 				include_once WP_CAPTCHA_BK_PLUGIN_DIR . "/views/header.php";
@@ -43,9 +50,16 @@ else
 		function wpcb_system_status()
 		{
 			global $wpdb,$current_user,$user_role_permission,$wp_version;
-			$role = $wpdb->prefix . "capabilities";
-			$current_user->role = array_keys($current_user->$role);
-			$role = $current_user->role[0];
+			if(is_super_admin())
+			{
+				$role = "administrator";
+			}
+			else
+			{
+				$role = $wpdb->prefix . "capabilities";
+				$current_user->role = array_keys($current_user->$role);
+				$role = $current_user->role[0];
+			}
 			if(file_exists(WP_CAPTCHA_BK_PLUGIN_DIR . "/views/header.php"))
 			{
 				include_once WP_CAPTCHA_BK_PLUGIN_DIR . "/views/header.php";
@@ -62,9 +76,16 @@ else
 		function wpcb_login_logs()
 		{
 			global $wpdb,$current_user,$user_role_permission,$wp_version;
-			$role = $wpdb->prefix . "capabilities";
-			$current_user->role = array_keys($current_user->$role);
-			$role = $current_user->role[0];
+			if(is_super_admin())
+			{
+				$role = "administrator";
+			}
+			else
+			{
+				$role = $wpdb->prefix . "capabilities";
+				$current_user->role = array_keys($current_user->$role);
+				$role = $current_user->role[0];
+			}
 			if(file_exists(WP_CAPTCHA_BK_PLUGIN_DIR . "/views/header.php"))
 			{
 				include_once WP_CAPTCHA_BK_PLUGIN_DIR . "/views/header.php";
@@ -80,9 +101,16 @@ else
 		function wpcb_recommended_plugins()
 		{
 			global $wpdb,$current_user,$user_role_permission,$wp_version;
-			$role = $wpdb->prefix . "capabilities";
-			$current_user->role = array_keys($current_user->$role);
-			$role = $current_user->role[0];
+			if(is_super_admin())
+			{
+				$role = "administrator";
+			}
+			else
+			{
+				$role = $wpdb->prefix . "capabilities";
+				$current_user->role = array_keys($current_user->$role);
+				$role = $current_user->role[0];
+			}
 			if(file_exists(WP_CAPTCHA_BK_PLUGIN_DIR . "/views/header.php"))
 			{
 				include_once WP_CAPTCHA_BK_PLUGIN_DIR . "/views/header.php";
@@ -98,9 +126,16 @@ else
 		function wpcb_purchase_premium_edition()
 		{
 			global $wpdb,$current_user,$user_role_permission,$wp_version;
-			$role = $wpdb->prefix . "capabilities";
-			$current_user->role = array_keys($current_user->$role);
-			$role = $current_user->role[0];
+			if(is_super_admin())
+			{
+				$role = "administrator";
+			}
+			else
+			{
+				$role = $wpdb->prefix . "capabilities";
+				$current_user->role = array_keys($current_user->$role);
+				$role = $current_user->role[0];
+			}
 			if(file_exists(WP_CAPTCHA_BK_PLUGIN_DIR . "/views/header.php"))
 			{
 				include_once WP_CAPTCHA_BK_PLUGIN_DIR . "/views/header.php";
@@ -116,9 +151,16 @@ else
 		function wpcb_other_services()
 		{
 			global $wpdb,$current_user,$user_role_permission,$wp_version;
-			$role = $wpdb->prefix . "capabilities";
-			$current_user->role = array_keys($current_user->$role);
-			$role = $current_user->role[0];
+			if(is_super_admin())
+			{
+				$role = "administrator";
+			}
+			else
+			{
+				$role = $wpdb->prefix . "capabilities";
+				$current_user->role = array_keys($current_user->$role);
+				$role = $current_user->role[0];
+			}
 			if(file_exists(WP_CAPTCHA_BK_PLUGIN_DIR . "/views/header.php"))
 			{
 				include_once WP_CAPTCHA_BK_PLUGIN_DIR . "/views/header.php";
@@ -134,9 +176,16 @@ else
 		function wpcb_plugin_settings()
 		{
 			global $wpdb,$current_user,$user_role_permission,$wp_version;
-			$role = $wpdb->prefix . "capabilities";
-			$current_user->role = array_keys($current_user->$role);
-			$role = $current_user->role[0];
+			if(is_super_admin())
+			{
+				$role = "administrator";
+			}
+			else
+			{
+				$role = $wpdb->prefix . "capabilities";
+				$current_user->role = array_keys($current_user->$role);
+				$role = $current_user->role[0];
+			}
 			if(file_exists(WP_CAPTCHA_BK_PLUGIN_DIR . "/views/header.php"))
 			{
 				include_once WP_CAPTCHA_BK_PLUGIN_DIR . "/views/header.php";

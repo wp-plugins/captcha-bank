@@ -75,6 +75,23 @@ else
 											<span class="css3_grid_vertical_align">
 												<span>
 													<span class="css3_hidden_caption">
+														<?php _e("Multisite Compatibility", captcha_bank); ?>*
+													</span>
+													<span class="css3_grid_tooltip">
+														<span>
+															<?php _e("Allows you to use this Plugin with network of sites / Multisites WordPress. But you need to have separate license for each domain.", captcha_bank); ?>
+														</span>
+														<?php _e("Multisite Compatibility", captcha_bank); ?>*
+													</span> 
+												</span>
+											</span> 
+										</span>
+									</li>
+									<li class="css3_grid_row_3 row_style_4 css3_grid_row_3_responsive">
+										<span class="css3_grid_vertical_align_table">
+											<span class="css3_grid_vertical_align">
+												<span>
+													<span class="css3_hidden_caption">
 														<?php _e("Technical Support", captcha_bank); ?>
 													</span>
 													<span class="css3_grid_tooltip">
@@ -87,7 +104,7 @@ else
 											</span> 
 										</span>
 									</li>
-									<li class="css3_grid_row_4 row_style_4 css3_grid_row_4_responsive">
+									<li class="css3_grid_row_4 row_style_2 css3_grid_row_4_responsive">
 										<span class="css3_grid_vertical_align_table">
 											<span class="css3_grid_vertical_align">
 												<span>
@@ -104,7 +121,7 @@ else
 											</span> 
 										</span>
 									</li>
-									<li class="css3_grid_row_5 row_style_2 css3_grid_row_5_responsive">
+									<li class="css3_grid_row_5 row_style_4 css3_grid_row_5_responsive">
 										<span class="css3_grid_vertical_align_table">
 											<span class="css3_grid_vertical_align">
 												<span>
@@ -121,7 +138,7 @@ else
 											</span> 
 										</span>
 									</li>
-									<li class="css3_grid_row_6 row_style_4 css3_grid_row_6_responsive">
+									<li class="css3_grid_row_6 row_style_2 css3_grid_row_6_responsive">
 										<span class="css3_grid_vertical_align_table">
 											<span class="css3_grid_vertical_align">
 												<span>
@@ -143,7 +160,7 @@ else
 											</span>
 										</span>
 									</li>
-									<li class="css3_grid_row_7 row_style_2 css3_grid_row_7_responsive">
+									<li class="css3_grid_row_7 row_style_4 css3_grid_row_7_responsive">
 										<span class="css3_grid_vertical_align_table">
 											<span class="css3_grid_vertical_align">
 												<span>
@@ -164,7 +181,7 @@ else
 											</span>
 										</span>
 									</li>
-									<li class="css3_grid_row_8 row_style_4 css3_grid_row_8_responsive">
+									<li class="css3_grid_row_8 row_style_2 css3_grid_row_8_responsive">
 										<span class="css3_grid_vertical_align_table">
 											<span class="css3_grid_vertical_align">
 												<span>
@@ -181,7 +198,7 @@ else
 											</span>
 										</span>
 									</li>
-									<li class="css3_grid_row_9 row_style_2 css3_grid_row_9_responsive">
+									<li class="css3_grid_row_9 row_style_4 css3_grid_row_9_responsive">
 										<span class="css3_grid_vertical_align_table">
 											<span class="css3_grid_vertical_align">
 												<span>
@@ -198,7 +215,7 @@ else
 											</span>
 										</span>
 									</li>
-									<li class="css3_grid_row_10 row_style_4 css3_grid_row_10_responsive">
+									<li class="css3_grid_row_10 row_style_2 css3_grid_row_10_responsive">
 										<span class="css3_grid_vertical_align_table">
 											<span class="css3_grid_vertical_align">
 												<span>
@@ -215,7 +232,7 @@ else
 											</span>
 										</span>
 									</li>
-									<li class="css3_grid_row_11 row_style_2 css3_grid_row_11_responsive">
+									<li class="css3_grid_row_11 row_style_4 css3_grid_row_11_responsive">
 										<span class="css3_grid_vertical_align_table">
 											<span class="css3_grid_vertical_align">
 												<span>
@@ -232,7 +249,7 @@ else
 											</span>
 										</span>
 									</li>
-									<li class="css3_grid_row_12 row_style_4 css3_grid_row_12_responsive">
+									<li class="css3_grid_row_12 row_style_2 css3_grid_row_12_responsive">
 										<span class="css3_grid_vertical_align_table">
 											<span class="css3_grid_vertical_align">
 												<span>
@@ -249,7 +266,7 @@ else
 											</span>
 										</span>
 									</li>
-									<li class="css3_grid_row_13 row_style_2 css3_grid_row_13_responsive">
+									<li class="css3_grid_row_13 row_style_4 css3_grid_row_13_responsive">
 										<span class="css3_grid_vertical_align_table">
 											<span class="css3_grid_vertical_align">
 												<span>
@@ -266,7 +283,7 @@ else
 											</span>
 										</span>
 									</li>
-									<li class="css3_grid_row_14 row_style_4 css3_grid_row_14_responsive">
+									<li class="css3_grid_row_14 row_style_2 css3_grid_row_14_responsive">
 										<span class="css3_grid_vertical_align_table">
 											<span class="css3_grid_vertical_align">
 												<span>
@@ -283,7 +300,7 @@ else
 											</span>
 										</span>
 									</li>
-									<li class="css3_grid_row_15 row_style_2 css3_grid_row_15_responsive">
+									<li class="css3_grid_row_15 row_style_4 css3_grid_row_15_responsive">
 										<span class="css3_grid_vertical_align_table">
 											<span class="css3_grid_vertical_align">
 												<span>
@@ -300,7 +317,7 @@ else
 											</span>
 										</span>
 									</li>
-									<li class="css3_grid_row_16 row_style_4 css3_grid_row_16_responsive">
+									<li class="css3_grid_row_16 row_style_2 css3_grid_row_16_responsive">
 										<span class="css3_grid_vertical_align_table">
 											<span class="css3_grid_vertical_align">
 												<span>
@@ -320,7 +337,7 @@ else
 											</span>
 										</span>
 									</li>
-									<li class="css3_grid_row_17 row_style_2 css3_grid_row_17_responsive">
+									<li class="css3_grid_row_17 row_style_4 css3_grid_row_17_responsive">
 										<span class="css3_grid_vertical_align_table">
 											<span class="css3_grid_vertical_align">
 												<span>
@@ -337,7 +354,7 @@ else
 											</span>
 										</span>
 									</li>
-									<li class="css3_grid_row_18 row_style_4 css3_grid_row_18_responsive">
+									<li class="css3_grid_row_18 row_style_2 css3_grid_row_18_responsive">
 										<span class="css3_grid_vertical_align_table">
 											<span class="css3_grid_vertical_align">
 												<span>
@@ -354,7 +371,7 @@ else
 											</span>
 										</span>
 									</li>
-									<li class="css3_grid_row_19 row_style_2 css3_grid_row_19_responsive">
+									<li class="css3_grid_row_19 row_style_4 css3_grid_row_19_responsive">
 										<span class="css3_grid_vertical_align_table">
 											<span class="css3_grid_vertical_align">
 												<span>
@@ -371,7 +388,7 @@ else
 											</span>
 										</span>
 									</li>
-									<li class="css3_grid_row_20 row_style_4 css3_grid_row_20_responsive">
+									<li class="css3_grid_row_20 row_style_2 css3_grid_row_20_responsive">
 										<span class="css3_grid_vertical_align_table">
 											<span class="css3_grid_vertical_align">
 												<span>
@@ -388,7 +405,7 @@ else
 											</span>
 										</span>
 									</li>
-									<li class="css3_grid_row_21 row_style_2 css3_grid_row_21_responsive">
+									<li class="css3_grid_row_21 row_style_4 css3_grid_row_21_responsive">
 										<span class="css3_grid_vertical_align_table">
 											<span class="css3_grid_vertical_align">
 												<span>
@@ -405,7 +422,7 @@ else
 											</span>
 										</span>
 									</li>
-									<li class="css3_grid_row_22 row_style_4 css3_grid_row_22_responsive">
+									<li class="css3_grid_row_22 row_style_2 css3_grid_row_22_responsive">
 										<span class="css3_grid_vertical_align_table">
 											<span class="css3_grid_vertical_align">
 												<span>
@@ -422,7 +439,7 @@ else
 											</span>
 										</span>
 									</li>
-									<li class="css3_grid_row_23 row_style_2 css3_grid_row_23_responsive">
+									<li class="css3_grid_row_23 row_style_4 css3_grid_row_23_responsive">
 										<span class="css3_grid_vertical_align_table">
 											<span class="css3_grid_vertical_align">
 												<span>
@@ -484,6 +501,18 @@ else
 										<span class="css3_grid_vertical_align">
 											<span>
 												<span class="css3_hidden_caption">
+													<?php _e("Multisite Compatibility", captcha_bank); ?>
+												</span>
+												<img src="<?php echo plugins_url("/assets/images/tick_10.png" , dirname(__FILE__)); ?>" alt="yes"> 
+											</span>
+										</span>
+									</span>
+									</li>
+									<li class="css3_grid_row_3 row_style_3 css3_grid_row_3_responsive align_center">
+									<span class="css3_grid_vertical_align_table">
+										<span class="css3_grid_vertical_align">
+											<span>
+												<span class="css3_hidden_caption">
 													<?php _e("Technical Support", captcha_bank); ?>
 												</span>
 												<?php _e("None", captcha_bank); ?>
@@ -491,7 +520,7 @@ else
 										</span>
 									</span>
 									</li>
-									<li class="css3_grid_row_4 row_style_3 css3_grid_row_4_responsive align_center">
+									<li class="css3_grid_row_4 row_style_1 css3_grid_row_4_responsive align_center">
 										<span class="css3_grid_vertical_align_table">
 											<span class="css3_grid_vertical_align">
 												<span>
@@ -503,7 +532,7 @@ else
 											</span>
 										</span>
 									</li>
-									<li class="css3_grid_row_5 row_style_1 css3_grid_row_5_responsive align_center">
+									<li class="css3_grid_row_5 row_style_3 css3_grid_row_5_responsive align_center">
 										<span class="css3_grid_vertical_align_table">
 											<span class="css3_grid_vertical_align">
 												<span>
@@ -515,7 +544,7 @@ else
 											</span>
 										</span>
 									</li>
-									<li class="css3_grid_row_6 row_style_3 css3_grid_row_6_responsive align_center">
+									<li class="css3_grid_row_6 row_style_1 css3_grid_row_6_responsive align_center">
 										<span class="css3_grid_vertical_align_table">
 											<span class="css3_grid_vertical_align">
 												<span>
@@ -527,7 +556,7 @@ else
 											</span>
 										</span>
 									</li>
-									<li class="css3_grid_row_7 row_style_1 css3_grid_row_7_responsive align_center">
+									<li class="css3_grid_row_7 row_style_3 css3_grid_row_7_responsive align_center">
 										<span class="css3_grid_vertical_align_table">
 											<span class="css3_grid_vertical_align">
 												<span>
@@ -539,7 +568,7 @@ else
 											</span>
 										</span>
 									</li>
-									<li class="css3_grid_row_8 row_style_3 css3_grid_row_8_responsive align_center">
+									<li class="css3_grid_row_8 row_style_1 css3_grid_row_8_responsive align_center">
 										<span class="css3_grid_vertical_align_table">
 											<span class="css3_grid_vertical_align">
 												<span>
@@ -551,7 +580,7 @@ else
 											</span>
 										</span>
 									</li>
-									<li class="css3_grid_row_9 row_style_1 css3_grid_row_9_responsive align_center">
+									<li class="css3_grid_row_9 row_style_3 css3_grid_row_9_responsive align_center">
 										<span class="css3_grid_vertical_align_table">
 											<span class="css3_grid_vertical_align">
 												<span>
@@ -563,7 +592,7 @@ else
 											</span>
 										</span>
 									</li>
-									<li class="css3_grid_row_10 row_style_3 css3_grid_row_10_responsive align_center">
+									<li class="css3_grid_row_10 row_style_1 css3_grid_row_10_responsive align_center">
 									<span class="css3_grid_vertical_align_table">
 										<span class="css3_grid_vertical_align">
 											<span>
@@ -575,7 +604,7 @@ else
 										</span>
 									</span>
 										</li>
-									<li class="css3_grid_row_11 row_style_1 css3_grid_row_11_responsive align_center">
+									<li class="css3_grid_row_11 row_style_3 css3_grid_row_11_responsive align_center">
 										<span class="css3_grid_vertical_align_table">
 											<span class="css3_grid_vertical_align">
 												<span>
@@ -587,7 +616,7 @@ else
 											</span>
 										</span>
 									</li>
-									<li class="css3_grid_row_12 row_style_3 css3_grid_row_12_responsive align_center">
+									<li class="css3_grid_row_12 row_style_1 css3_grid_row_12_responsive align_center">
 										<span class="css3_grid_vertical_align_table">
 											<span class="css3_grid_vertical_align">
 												<span>
@@ -599,7 +628,7 @@ else
 											</span>
 										</span>
 									</li>
-									<li class="css3_grid_row_13 row_style_1 css3_grid_row_13_responsive align_center">
+									<li class="css3_grid_row_13 row_style_3 css3_grid_row_13_responsive align_center">
 										<span class="css3_grid_vertical_align_table">
 											<span class="css3_grid_vertical_align">
 												<span>
@@ -611,7 +640,7 @@ else
 											</span>
 										</span>
 									</li>
-									<li class="css3_grid_row_14 row_style_3 css3_grid_row_14_responsive align_center">
+									<li class="css3_grid_row_14 row_style_1 css3_grid_row_14_responsive align_center">
 										<span class="css3_grid_vertical_align_table">
 											<span class="css3_grid_vertical_align">
 												<span>
@@ -623,7 +652,7 @@ else
 											</span>
 										</span>
 									</li>
-									<li class="css3_grid_row_15 row_style_1 css3_grid_row_15_responsive align_center">
+									<li class="css3_grid_row_15 row_style_3 css3_grid_row_15_responsive align_center">
 										<span class="css3_grid_vertical_align_table">
 											<span class="css3_grid_vertical_align">
 												<span>
@@ -635,7 +664,7 @@ else
 											</span>
 										</span>
 									</li>
-									<li class="css3_grid_row_16 row_style_3 css3_grid_row_16_responsive align_center">
+									<li class="css3_grid_row_16 row_style_1 css3_grid_row_16_responsive align_center">
 										<span class="css3_grid_vertical_align_table">
 											<span class="css3_grid_vertical_align">
 												<span>
@@ -647,7 +676,7 @@ else
 											</span>
 										</span>
 									</li>
-									<li class="css3_grid_row_17 row_style_1 css3_grid_row_17_responsive align_center">
+									<li class="css3_grid_row_17 row_style_3 css3_grid_row_17_responsive align_center">
 										<span class="css3_grid_vertical_align_table">
 											<span class="css3_grid_vertical_align">
 												<span>
@@ -659,7 +688,7 @@ else
 											</span>
 										</span>
 									</li>
-									<li class="css3_grid_row_18 row_style_3 css3_grid_row_18_responsive align_center">
+									<li class="css3_grid_row_18 row_style_1 css3_grid_row_18_responsive align_center">
 										<span class="css3_grid_vertical_align_table">
 											<span class="css3_grid_vertical_align">
 												<span>
@@ -671,7 +700,7 @@ else
 											</span>
 										</span>
 									</li>
-									<li class="css3_grid_row_19 row_style_1 css3_grid_row_19_responsive align_center">
+									<li class="css3_grid_row_19 row_style_3 css3_grid_row_19_responsive align_center">
 										<span class="css3_grid_vertical_align_table">
 											<span class="css3_grid_vertical_align">
 												<span>
@@ -683,7 +712,7 @@ else
 											</span>
 										</span>
 									</li>
-									<li class="css3_grid_row_20 row_style_3 css3_grid_row_20_responsive align_center">
+									<li class="css3_grid_row_20 row_style_1 css3_grid_row_20_responsive align_center">
 										<span class="css3_grid_vertical_align_table">
 											<span class="css3_grid_vertical_align">
 												<span>
@@ -695,7 +724,7 @@ else
 											</span>
 										</span>
 									</li>
-									<li class="css3_grid_row_21 row_style_1 css3_grid_row_21_responsive align_center">
+									<li class="css3_grid_row_21 row_style_3 css3_grid_row_21_responsive align_center">
 										<span class="css3_grid_vertical_align_table">
 											<span class="css3_grid_vertical_align">
 												<span>
@@ -707,7 +736,7 @@ else
 											</span>
 										</span>
 									</li>
-									<li class="css3_grid_row_22 row_style_3 css3_grid_row_22_responsive align_center">
+									<li class="css3_grid_row_22 row_style_1 css3_grid_row_22_responsive align_center">
 										<span class="css3_grid_vertical_align_table">
 											<span class="css3_grid_vertical_align">
 												<span>
@@ -719,7 +748,7 @@ else
 											</span>
 										</span>
 									</li>
-									<li class="css3_grid_row_23 row_style_1 css3_grid_row_23_responsive align_center">
+									<li class="css3_grid_row_23 row_style_3 css3_grid_row_23_responsive align_center">
 										<span class="css3_grid_vertical_align_table">
 											<span class="css3_grid_vertical_align">
 												<span>
@@ -788,6 +817,18 @@ else
 											<span class="css3_grid_vertical_align">
 												<span>
 													<span class="css3_hidden_caption">
+														<?php _e("Multisite Compatibility", captcha_bank); ?>
+													</span>
+													<img src="<?php echo plugins_url("/assets/images/tick_10.png" , dirname(__FILE__)); ?>" alt="yes">
+												</span>
+											</span>
+										</span>
+									</li>
+									<li class="css3_grid_row_3 row_style_4 css3_grid_row_3_responsive align_center">
+										<span class="css3_grid_vertical_align_table">
+											<span class="css3_grid_vertical_align">
+												<span>
+													<span class="css3_hidden_caption">
 														<?php _e("Technical Support", captcha_bank); ?>
 													</span>
 													<?php _e("1 Week", captcha_bank); ?>
@@ -795,7 +836,7 @@ else
 											</span>
 										</span>
 									</li>
-									<li class="css3_grid_row_4 row_style_4 css3_grid_row_4_responsive align_center">
+									<li class="css3_grid_row_4 row_style_2 css3_grid_row_4_responsive align_center">
 										<span class="css3_grid_vertical_align_table">
 											<span class="css3_grid_vertical_align">
 												<span>
@@ -807,7 +848,7 @@ else
 											</span>
 										</span>
 									</li>
-									<li class="css3_grid_row_5 row_style_2 css3_grid_row_5_responsive align_center">
+									<li class="css3_grid_row_5 row_style_4 css3_grid_row_5_responsive align_center">
 										<span class="css3_grid_vertical_align_table">
 											<span class="css3_grid_vertical_align">
 												<span>
@@ -819,7 +860,7 @@ else
 											</span>
 										</span>
 									</li>
-									<li class="css3_grid_row_6 row_style_4 css3_grid_row_6_responsive align_center">
+									<li class="css3_grid_row_6 row_style_2 css3_grid_row_6_responsive align_center">
 										<span class="css3_grid_vertical_align_table">
 											<span class="css3_grid_vertical_align">
 												<span>
@@ -831,7 +872,7 @@ else
 											</span>
 										</span>
 									</li>
-									<li class="css3_grid_row_7 row_style_2 css3_grid_row_7_responsive align_center">
+									<li class="css3_grid_row_7 row_style_4 css3_grid_row_7_responsive align_center">
 										<span class="css3_grid_vertical_align_table">
 											<span class="css3_grid_vertical_align">
 												<span>
@@ -843,7 +884,7 @@ else
 											</span>
 										</span>
 									</li>
-									<li class="css3_grid_row_8 row_style_4 css3_grid_row_8_responsive align_center">
+									<li class="css3_grid_row_8 row_style_2 css3_grid_row_8_responsive align_center">
 										<span class="css3_grid_vertical_align_table">
 											<span class="css3_grid_vertical_align">
 												<span>
@@ -855,7 +896,7 @@ else
 											</span>
 										</span>
 									</li>
-									<li class="css3_grid_row_9 row_style_2 css3_grid_row_9_responsive align_center">
+									<li class="css3_grid_row_9 row_style_4 css3_grid_row_9_responsive align_center">
 										<span class="css3_grid_vertical_align_table">
 											<span class="css3_grid_vertical_align">
 												<span>
@@ -867,7 +908,7 @@ else
 											</span>
 										</span>
 									</li>
-									<li class="css3_grid_row_10 row_style_4 css3_grid_row_10_responsive align_center">
+									<li class="css3_grid_row_10 row_style_2 css3_grid_row_10_responsive align_center">
 										<span class="css3_grid_vertical_align_table">
 											<span class="css3_grid_vertical_align">
 												<span>
@@ -879,7 +920,7 @@ else
 											</span>
 										</span>
 									</li>
-									<li class="css3_grid_row_11 row_style_2 css3_grid_row_11_responsive align_center">
+									<li class="css3_grid_row_11 row_style_4 css3_grid_row_11_responsive align_center">
 										<span class="css3_grid_vertical_align_table">
 											<span class="css3_grid_vertical_align">
 												<span>
@@ -891,7 +932,7 @@ else
 											</span>
 										</span>
 									</li>
-									<li class="css3_grid_row_12 row_style_4 css3_grid_row_12_responsive align_center">
+									<li class="css3_grid_row_12 row_style_2 css3_grid_row_12_responsive align_center">
 										<span class="css3_grid_vertical_align_table">
 											<span class="css3_grid_vertical_align">
 												<span>
@@ -903,7 +944,7 @@ else
 											</span>
 										</span>
 									</li>
-									<li class="css3_grid_row_13 row_style_2 css3_grid_row_13_responsive align_center">
+									<li class="css3_grid_row_13 row_style_4 css3_grid_row_13_responsive align_center">
 										<span class="css3_grid_vertical_align_table">
 											<span class="css3_grid_vertical_align">
 												<span>
@@ -915,7 +956,7 @@ else
 											</span>
 										</span>
 									</li>
-									<li class="css3_grid_row_14 row_style_4 css3_grid_row_14_responsive align_center">
+									<li class="css3_grid_row_14 row_style_2 css3_grid_row_14_responsive align_center">
 										<span class="css3_grid_vertical_align_table">
 											<span class="css3_grid_vertical_align">
 												<span>
@@ -927,7 +968,7 @@ else
 											</span>
 										</span>
 									</li>
-									<li class="css3_grid_row_15 row_style_2 css3_grid_row_15_responsive align_center">
+									<li class="css3_grid_row_15 row_style_4 css3_grid_row_15_responsive align_center">
 										<span class="css3_grid_vertical_align_table">
 											<span class="css3_grid_vertical_align">
 												<span>
@@ -939,7 +980,7 @@ else
 											</span>
 										</span>
 									</li>
-									<li class="css3_grid_row_16 row_style_4 css3_grid_row_16_responsive align_center">
+									<li class="css3_grid_row_16 row_style_2 css3_grid_row_16_responsive align_center">
 										<span class="css3_grid_vertical_align_table">
 											<span class="css3_grid_vertical_align">
 												<span>
@@ -949,7 +990,7 @@ else
 											</span>
 										</span>
 									</li>
-									<li class="css3_grid_row_17 row_style_2 css3_grid_row_17_responsive align_center">
+									<li class="css3_grid_row_17 row_style_4 css3_grid_row_17_responsive align_center">
 										<span class="css3_grid_vertical_align_table">
 											<span class="css3_grid_vertical_align">
 												<span>
@@ -961,7 +1002,7 @@ else
 											</span>
 										</span>
 									</li>
-									<li class="css3_grid_row_18 row_style_4 css3_grid_row_18_responsive align_center">
+									<li class="css3_grid_row_18 row_style_2 css3_grid_row_18_responsive align_center">
 										<span class="css3_grid_vertical_align_table">
 											<span class="css3_grid_vertical_align">
 												<span>
@@ -973,7 +1014,7 @@ else
 											</span>
 										</span>
 									</li>
-									<li class="css3_grid_row_19 row_style_2 css3_grid_row_19_responsive align_center">
+									<li class="css3_grid_row_19 row_style_4 css3_grid_row_19_responsive align_center">
 										<span class="css3_grid_vertical_align_table">
 											<span class="css3_grid_vertical_align">
 												<span>
@@ -985,7 +1026,7 @@ else
 											</span>
 										</span>
 									</li>
-									<li class="css3_grid_row_20 row_style_4 css3_grid_row_20_responsive align_center">
+									<li class="css3_grid_row_20 row_style_2 css3_grid_row_20_responsive align_center">
 										<span class="css3_grid_vertical_align_table">
 											<span class="css3_grid_vertical_align">
 												<span>
@@ -997,7 +1038,7 @@ else
 											</span>
 										</span>
 									</li>
-									<li class="css3_grid_row_21 row_style_2 css3_grid_row_21_responsive align_center">
+									<li class="css3_grid_row_21 row_style_4 css3_grid_row_21_responsive align_center">
 										<span class="css3_grid_vertical_align_table">
 											<span class="css3_grid_vertical_align">
 												<span>
@@ -1009,7 +1050,7 @@ else
 											</span>
 										</span>
 									</li>
-									<li class="css3_grid_row_22 row_style_4 css3_grid_row_22_responsive align_center">
+									<li class="css3_grid_row_22 row_style_2 css3_grid_row_22_responsive align_center">
 										<span class="css3_grid_vertical_align_table">
 											<span class="css3_grid_vertical_align">
 												<span>
@@ -1021,7 +1062,7 @@ else
 											</span>
 										</span>
 									</li>
-									<li class="css3_grid_row_23 row_style_2 css3_grid_row_23_responsive align_center">
+									<li class="css3_grid_row_23 row_style_4 css3_grid_row_23_responsive align_center">
 										<span class="css3_grid_vertical_align_table">
 											<span class="css3_grid_vertical_align">
 												<span>
@@ -1090,6 +1131,18 @@ else
 											<span class="css3_grid_vertical_align">
 												<span>
 													<span class="css3_hidden_caption">
+														<?php _e("Multisite Compatibility", captcha_bank); ?>
+													</span>
+													<img src="<?php echo plugins_url("/assets/images/tick_10.png" , dirname(__FILE__)); ?>" alt="yes">
+												</span>
+											</span>
+										</span>
+									</li>
+									<li class="css3_grid_row_3 row_style_3 css3_grid_row_3_responsive align_center">
+										<span class="css3_grid_vertical_align_table">
+											<span class="css3_grid_vertical_align">
+												<span>
+													<span class="css3_hidden_caption">
 														<?php _e("Technical Support", captcha_bank); ?>
 													</span>
 													<?php _e("1 Month", captcha_bank); ?>
@@ -1097,7 +1150,7 @@ else
 											</span>
 										</span>
 									</li>
-									<li class="css3_grid_row_4 row_style_3 css3_grid_row_4_responsive align_center">
+									<li class="css3_grid_row_4 row_style_1 css3_grid_row_4_responsive align_center">
 										<span class="css3_grid_vertical_align_table">
 											<span class="css3_grid_vertical_align">
 												<span>
@@ -1109,7 +1162,7 @@ else
 											</span>
 										</span>
 									</li>
-									<li class="css3_grid_row_5 row_style_1 css3_grid_row_5_responsive align_center">
+									<li class="css3_grid_row_5 row_style_3 css3_grid_row_5_responsive align_center">
 										<span class="css3_grid_vertical_align_table">
 											<span class="css3_grid_vertical_align">
 												<span>
@@ -1121,7 +1174,7 @@ else
 											</span>
 										</span>
 									</li>
-									<li class="css3_grid_row_6 row_style_3 css3_grid_row_6_responsive align_center">
+									<li class="css3_grid_row_6 row_style_1 css3_grid_row_6_responsive align_center">
 										<span class="css3_grid_vertical_align_table">
 											<span class="css3_grid_vertical_align">
 												<span>
@@ -1133,7 +1186,7 @@ else
 											</span>
 										</span>
 									</li>
-									<li class="css3_grid_row_7 row_style_1 css3_grid_row_7_responsive align_center">
+									<li class="css3_grid_row_7 row_style_3 css3_grid_row_7_responsive align_center">
 										<span class="css3_grid_vertical_align_table">
 											<span class="css3_grid_vertical_align">
 												<span>
@@ -1145,7 +1198,7 @@ else
 											</span>
 										</span>
 									</li>
-									<li class="css3_grid_row_8 row_style_3 css3_grid_row_8_responsive align_center">
+									<li class="css3_grid_row_8 row_style_1 css3_grid_row_8_responsive align_center">
 										<span class="css3_grid_vertical_align_table">
 											<span class="css3_grid_vertical_align">
 												<span>
@@ -1157,7 +1210,7 @@ else
 											</span>
 										</span>
 									</li>
-									<li class="css3_grid_row_9 row_style_1 css3_grid_row_9_responsive align_center">
+									<li class="css3_grid_row_9 row_style_3 css3_grid_row_9_responsive align_center">
 										<span class="css3_grid_vertical_align_table">
 											<span class="css3_grid_vertical_align">
 												<span>
@@ -1169,7 +1222,7 @@ else
 											</span>
 										</span>
 									</li>
-									<li class="css3_grid_row_10 row_style_3 css3_grid_row_10_responsive align_center">
+									<li class="css3_grid_row_10 row_style_1 css3_grid_row_10_responsive align_center">
 										<span class="css3_grid_vertical_align_table">
 											<span class="css3_grid_vertical_align">
 												<span>
@@ -1181,7 +1234,7 @@ else
 											</span>
 										</span>
 									</li>
-									<li class="css3_grid_row_11 row_style_1 css3_grid_row_11_responsive align_center">
+									<li class="css3_grid_row_11 row_style_3 css3_grid_row_11_responsive align_center">
 										<span class="css3_grid_vertical_align_table">
 											<span class="css3_grid_vertical_align">
 												<span>
@@ -1193,7 +1246,7 @@ else
 											</span>
 										</span>
 									</li>
-									<li class="css3_grid_row_12 row_style_3 css3_grid_row_12_responsive align_center">
+									<li class="css3_grid_row_12 row_style_1 css3_grid_row_12_responsive align_center">
 										<span class="css3_grid_vertical_align_table">
 											<span class="css3_grid_vertical_align">
 												<span>
@@ -1205,7 +1258,7 @@ else
 											</span>
 										</span>
 									</li>
-									<li class="css3_grid_row_13 row_style_1 css3_grid_row_13_responsive align_center">
+									<li class="css3_grid_row_13 row_style_3 css3_grid_row_13_responsive align_center">
 										<span class="css3_grid_vertical_align_table">
 											<span class="css3_grid_vertical_align">
 												<span>
@@ -1217,7 +1270,7 @@ else
 											</span>
 										</span>
 									</li>
-									<li class="css3_grid_row_14 row_style_3 css3_grid_row_14_responsive align_center">
+									<li class="css3_grid_row_14 row_style_1 css3_grid_row_14_responsive align_center">
 										<span class="css3_grid_vertical_align_table">
 											<span class="css3_grid_vertical_align">
 												<span>
@@ -1229,7 +1282,7 @@ else
 											</span>
 										</span>
 									</li>
-									<li class="css3_grid_row_15 row_style_1 css3_grid_row_15_responsive align_center">
+									<li class="css3_grid_row_15 row_style_3 css3_grid_row_15_responsive align_center">
 										<span class="css3_grid_vertical_align_table">
 											<span class="css3_grid_vertical_align">
 												<span>
@@ -1241,7 +1294,7 @@ else
 											</span>
 										</span>
 									</li>
-									<li class="css3_grid_row_16 row_style_3 css3_grid_row_16_responsive align_center">
+									<li class="css3_grid_row_16 row_style_1 css3_grid_row_16_responsive align_center">
 										<span class="css3_grid_vertical_align_table">
 											<span class="css3_grid_vertical_align">
 												<span>
@@ -1253,7 +1306,7 @@ else
 											</span>
 										</span>
 									</li>
-									<li class="css3_grid_row_17 row_style_1 css3_grid_row_17_responsive align_center">
+									<li class="css3_grid_row_17 row_style_3 css3_grid_row_17_responsive align_center">
 										<span class="css3_grid_vertical_align_table">
 											<span class="css3_grid_vertical_align">
 												<span>
@@ -1265,7 +1318,7 @@ else
 											</span>
 										</span>
 									</li>
-									<li class="css3_grid_row_18 row_style_3 css3_grid_row_18_responsive align_center">
+									<li class="css3_grid_row_18 row_style_1 css3_grid_row_18_responsive align_center">
 										<span class="css3_grid_vertical_align_table">
 											<span class="css3_grid_vertical_align">
 												<span>
@@ -1277,7 +1330,7 @@ else
 											</span>
 										</span>
 									</li>
-									<li class="css3_grid_row_19 row_style_1 css3_grid_row_19_responsive align_center">
+									<li class="css3_grid_row_19 row_style_3 css3_grid_row_19_responsive align_center">
 										<span class="css3_grid_vertical_align_table">
 											<span class="css3_grid_vertical_align">
 												<span>
@@ -1289,7 +1342,7 @@ else
 											</span>
 										</span>
 									</li>
-									<li class="css3_grid_row_20 row_style_3 css3_grid_row_20_responsive align_center">
+									<li class="css3_grid_row_20 row_style_1 css3_grid_row_20_responsive align_center">
 										<span class="css3_grid_vertical_align_table">
 											<span class="css3_grid_vertical_align">
 												<span>
@@ -1301,7 +1354,7 @@ else
 											</span>
 										</span>
 									</li>
-									<li class="css3_grid_row_21 row_style_1 css3_grid_row_21_responsive align_center">
+									<li class="css3_grid_row_21 row_style_3 css3_grid_row_21_responsive align_center">
 										<span class="css3_grid_vertical_align_table">
 											<span class="css3_grid_vertical_align">
 												<span>
@@ -1313,7 +1366,7 @@ else
 											</span>
 										</span>
 									</li>
-									<li class="css3_grid_row_22 row_style_3 css3_grid_row_22_responsive align_center">
+									<li class="css3_grid_row_22 row_style_1 css3_grid_row_22_responsive align_center">
 										<span class="css3_grid_vertical_align_table">
 											<span class="css3_grid_vertical_align">
 												<span>
@@ -1325,7 +1378,7 @@ else
 											</span>
 										</span>
 									</li>
-									<li class="css3_grid_row_23 row_style_1 css3_grid_row_23_responsive align_center">
+									<li class="css3_grid_row_23 row_style_3 css3_grid_row_23_responsive align_center">
 										<span class="css3_grid_vertical_align_table">
 											<span class="css3_grid_vertical_align">
 												<span>
@@ -1394,6 +1447,18 @@ else
 											<span class="css3_grid_vertical_align">
 												<span>
 													<span class="css3_hidden_caption">
+														<?php _e("Multisite Compatibility", captcha_bank); ?>
+													</span>
+													<img src="<?php echo plugins_url("/assets/images/tick_10.png" , dirname(__FILE__)); ?>" alt="yes">
+												</span>
+											</span>
+										</span>
+									</li>
+									<li class="css3_grid_row_3 row_style_4 css3_grid_row_3_responsive align_center">
+										<span class="css3_grid_vertical_align_table">
+											<span class="css3_grid_vertical_align">
+												<span>
+													<span class="css3_hidden_caption">
 														<?php _e("Technical Support", captcha_bank); ?>
 													</span>
 													<?php _e("1 Year", captcha_bank); ?>
@@ -1401,7 +1466,7 @@ else
 											</span>
 										</span>
 									</li>
-									<li class="css3_grid_row_4 row_style_4 css3_grid_row_4_responsive align_center">
+									<li class="css3_grid_row_4 row_style_2 css3_grid_row_4_responsive align_center">
 										<span class="css3_grid_vertical_align_table">
 											<span class="css3_grid_vertical_align">
 												<span>
@@ -1413,7 +1478,7 @@ else
 											</span>
 										</span>
 									</li>
-									<li class="css3_grid_row_5 row_style_2 css3_grid_row_5_responsive align_center">
+									<li class="css3_grid_row_5 row_style_4 css3_grid_row_5_responsive align_center">
 										<span class="css3_grid_vertical_align_table">
 											<span class="css3_grid_vertical_align">
 												<span>
@@ -1425,7 +1490,7 @@ else
 											</span>
 										</span>
 									</li>
-									<li class="css3_grid_row_6 row_style_4 css3_grid_row_6_responsive align_center">
+									<li class="css3_grid_row_6 row_style_2 css3_grid_row_6_responsive align_center">
 										<span class="css3_grid_vertical_align_table">
 											<span class="css3_grid_vertical_align">
 												<span>
@@ -1437,7 +1502,7 @@ else
 											</span>
 										</span>
 									</li>
-									<li class="css3_grid_row_7 row_style_2 css3_grid_row_7_responsive align_center">
+									<li class="css3_grid_row_7 row_style_4 css3_grid_row_7_responsive align_center">
 										<span class="css3_grid_vertical_align_table">
 											<span class="css3_grid_vertical_align">
 												<span>
@@ -1449,7 +1514,7 @@ else
 											</span>
 										</span>
 									</li>
-									<li class="css3_grid_row_8 row_style_4 css3_grid_row_8_responsive align_center">
+									<li class="css3_grid_row_8 row_style_2 css3_grid_row_8_responsive align_center">
 										<span class="css3_grid_vertical_align_table">
 											<span class="css3_grid_vertical_align">
 												<span>
@@ -1461,7 +1526,7 @@ else
 											</span>
 										</span>
 									</li>
-									<li class="css3_grid_row_9 row_style_2 css3_grid_row_9_responsive align_center">
+									<li class="css3_grid_row_9 row_style_4 css3_grid_row_9_responsive align_center">
 										<span class="css3_grid_vertical_align_table">
 											<span class="css3_grid_vertical_align">
 												<span>
@@ -1473,7 +1538,7 @@ else
 											</span>
 										</span>
 									</li>
-									<li class="css3_grid_row_10 row_style_4 css3_grid_row_10_responsive align_center">
+									<li class="css3_grid_row_10 row_style_2 css3_grid_row_10_responsive align_center">
 										<span class="css3_grid_vertical_align_table">
 											<span class="css3_grid_vertical_align">
 												<span>
@@ -1485,7 +1550,7 @@ else
 											</span>
 										</span>
 									</li>
-									<li class="css3_grid_row_11 row_style_2 css3_grid_row_11_responsive align_center">
+									<li class="css3_grid_row_11 row_style_4 css3_grid_row_11_responsive align_center">
 										<span class="css3_grid_vertical_align_table">
 											<span class="css3_grid_vertical_align">
 												<span>
@@ -1497,7 +1562,7 @@ else
 											</span>
 										</span>
 									</li>
-									<li class="css3_grid_row_12 row_style_4 css3_grid_row_12_responsive align_center">
+									<li class="css3_grid_row_12 row_style_2 css3_grid_row_12_responsive align_center">
 										<span class="css3_grid_vertical_align_table">
 											<span class="css3_grid_vertical_align">
 												<span>
@@ -1509,7 +1574,7 @@ else
 											</span>
 										</span>
 									</li>
-									<li class="css3_grid_row_13 row_style_2 css3_grid_row_13_responsive align_center">
+									<li class="css3_grid_row_13 row_style_4 css3_grid_row_13_responsive align_center">
 										<span class="css3_grid_vertical_align_table">
 											<span class="css3_grid_vertical_align">
 												<span>
@@ -1521,7 +1586,7 @@ else
 											</span>
 										</span>
 									</li>
-									<li class="css3_grid_row_14 row_style_4 css3_grid_row_14_responsive align_center">
+									<li class="css3_grid_row_14 row_style_2 css3_grid_row_14_responsive align_center">
 										<span class="css3_grid_vertical_align_table">
 											<span class="css3_grid_vertical_align">
 												<span>
@@ -1533,7 +1598,7 @@ else
 											</span>
 										</span>
 									</li>
-									<li class="css3_grid_row_15 row_style_2 css3_grid_row_15_responsive align_center">
+									<li class="css3_grid_row_15 row_style_4 css3_grid_row_15_responsive align_center">
 										<span class="css3_grid_vertical_align_table">
 											<span class="css3_grid_vertical_align">
 												<span>
@@ -1545,7 +1610,7 @@ else
 											</span>
 										</span>
 									</li>
-									<li class="css3_grid_row_16 row_style_4 css3_grid_row_16_responsive align_center">
+									<li class="css3_grid_row_16 row_style_2 css3_grid_row_16_responsive align_center">
 										<span class="css3_grid_vertical_align_table">
 											<span class="css3_grid_vertical_align">
 												<span>
@@ -1557,7 +1622,7 @@ else
 											</span>
 										</span>
 									</li>
-									<li class="css3_grid_row_17 row_style_2 css3_grid_row_17_responsive align_center">
+									<li class="css3_grid_row_17 row_style_4 css3_grid_row_17_responsive align_center">
 										<span class="css3_grid_vertical_align_table">
 											<span class="css3_grid_vertical_align">
 												<span>
@@ -1569,7 +1634,7 @@ else
 											</span>
 										</span>
 									</li>
-									<li class="css3_grid_row_18 row_style_4 css3_grid_row_18_responsive align_center">
+									<li class="css3_grid_row_18 row_style_2 css3_grid_row_18_responsive align_center">
 										<span class="css3_grid_vertical_align_table">
 											<span class="css3_grid_vertical_align">
 												<span>
@@ -1581,7 +1646,7 @@ else
 											</span>
 										</span>
 									</li>
-									<li class="css3_grid_row_19 row_style_2 css3_grid_row_19_responsive align_center">
+									<li class="css3_grid_row_19 row_style_4 css3_grid_row_19_responsive align_center">
 										<span class="css3_grid_vertical_align_table">
 											<span class="css3_grid_vertical_align">
 												<span>
@@ -1593,7 +1658,7 @@ else
 											</span>
 										</span>
 									</li>
-									<li class="css3_grid_row_20 row_style_4 css3_grid_row_20_responsive align_center">
+									<li class="css3_grid_row_20 row_style_2 css3_grid_row_20_responsive align_center">
 										<span class="css3_grid_vertical_align_table">
 											<span class="css3_grid_vertical_align">
 												<span>
@@ -1605,7 +1670,7 @@ else
 											</span>
 										</span>
 									</li>
-									<li class="css3_grid_row_21 row_style_2 css3_grid_row_21_responsive align_center">
+									<li class="css3_grid_row_21 row_style_4 css3_grid_row_21_responsive align_center">
 										<span class="css3_grid_vertical_align_table">
 											<span class="css3_grid_vertical_align">
 												<span>
@@ -1617,7 +1682,7 @@ else
 											</span>
 										</span>
 									</li>
-									<li class="css3_grid_row_22 row_style_4 css3_grid_row_22_responsive align_center">
+									<li class="css3_grid_row_22 row_style_2 css3_grid_row_22_responsive align_center">
 										<span class="css3_grid_vertical_align_table">
 											<span class="css3_grid_vertical_align">
 												<span>
@@ -1629,7 +1694,7 @@ else
 											</span>
 										</span>
 									</li>
-									<li class="css3_grid_row_23 row_style_2 css3_grid_row_23_responsive align_center">
+									<li class="css3_grid_row_23 row_style_4 css3_grid_row_23_responsive align_center">
 										<span class="css3_grid_vertical_align_table">
 											<span class="css3_grid_vertical_align">
 												<span>
@@ -1698,6 +1763,18 @@ else
 											<span class="css3_grid_vertical_align">
 												<span>
 													<span class="css3_hidden_caption">
+														<?php _e("Multisite Compatibility", captcha_bank); ?>
+													</span>
+													<img src="<?php echo plugins_url("/assets/images/tick_10.png" , dirname(__FILE__)); ?>" alt="yes">
+												</span>
+											</span>
+										</span>
+									</li>
+									<li class="css3_grid_row_3 row_style_3 css3_grid_row_3_responsive align_center">
+										<span class="css3_grid_vertical_align_table">
+											<span class="css3_grid_vertical_align">
+												<span>
+													<span class="css3_hidden_caption">
 														<?php _e("Technical Support", captcha_bank); ?>
 													</span>
 													<?php _e("1 Year", captcha_bank); ?>
@@ -1705,7 +1782,7 @@ else
 											</span>
 										</span>
 									</li>
-									<li class="css3_grid_row_4 row_style_3 css3_grid_row_4_responsive align_center">
+									<li class="css3_grid_row_4 row_style_1 css3_grid_row_4_responsive align_center">
 										<span class="css3_grid_vertical_align_table">
 											<span class="css3_grid_vertical_align">
 												<span>
@@ -1717,7 +1794,7 @@ else
 											</span>
 										</span>
 									</li>
-									<li class="css3_grid_row_5 row_style_1 css3_grid_row_5_responsive align_center">
+									<li class="css3_grid_row_5 row_style_3 css3_grid_row_5_responsive align_center">
 										<span class="css3_grid_vertical_align_table">
 											<span class="css3_grid_vertical_align">
 												<span>
@@ -1729,7 +1806,7 @@ else
 											</span>
 										</span>
 									</li>
-									<li class="css3_grid_row_6 row_style_3 css3_grid_row_6_responsive align_center">
+									<li class="css3_grid_row_6 row_style_1 css3_grid_row_6_responsive align_center">
 										<span class="css3_grid_vertical_align_table">
 											<span class="css3_grid_vertical_align">
 												<span>
@@ -1741,7 +1818,7 @@ else
 											</span>
 										</span>
 									</li>
-									<li class="css3_grid_row_7 row_style_1 css3_grid_row_7_responsive align_center">
+									<li class="css3_grid_row_7 row_style_3 css3_grid_row_7_responsive align_center">
 										<span class="css3_grid_vertical_align_table">
 											<span class="css3_grid_vertical_align">
 												<span>
@@ -1753,7 +1830,7 @@ else
 											</span>
 										</span>
 									</li>
-									<li class="css3_grid_row_8 row_style_3 css3_grid_row_8_responsive align_center">
+									<li class="css3_grid_row_8 row_style_1 css3_grid_row_8_responsive align_center">
 										<span class="css3_grid_vertical_align_table">
 											<span class="css3_grid_vertical_align">
 												<span>
@@ -1765,7 +1842,7 @@ else
 											</span>
 										</span>
 									</li>
-									<li class="css3_grid_row_9 row_style_1 css3_grid_row_9_responsive align_center">
+									<li class="css3_grid_row_9 row_style_3 css3_grid_row_9_responsive align_center">
 										<span class="css3_grid_vertical_align_table">
 											<span class="css3_grid_vertical_align">
 												<span>
@@ -1777,7 +1854,7 @@ else
 											</span>
 										</span>
 									</li>
-									<li class="css3_grid_row_10 row_style_3 css3_grid_row_10_responsive align_center">
+									<li class="css3_grid_row_10 row_style_1 css3_grid_row_10_responsive align_center">
 										<span class="css3_grid_vertical_align_table">
 											<span class="css3_grid_vertical_align">
 												<span>
@@ -1790,7 +1867,7 @@ else
 											</span>
 										</span>
 									</li>
-									<li class="css3_grid_row_11 row_style_1 css3_grid_row_11_responsive align_center">
+									<li class="css3_grid_row_11 row_style_3 css3_grid_row_11_responsive align_center">
 										<span class="css3_grid_vertical_align_table">
 											<span class="css3_grid_vertical_align">
 												<span>
@@ -1803,7 +1880,7 @@ else
 											</span>
 										</span>
 									</li>
-									<li class="css3_grid_row_12 row_style_3 css3_grid_row_12_responsive align_center">
+									<li class="css3_grid_row_12 row_style_1 css3_grid_row_12_responsive align_center">
 										<span class="css3_grid_vertical_align_table">
 											<span class="css3_grid_vertical_align">
 												<span>
@@ -1816,7 +1893,7 @@ else
 											</span>
 										</span>
 									</li>
-									<li class="css3_grid_row_13 row_style_1 css3_grid_row_13_responsive align_center">
+									<li class="css3_grid_row_13 row_style_3 css3_grid_row_13_responsive align_center">
 										<span class="css3_grid_vertical_align_table">
 											<span class="css3_grid_vertical_align">
 												<span>
@@ -1828,7 +1905,7 @@ else
 											</span>
 										</span>
 									</li>
-									<li class="css3_grid_row_14 row_style_3 css3_grid_row_14_responsive align_center">
+									<li class="css3_grid_row_14 row_style_1 css3_grid_row_14_responsive align_center">
 										<span class="css3_grid_vertical_align_table">
 											<span class="css3_grid_vertical_align">
 												<span>
@@ -1840,7 +1917,7 @@ else
 											</span>
 										</span>
 									</li>
-									<li class="css3_grid_row_15 row_style_1 css3_grid_row_15_responsive align_center">
+									<li class="css3_grid_row_15 row_style_3 css3_grid_row_15_responsive align_center">
 										<span class="css3_grid_vertical_align_table">
 											<span class="css3_grid_vertical_align">
 												<span>
@@ -1852,7 +1929,7 @@ else
 											</span>
 										</span>
 									</li>
-									<li class="css3_grid_row_16 row_style_3 css3_grid_row_16_responsive align_center">
+									<li class="css3_grid_row_16 row_style_1 css3_grid_row_16_responsive align_center">
 										<span class="css3_grid_vertical_align_table">
 											<span class="css3_grid_vertical_align">
 												<span>
@@ -1865,7 +1942,7 @@ else
 											</span>
 										</span>
 									</li>
-									<li class="css3_grid_row_17 row_style_1 css3_grid_row_17_responsive align_center">
+									<li class="css3_grid_row_17 row_style_3 css3_grid_row_17_responsive align_center">
 										<span class="css3_grid_vertical_align_table">
 											<span class="css3_grid_vertical_align">
 												<span>
@@ -1876,7 +1953,7 @@ else
 											</span>
 										</span>
 									</li>
-									<li class="css3_grid_row_18 row_style_3 css3_grid_row_18_responsive align_center">
+									<li class="css3_grid_row_18 row_style_1 css3_grid_row_18_responsive align_center">
 										<span class="css3_grid_vertical_align_table">
 											<span class="css3_grid_vertical_align">
 												<span>
@@ -1888,7 +1965,7 @@ else
 											</span>
 										</span>
 									</li>
-									<li class="css3_grid_row_19 row_style_1 css3_grid_row_19_responsive align_center">
+									<li class="css3_grid_row_19 row_style_3 css3_grid_row_19_responsive align_center">
 										<span class="css3_grid_vertical_align_table">
 											<span class="css3_grid_vertical_align">
 												<span>
@@ -1901,7 +1978,7 @@ else
 											</span>
 										</span>
 									</li>
-									<li class="css3_grid_row_20 row_style_3 css3_grid_row_20_responsive align_center">
+									<li class="css3_grid_row_20 row_style_1 css3_grid_row_20_responsive align_center">
 										<span class="css3_grid_vertical_align_table">
 											<span class="css3_grid_vertical_align">
 												<span>
@@ -1914,7 +1991,7 @@ else
 											</span>
 										</span>
 									</li>
-									<li class="css3_grid_row_21 row_style_1 css3_grid_row_21_responsive align_center">
+									<li class="css3_grid_row_21 row_style_3 css3_grid_row_21_responsive align_center">
 										<span class="css3_grid_vertical_align_table">
 											<span class="css3_grid_vertical_align">
 												<span>
@@ -1926,7 +2003,7 @@ else
 											</span>
 										</span>
 									</li>
-									<li class="css3_grid_row_22 row_style_3 css3_grid_row_22_responsive align_center">
+									<li class="css3_grid_row_22 row_style_1 css3_grid_row_22_responsive align_center">
 										<span class="css3_grid_vertical_align_table">
 											<span class="css3_grid_vertical_align">
 												<span>
@@ -1938,7 +2015,7 @@ else
 											</span>
 										</span>
 									</li>
-									<li class="css3_grid_row_23 row_style_1 css3_grid_row_23_responsive align_center">
+									<li class="css3_grid_row_23 row_style_3 css3_grid_row_23_responsive align_center">
 										<span class="css3_grid_vertical_align_table">
 											<span class="css3_grid_vertical_align">
 												<span>
