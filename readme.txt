@@ -18,6 +18,8 @@ Captcha Bank is a Bullet Proof Advance Protection Shield for your Wordpress webs
 
 **Captcha Bank**, a bullet proof captcha validator allows you to display **captcha** in different formats such as alphabets, digits or both. Its an advance protection shield that protects your website from spam by means of **captcha logic**, easily understood by human beings. Its a protection method for Website Login, Website Registration and Comment Spam in Blogs which makes the Captcha Bank powerful.
 
+**Captcha Bank** uses our own Tech Banker API based on Maxmind Database to fetch location and other details based on IP Address for its feature Login Logs.
+
 > #### **Live Demos - Captcha Bank**
 
 > * [**Captcha Bank**](http://tech-banker.com/products/wp-captcha-bank/)
