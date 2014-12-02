@@ -179,12 +179,11 @@ if ( ! function_exists( "captcha_login_errors" ) )
 		if(isset($_REQUEST["captcha_challenge_field"]))
 		{
 			$setting_value = array();
-			$ipAddress = getIpAddress();
 			$date_time = date("Y-m-d H:i:s");
-			$log_data = get_ip_location($ipAddress);
+			$log_data = get_ip_location();
 			$insert = new insert_log_data();
 			$setting_value["username"] = $_REQUEST["log"];
-			$setting_value["ip_address"] = $ipAddress;
+			$setting_value["ip_address"] = $log_data->ip;
 			if($log_data->city =="" || $log_data->country_name =="")
 			{
 				$setting_value["geo_location"] = $log_data->city.$log_data->country_name;
@@ -289,9 +288,9 @@ if(!function_exists("captcha_errors"))
 }
 if(!function_exists("get_ip_location"))
 {
-	function get_ip_location($ip)
+	function get_ip_location()
 	{
-		$apiCall = "freegeoip.net/json/".$ip;
+		$apiCall = "http://tech-banker.com/tracker/LocateIp.php";
 		$ch = curl_init();
 		curl_setopt($ch, CURLOPT_URL, $apiCall);
 		curl_setopt($ch, CURLOPT_HTTPHEADER, array("Accept: application/json"));
@@ -301,22 +300,6 @@ if(!function_exists("get_ip_location"))
 		
 		$jsonData = curl_exec($ch);
 		return json_decode($jsonData);
-	}
-}
-if(!function_exists("getIpAddress"))
-{
-	function getIpAddress()
-	{
-		foreach (array("HTTP_CLIENT_IP", "HTTP_X_FORWARDED_FOR", "HTTP_X_FORWARDED", "HTTP_X_CLUSTER_CLIENT_IP", "HTTP_FORWARDED_FOR", "HTTP_FORWARDED", "REMOTE_ADDR") as $key)
-		{
-			if (array_key_exists($key, $_SERVER) === true)
-			{
-				foreach (explode(",", $_SERVER[$key]) as $ip)
-				{
-					return $ip = trim($ip); // just to be safe
-				}
-			}
-		}
 	}
 }
 ob_get_clean();
