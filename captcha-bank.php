@@ -4,7 +4,7 @@ Plugin Name: WP Captcha Bank Lite Edition
 Plugin URI: http://tech-banker.com
 Description: This plugin allows you to implement security captcha form into web forms to prevent spam.
 Author: Tech Banker
-Version: 2.0.7
+Version: 2.0.8
 Author URI: http://tech-banker.com
 */
 /////////////////////////////////////  Define  WP Captcha Bank  Constants  //////////////////////////////////
@@ -269,24 +269,6 @@ else
 	}
 }
 
-///////////////////////////////////// Function to get IP Address ////////////////////////////////////////////////
-
-if(!function_exists("getIpAddress"))
-{
-	function getIpAddress()
-	{
-		foreach (array("HTTP_CLIENT_IP", "HTTP_X_FORWARDED_FOR", "HTTP_X_FORWARDED", "HTTP_X_CLUSTER_CLIENT_IP", "HTTP_FORWARDED_FOR", "HTTP_FORWARDED", "REMOTE_ADDR") as $key)
-		{
-			if (array_key_exists($key, $_SERVER) === true)
-			{
-				foreach (explode(",", $_SERVER[$key]) as $ip)
-				{
-					return $ip = trim($ip); // just to be safe
-				}
-			}
-		}
-	}
-}
 /////////////////////////////////////Language Convertions//////////////////////////////////////////////////////////
 
 if(!function_exists( "plugin_load_textdomain_wp_captcha_bank" ))
