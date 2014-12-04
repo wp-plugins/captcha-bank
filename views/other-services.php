@@ -1,5 +1,5 @@
 <?php
-switch($role)
+switch($captcha_role)
 {
 	case "administrator":
 		$user_role_permission = "manage_options";

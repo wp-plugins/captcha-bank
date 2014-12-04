@@ -1,5 +1,5 @@
 <?php 
-switch($role)
+switch($captcha_role)
 {
 	case "administrator":
 		$user_role_permission = "manage_options";
@@ -196,7 +196,7 @@ else
 			{
 				"sLengthMenu": "<span>Show entries:</span> _MENU_"
 			},
-			"aaSorting": [[ 6, "desc" ]]
+			"aaSorting": [[ 5, "desc" ]]
 		});
 		initialize();
 	});
