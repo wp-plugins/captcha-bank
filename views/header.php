@@ -20,11 +20,11 @@ else
 	$captcha_lang = array();
 	$captcha_translated_lang = array();
 	
-	array_push($captcha_lang, "bg_BG", "ja", "ko_KR", "ms_MY", "sl_SI", "sq_AL", "sr_RS", "es_ES", "nl_NL", "uk", "sv_SE", "fr_FR", "pt_PT", "pt_BR", "et", "it_IT",
+	array_push($captcha_lang, "bg_BG", "ja", "ko_KR", "ms_MY", "sl_SI", "sq_AL", "sr_RS", "es_ES", "nl_NL", "uk", "sv_SE", "fr_FR", "et", "it_IT",
 	"de_DE", "fi", "he_IL", "ru_RU", "be_BY", "tr", "th", "ar", "hu_HU", "cs_CZ", "pl_PL", "da_DK", "sk_SK", "zh_CN", "id_ID", "el_GR",
 	"hr", "nb", "ro_RO");
 	
-	array_push($captcha_translated_lang, "en_GB", "en_US");
+	array_push($captcha_translated_lang, "en_GB", "en_US" , "pt_PT", "pt_BR");
 	$language = get_locale();
 	?>
 	<div id="welcome-panel" class="welcome-panel" style="width:1000px;padding:0px !important;background-color: #f9f9f9 !important">
