@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Captcha Bank\n"
-"POT-Creation-Date: 2015-01-05 10:07+0530\n"
+"POT-Creation-Date: 2015-01-07 14:21+0530\n"
 "PO-Revision-Date: \n"
 "Last-Translator: \n"
 "Language-Team: \n"
@@ -11,7 +11,8 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: Poedit 1.6.6\n"
 "X-Poedit-KeywordsList: _e;__;gettext\n"
-"X-Poedit-Basepath: C:\\Users\\Developer\\Downloads\\captcha-bank\n"
+"X-Poedit-Basepath: C:\\xampp\\htdocs\\captcha_testing\\wp-content\\plugins"
+"\\captcha-bank\n"
 "X-Poedit-SearchPath-0: .\n"
 
 #: captcha-bank.php:303

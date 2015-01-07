@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Captcha Bank\n"
-"POT-Creation-Date: 2014-11-17 16:54+0530\n"
-"PO-Revision-Date: 2014-11-17 16:54+0530\n"
+"POT-Creation-Date: 2015-01-07 14:18+0530\n"
+"PO-Revision-Date: 2015-01-07 14:18+0530\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: id\n"
@@ -10,75 +10,59 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: Poedit 1.6.6\n"
-"X-Poedit-Basepath: C:\\Users\\Developer\\Desktop\\captcha-bank-versions"
+"X-Poedit-Basepath: C:\\xampp\\htdocs\\captcha_testing\\wp-content\\plugins"
 "\\captcha-bank\n"
 "Plural-Forms: nplurals=6; plural=(n==0 ? 0 : n==1 ? 1 : n==2 ? 2 : n%100>=3 "
 "&& n%100<=10 ? 3 : n%100>=11 && n%100<=99 ? 4 : 5);\n"
 "X-Poedit-KeywordsList: __;_e\n"
 "X-Poedit-SearchPath-0: .\n"
 
-#: captcha-bank.php:283
+#: captcha-bank.php:303
 msgid "View WP Captcha Bank Documentation"
 msgstr ""
 
-#: captcha-bank.php:283
+#: captcha-bank.php:303
 msgid "Docs"
 msgstr ""
 
-#: captcha-bank.php:284
+#: captcha-bank.php:304
 msgid "View WP Captcha Bank Editions"
 msgstr ""
 
-#: captcha-bank.php:284
+#: captcha-bank.php:304
 msgid "Go for Premium!"
 msgstr ""
 
-#: lib/admin-bar-menu.php:19 lib/admin-bar-menu.php:70
-#: lib/admin-bar-menu.php:120 lib/menus.php:9 lib/menus.php:19
-#: lib/menus.php:29 views/header.php:146 views/settings.php:41
+#: lib/admin-bar-menu.php:18 lib/menus.php:12 views/header.php:146
+#: views/settings.php:41
 msgid "Captcha Settings"
 msgstr ""
 
-#: lib/admin-bar-menu.php:25 lib/admin-bar-menu.php:76
-#: lib/admin-bar-menu.php:126 lib/menus.php:10 lib/menus.php:20
-#: lib/menus.php:30 views/header.php:149 views/login-logs.php:30
-#: views/purchase-premium-edition.php:129
-#: views/purchase-premium-edition.php:140
-#: views/purchase-premium-edition.php:523
-#: views/purchase-premium-edition.php:827
-#: views/purchase-premium-edition.php:1129
-#: views/purchase-premium-edition.php:1433
-#: views/purchase-premium-edition.php:1737
+#: lib/admin-bar-menu.php:24 lib/menus.php:13 views/header.php:149
+#: views/login-logs.php:30
 msgid "Login Logs"
 msgstr ""
 
-#: lib/admin-bar-menu.php:31 lib/admin-bar-menu.php:82
-#: lib/admin-bar-menu.php:132 lib/menus.php:11 lib/menus.php:21
-#: lib/menus.php:31 views/header.php:152 views/plugin-settings.php:39
+#: lib/admin-bar-menu.php:30 lib/menus.php:14 views/header.php:152
+#: views/plugin-settings.php:39
 msgid "Plugin Settings"
 msgstr ""
 
-#: lib/admin-bar-menu.php:37 lib/admin-bar-menu.php:88
-#: lib/admin-bar-menu.php:138 lib/menus.php:12 lib/menus.php:22
-#: lib/menus.php:32
+#: lib/admin-bar-menu.php:36 lib/menus.php:15
 msgid "System Status"
 msgstr ""
 
-#: lib/admin-bar-menu.php:43 lib/admin-bar-menu.php:94
-#: lib/admin-bar-menu.php:144 lib/menus.php:13 lib/menus.php:23
-#: lib/menus.php:33 views/header.php:99 views/header.php:158
+#: lib/admin-bar-menu.php:42 lib/menus.php:16 views/header.php:94
+#: views/header.php:158
 msgid "Recommendations"
 msgstr ""
 
-#: lib/admin-bar-menu.php:49 lib/admin-bar-menu.php:100
-#: lib/admin-bar-menu.php:150 lib/menus.php:14 lib/menus.php:24
-#: lib/menus.php:34 views/header.php:155 views/purchase-premium-edition.php:26
+#: lib/admin-bar-menu.php:48 lib/menus.php:17 views/header.php:155
 msgid "Premium Editions"
 msgstr ""
 
-#: lib/admin-bar-menu.php:55 lib/admin-bar-menu.php:106
-#: lib/admin-bar-menu.php:156 lib/menus.php:15 lib/menus.php:25
-#: lib/menus.php:35 views/header.php:104 views/header.php:161
+#: lib/admin-bar-menu.php:54 lib/menus.php:18 views/header.php:99
+#: views/header.php:161
 msgid "Our Other Services"
 msgstr ""
 
@@ -90,7 +74,7 @@ msgstr ""
 msgid "The Captcha Code does not match. Please Try Again."
 msgstr ""
 
-#: lib/install-script.php:233 lib/settings-include.php:50
+#: lib/install-script.php:233
 msgid "random :"
 msgstr ""
 
@@ -121,6 +105,10 @@ msgstr ""
 msgid "Captcha-Bank"
 msgstr ""
 
+#: lib/settings-include.php:50
+msgid "random"
+msgstr ""
+
 #: lib/settings-include.php:55
 msgid ""
 "You have Exceeded Maximum Login Attempts.\n"
@@ -128,7 +116,7 @@ msgid ""
 "Kindly, try again after 24 Hours."
 msgstr ""
 
-#: views/frontend-captcha.php:37
+#: views/frontend-captcha.php:44
 msgid "Enter Code"
 msgstr ""
 
@@ -180,7 +168,7 @@ msgstr ""
 msgid "More Actions"
 msgstr ""
 
-#: views/header.php:94
+#: views/header.php:104
 msgid "Plugin Customization"
 msgstr ""
 
@@ -335,461 +323,6 @@ msgstr ""
 
 #: views/plugin-settings.php:113 views/settings.php:45 views/settings.php:930
 msgid "Save Changes"
-msgstr ""
-
-#: views/purchase-premium-edition.php:33
-msgid "WP Captcha Bank is an one time Investment. Its Worth it!"
-msgstr ""
-
-#: views/purchase-premium-edition.php:47
-msgid "choose"
-msgstr ""
-
-#: views/purchase-premium-edition.php:49
-msgid "your"
-msgstr ""
-
-#: views/purchase-premium-edition.php:51
-msgid "plan"
-msgstr ""
-
-#: views/purchase-premium-edition.php:61 views/purchase-premium-edition.php:67
-#: views/purchase-premium-edition.php:475
-#: views/purchase-premium-edition.php:779
-#: views/purchase-premium-edition.php:1081
-#: views/purchase-premium-edition.php:1385
-#: views/purchase-premium-edition.php:1689
-msgid "Domains per License"
-msgstr ""
-
-#: views/purchase-premium-edition.php:65
-msgid "Number of websites that can use the plugin on purchase of a License."
-msgstr ""
-
-#: views/purchase-premium-edition.php:78 views/purchase-premium-edition.php:84
-#: views/purchase-premium-edition.php:487
-#: views/purchase-premium-edition.php:791
-#: views/purchase-premium-edition.php:1093
-#: views/purchase-premium-edition.php:1397
-#: views/purchase-premium-edition.php:1701
-msgid "Technical Support"
-msgstr ""
-
-#: views/purchase-premium-edition.php:82
-msgid ""
-"Technical Support by the Development Team for Installation, Bug Fixing, "
-"Plugin Compatibility Issues."
-msgstr ""
-
-#: views/purchase-premium-edition.php:95
-#: views/purchase-premium-edition.php:101
-#: views/purchase-premium-edition.php:499
-#: views/purchase-premium-edition.php:803
-#: views/purchase-premium-edition.php:1105
-#: views/purchase-premium-edition.php:1409
-#: views/purchase-premium-edition.php:1713
-msgid "Plugin Updates"
-msgstr ""
-
-#: views/purchase-premium-edition.php:99
-msgid ""
-"Automatic Plugin Update Notification with New Features, Bug Fixing and much "
-"more."
-msgstr ""
-
-#: views/purchase-premium-edition.php:112
-#: views/purchase-premium-edition.php:118
-#: views/purchase-premium-edition.php:511
-#: views/purchase-premium-edition.php:815
-#: views/purchase-premium-edition.php:1117
-#: views/purchase-premium-edition.php:1421
-#: views/purchase-premium-edition.php:1725
-msgid "Multi-Lingual"
-msgstr ""
-
-#: views/purchase-premium-edition.php:116
-msgid "Multi-Lingual Facility allows the plugin to be used in 36 languages."
-msgstr ""
-
-#: views/purchase-premium-edition.php:133
-msgid ""
-"Allows you to track the\n"
-"\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tcurrent users who are logged in into you "
-"website and show\n"
-"\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tthere Geo Location on the map. It shows "
-"various details\n"
-"\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tsuch as Username, IP Address, Location, "
-"Login Date &amp;\n"
-"\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tTime, Login Status, Action to Block or White "
-"list IP\n"
-"\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tAddress."
-msgstr ""
-
-#: views/purchase-premium-edition.php:151
-#: views/purchase-premium-edition.php:161
-#: views/purchase-premium-edition.php:535
-#: views/purchase-premium-edition.php:839
-#: views/purchase-premium-edition.php:1141
-#: views/purchase-premium-edition.php:1445
-#: views/purchase-premium-edition.php:1749
-msgid "Captcha General Settings"
-msgstr ""
-
-#: views/purchase-premium-edition.php:155
-msgid ""
-"Allows you to set various\n"
-"\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tsettings for Captcha which includes Title, "
-"Tooltip,\n"
-"\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tnumber of characters, Captcha type, Text "
-"Case for\n"
-"\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tCaptcha, Captcha text case sensitivity, "
-"Width and\n"
-"\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tHeight"
-msgstr ""
-
-#: views/purchase-premium-edition.php:172
-#: views/purchase-premium-edition.php:178
-#: views/purchase-premium-edition.php:547
-#: views/purchase-premium-edition.php:851
-#: views/purchase-premium-edition.php:1153
-#: views/purchase-premium-edition.php:1457
-#: views/purchase-premium-edition.php:1761
-msgid "Captcha For Login"
-msgstr ""
-
-#: views/purchase-premium-edition.php:176
-msgid "Allows you to display Captcha on WordPress Login Form."
-msgstr ""
-
-#: views/purchase-premium-edition.php:189
-#: views/purchase-premium-edition.php:195
-#: views/purchase-premium-edition.php:559
-#: views/purchase-premium-edition.php:863
-#: views/purchase-premium-edition.php:1165
-#: views/purchase-premium-edition.php:1469
-#: views/purchase-premium-edition.php:1773
-msgid "Captcha For Registration"
-msgstr ""
-
-#: views/purchase-premium-edition.php:193
-msgid "Allows you to display Captcha on WordPress Registration Form."
-msgstr ""
-
-#: views/purchase-premium-edition.php:206
-#: views/purchase-premium-edition.php:212
-#: views/purchase-premium-edition.php:571
-#: views/purchase-premium-edition.php:875
-#: views/purchase-premium-edition.php:1177
-#: views/purchase-premium-edition.php:1481
-#: views/purchase-premium-edition.php:1785
-msgid "Captcha For Comments"
-msgstr ""
-
-#: views/purchase-premium-edition.php:210
-msgid "Allows you to display Captcha on WordPress Comments Form."
-msgstr ""
-
-#: views/purchase-premium-edition.php:223
-#: views/purchase-premium-edition.php:229
-#: views/purchase-premium-edition.php:583
-#: views/purchase-premium-edition.php:887
-#: views/purchase-premium-edition.php:1189
-#: views/purchase-premium-edition.php:1493
-#: views/purchase-premium-edition.php:1798
-msgid "Captcha For Admin Comments"
-msgstr ""
-
-#: views/purchase-premium-edition.php:227
-msgid "Allows you to display Captcha on WordPress Admin Comment Form."
-msgstr ""
-
-#: views/purchase-premium-edition.php:240
-#: views/purchase-premium-edition.php:246
-#: views/purchase-premium-edition.php:595
-#: views/purchase-premium-edition.php:899
-#: views/purchase-premium-edition.php:1201
-#: views/purchase-premium-edition.php:1505
-#: views/purchase-premium-edition.php:1811
-msgid "Captcha For Reset/Lost Password"
-msgstr ""
-
-#: views/purchase-premium-edition.php:244
-msgid "Allows you to display Captcha on WordPress Reset/Lost Password Form."
-msgstr ""
-
-#: views/purchase-premium-edition.php:257
-#: views/purchase-premium-edition.php:263
-#: views/purchase-premium-edition.php:607
-#: views/purchase-premium-edition.php:911
-#: views/purchase-premium-edition.php:1213
-#: views/purchase-premium-edition.php:1517
-#: views/purchase-premium-edition.php:1824
-msgid "Hide Captcha For Users"
-msgstr ""
-
-#: views/purchase-premium-edition.php:261
-msgid ""
-"Allows you to hide Captcha for Admin Comment form when the user is other "
-"than Administrator."
-msgstr ""
-
-#: views/purchase-premium-edition.php:274
-#: views/purchase-premium-edition.php:280
-#: views/purchase-premium-edition.php:619
-#: views/purchase-premium-edition.php:923
-#: views/purchase-premium-edition.php:1225
-#: views/purchase-premium-edition.php:1529
-#: views/purchase-premium-edition.php:1836
-msgid "Captcha Layout Settings"
-msgstr ""
-
-#: views/purchase-premium-edition.php:278
-msgid ""
-"Allows you to set various Layout Settings such as Background, Lines, Dots, "
-"Text Transparency, and Signature for Captcha."
-msgstr ""
-
-#: views/purchase-premium-edition.php:291
-#: views/purchase-premium-edition.php:297
-#: views/purchase-premium-edition.php:631
-#: views/purchase-premium-edition.php:935
-#: views/purchase-premium-edition.php:1237
-#: views/purchase-premium-edition.php:1541
-#: views/purchase-premium-edition.php:1848
-msgid "Captcha Font Settings"
-msgstr ""
-
-#: views/purchase-premium-edition.php:295
-msgid ""
-"Allows you to set different Font Settings (Font Family, Font Size, and Font "
-"Color) for Captcha Text."
-msgstr ""
-
-#: views/purchase-premium-edition.php:308
-#: views/purchase-premium-edition.php:317
-#: views/purchase-premium-edition.php:643
-#: views/purchase-premium-edition.php:1249
-#: views/purchase-premium-edition.php:1553
-#: views/purchase-premium-edition.php:1860
-msgid "Captcha Message Settings"
-msgstr ""
-
-#: views/purchase-premium-edition.php:312
-msgid ""
-"Allows you to set different\n"
-"\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tsettings for error messages such as "
-"Captcha Empty Error,\n"
-"\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tCaptcha Invalid Error, IP Block Message, "
-"Max Login\n"
-"\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tAttempts and Maximum Login Exceeded Error."
-msgstr ""
-
-#: views/purchase-premium-edition.php:328
-#: views/purchase-premium-edition.php:334
-#: views/purchase-premium-edition.php:655
-#: views/purchase-premium-edition.php:957
-#: views/purchase-premium-edition.php:1261
-#: views/purchase-premium-edition.php:1565
-#: views/purchase-premium-edition.php:1873
-msgid "Captcha For Contact Bank"
-msgstr ""
-
-#: views/purchase-premium-edition.php:332
-msgid ""
-"Allows you to Integrate Captcha on Contact Bank Form. For this you need to "
-"purchase both the plugins separately."
-msgstr ""
-
-#: views/purchase-premium-edition.php:345
-#: views/purchase-premium-edition.php:351
-#: views/purchase-premium-edition.php:667
-#: views/purchase-premium-edition.php:969
-#: views/purchase-premium-edition.php:1273
-#: views/purchase-premium-edition.php:1577
-#: views/purchase-premium-edition.php:1884
-msgid "Roles and Capabilities"
-msgstr ""
-
-#: views/purchase-premium-edition.php:349
-msgid ""
-"Allows you to controls the capabilities of WP Captcha Bank among different "
-"roles of WordPress users."
-msgstr ""
-
-#: views/purchase-premium-edition.php:362
-#: views/purchase-premium-edition.php:368
-#: views/purchase-premium-edition.php:679
-#: views/purchase-premium-edition.php:981
-#: views/purchase-premium-edition.php:1285
-#: views/purchase-premium-edition.php:1589
-#: views/purchase-premium-edition.php:1896
-msgid "Block Login IP Address"
-msgstr ""
-
-#: views/purchase-premium-edition.php:366
-msgid ""
-"Allows you to block the IP Addresses of the login users from the Login Logs "
-"if he is considered as unauthorized."
-msgstr ""
-
-#: views/purchase-premium-edition.php:379
-#: views/purchase-premium-edition.php:385
-#: views/purchase-premium-edition.php:691
-#: views/purchase-premium-edition.php:993
-#: views/purchase-premium-edition.php:1297
-#: views/purchase-premium-edition.php:1601
-#: views/purchase-premium-edition.php:1909 views/settings.php:739
-#: views/settings.php:879
-msgid "Max Login Attempts"
-msgstr ""
-
-#: views/purchase-premium-edition.php:383 views/settings.php:740
-msgid ""
-"Allows you to set number of login attempts left for the user incase Captcha "
-"code is left empty or filled invalid."
-msgstr ""
-
-#: views/purchase-premium-edition.php:396
-#: views/purchase-premium-edition.php:402
-#: views/purchase-premium-edition.php:703
-#: views/purchase-premium-edition.php:1005
-#: views/purchase-premium-edition.php:1309
-#: views/purchase-premium-edition.php:1613
-#: views/purchase-premium-edition.php:1922 views/settings.php:712
-msgid "Auto IP Block"
-msgstr ""
-
-#: views/purchase-premium-edition.php:400 views/settings.php:713
-msgid ""
-"Allows you to Blocks IP addresses for next 24 hours when the limit of login "
-"attempts is reached."
-msgstr ""
-
-#: views/purchase-premium-edition.php:413
-#: views/purchase-premium-edition.php:419
-#: views/purchase-premium-edition.php:715
-#: views/purchase-premium-edition.php:1017
-#: views/purchase-premium-edition.php:1321
-#: views/purchase-premium-edition.php:1625
-#: views/purchase-premium-edition.php:1934
-msgid "Block IP Ranges"
-msgstr ""
-
-#: views/purchase-premium-edition.php:417
-msgid ""
-"Allows you to block range of IP Addresses that are considered undesirable or "
-"hostile."
-msgstr ""
-
-#: views/purchase-premium-edition.php:430
-#: views/purchase-premium-edition.php:436
-#: views/purchase-premium-edition.php:727
-#: views/purchase-premium-edition.php:1029
-#: views/purchase-premium-edition.php:1333
-#: views/purchase-premium-edition.php:1637
-#: views/purchase-premium-edition.php:1946
-msgid "Block Single IP Address"
-msgstr ""
-
-#: views/purchase-premium-edition.php:434
-msgid ""
-"Allows you to add single IP Address for blocking it as per your requirement."
-msgstr ""
-
-#: views/purchase-premium-edition.php:456
-msgid "Lite"
-msgstr ""
-
-#: views/purchase-premium-edition.php:465
-msgid "FREE"
-msgstr ""
-
-#: views/purchase-premium-edition.php:477
-#: views/purchase-premium-edition.php:781
-#: views/purchase-premium-edition.php:1083
-msgid "1"
-msgstr ""
-
-#: views/purchase-premium-edition.php:489
-msgid "None"
-msgstr ""
-
-#: views/purchase-premium-edition.php:738
-msgid "Download!"
-msgstr ""
-
-#: views/purchase-premium-edition.php:752
-msgid "Eco"
-msgstr ""
-
-#: views/purchase-premium-edition.php:762
-#: views/purchase-premium-edition.php:1064
-#: views/purchase-premium-edition.php:1368
-#: views/purchase-premium-edition.php:1672
-msgid "You just need to pay for once for life time."
-msgstr ""
-
-#: views/purchase-premium-edition.php:765
-msgid "8"
-msgstr ""
-
-#: views/purchase-premium-edition.php:768
-#: views/purchase-premium-edition.php:1070
-#: views/purchase-premium-edition.php:1374
-#: views/purchase-premium-edition.php:1678
-msgid "one time"
-msgstr ""
-
-#: views/purchase-premium-edition.php:793
-msgid "1 Week"
-msgstr ""
-
-#: views/purchase-premium-edition.php:1040
-#: views/purchase-premium-edition.php:1344
-#: views/purchase-premium-edition.php:1648
-#: views/purchase-premium-edition.php:1957
-msgid "Order Now!"
-msgstr ""
-
-#: views/purchase-premium-edition.php:1054
-msgid "Pro"
-msgstr ""
-
-#: views/purchase-premium-edition.php:1067
-msgid "12"
-msgstr ""
-
-#: views/purchase-premium-edition.php:1095
-msgid "1 Month"
-msgstr ""
-
-#: views/purchase-premium-edition.php:1358
-msgid "Developer"
-msgstr ""
-
-#: views/purchase-premium-edition.php:1371
-msgid "49"
-msgstr ""
-
-#: views/purchase-premium-edition.php:1387
-msgid "5"
-msgstr ""
-
-#: views/purchase-premium-edition.php:1399
-#: views/purchase-premium-edition.php:1703
-msgid "1 Year"
-msgstr ""
-
-#: views/purchase-premium-edition.php:1662
-msgid "Extended"
-msgstr ""
-
-#: views/purchase-premium-edition.php:1675
-msgid "389"
-msgstr ""
-
-#: views/purchase-premium-edition.php:1691
-msgid "50"
 msgstr ""
 
 #: views/settings.php:31
@@ -1171,6 +704,26 @@ msgstr ""
 
 #: views/settings.php:707
 msgid "Security Settings"
+msgstr ""
+
+#: views/settings.php:712
+msgid "Auto IP Block"
+msgstr ""
+
+#: views/settings.php:713
+msgid ""
+"Allows you to Blocks IP addresses for next 24 hours when the limit of login "
+"attempts is reached."
+msgstr ""
+
+#: views/settings.php:739 views/settings.php:879
+msgid "Max Login Attempts"
+msgstr ""
+
+#: views/settings.php:740
+msgid ""
+"Allows you to set number of login attempts left for the user incase Captcha "
+"code is left empty or filled invalid."
 msgstr ""
 
 #: views/settings.php:745

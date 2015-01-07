@@ -791,7 +791,7 @@ else
 														<?php _e("You just need to pay for once for life time.", captcha_bank); ?>
 													</span>
 													 <h1 class="col1">
-														&pound;<span><?php _e("8", captcha_bank); ?></span>
+														&euro;<span><?php _e("11", captcha_bank); ?></span>
 													</h1>
 													<h3 class="col1">
 														<?php _e("one time", captcha_bank); ?>
@@ -1105,7 +1105,7 @@ else
 														<?php _e("You just need to pay for once for life time.", captcha_bank); ?>
 													</span>
 													<h1 class="col1">
-														&pound;<span><?php _e("12", captcha_bank); ?></span>
+														&euro;<span><?php _e("17", captcha_bank); ?></span>
 													</h1>
 													<h3 class="col1">
 														<?php _e("one time", captcha_bank); ?>
@@ -1421,7 +1421,7 @@ else
 														<?php _e("You just need to pay for once for life time.", captcha_bank); ?>
 													</span>
 													<h1 class="col1">
-														&pound;<span><?php _e("49", captcha_bank); ?></span>
+														&euro;<span><?php _e("69", captcha_bank); ?></span>
 													</h1>
 													<h3 class="col1">
 														<?php _e("one time", captcha_bank); ?>
@@ -1737,7 +1737,7 @@ else
 														<?php _e("You just need to pay for once for life time.", captcha_bank); ?>
 													</span>
 													<h1 class="col1">
-														&pound;<span><?php _e("389", captcha_bank); ?></span>
+														&euro;<span><?php _e("545", captcha_bank); ?></span>
 													</h1>
 													<h3 class="col1">
 														<?php _e("one time", captcha_bank); ?>

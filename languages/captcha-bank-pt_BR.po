@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Captcha Bank\n"
-"POT-Creation-Date: 2015-01-05 10:07+0530\n"
+"POT-Creation-Date: 2015-01-07 14:20+0530\n"
 "PO-Revision-Date: \n"
 "Last-Translator: \n"
 "Language-Team: \n"
@@ -11,7 +11,8 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: Poedit 1.6.6\n"
 "X-Poedit-KeywordsList: _e;__;gettext\n"
-"X-Poedit-Basepath: C:\\Users\\Developer\\Downloads\\captcha-bank\n"
+"X-Poedit-Basepath: C:\\xampp\\htdocs\\captcha_testing\\wp-content\\plugins"
+"\\captcha-bank\n"
 "X-Poedit-SearchPath-0: .\n"
 
 #: captcha-bank.php:303
@@ -1101,6 +1102,108 @@ msgstr "Versão do Tema:"
 msgid "Author URL :"
 msgstr "URL do Autor:"
 
+#~ msgid "WP Captcha Bank is an one time Investment. Its Worth it!"
+#~ msgstr "WP Captcha Bank é um investimento de uma vez. Sua pena!"
+
+#~ msgid "choose"
+#~ msgstr "escolher"
+
+#, fuzzy
+#~ msgid "Plugin Updates"
+#~ msgstr "Configurações do Plugin"
+
+#, fuzzy
+#~ msgid "Captcha General Settings"
+#~ msgstr "Configurações Gerais"
+
+#, fuzzy
+#~ msgid "Captcha For Login"
+#~ msgstr "Instrução do Captcha"
+
+#, fuzzy
+#~ msgid "Captcha For Registration"
+#~ msgstr "Configurações de Captcha"
+
+#, fuzzy
+#~ msgid "Captcha For Comments"
+#~ msgstr "Instrução do Captcha"
+
+#, fuzzy
+#~ msgid "Hide Captcha For Users"
+#~ msgstr "Esconder o Captcha para usuários registrados"
+
+#, fuzzy
+#~ msgid "Captcha Layout Settings"
+#~ msgstr "Configurações de Captcha"
+
+#, fuzzy
+#~ msgid "Captcha Font Settings"
+#~ msgstr "Configurações de Captcha"
+
+#, fuzzy
+#~ msgid ""
+#~ "Allows you to set different Font Settings (Font Family, Font Size, and "
+#~ "Font Color) for Captcha Text."
+#~ msgstr ""
+#~ "Permite definir as Bordas com diferentes tamanhos e cores para a Imagem "
+#~ "Captcha."
+
+#, fuzzy
+#~ msgid "Captcha Message Settings"
+#~ msgstr "Configurações de Mensagem"
+
+#, fuzzy
+#~ msgid "Captcha For Contact Bank"
+#~ msgstr "Captcha-Bank"
+
+#, fuzzy
+#~ msgid ""
+#~ "Allows you to controls the capabilities of WP Captcha Bank among "
+#~ "different roles of WordPress users."
+#~ msgstr ""
+#~ "Permite que você controle os recursos do WP Captcha Bank entre as "
+#~ "diferentes classes de usuários do WordPress."
+
+#, fuzzy
+#~ msgid "Block Login IP Address"
+#~ msgstr "Endereços de IP Bloqueados"
+
+#, fuzzy
+#~ msgid ""
+#~ "Allows you to block the IP Addresses of the login users from the Login "
+#~ "Logs if he is considered as unauthorized."
+#~ msgstr ""
+#~ "Permite o bloqueio ou desbloqueio de endereços de IP de qualquer usuário "
+#~ "logado."
+
+#, fuzzy
+#~ msgid "Block IP Ranges"
+#~ msgstr "Faixa de Bloqueio de IP"
+
+#, fuzzy
+#~ msgid ""
+#~ "Allows you to block range of IP Addresses that are considered undesirable "
+#~ "or hostile."
+#~ msgstr ""
+#~ "Permite bloquear Endereços de IP caso sejam considerados indesejáveis ou "
+#~ "hostis."
+
+#, fuzzy
+#~ msgid "Block Single IP Address"
+#~ msgstr "Endereços de IP Bloqueados"
+
+#, fuzzy
+#~ msgid ""
+#~ "Allows you to add single IP Address for blocking it as per your "
+#~ "requirement."
+#~ msgstr ""
+#~ "Permite bloquear Endereços de IP caso sejam considerados indesejáveis ou "
+#~ "hostis."
+
+#, fuzzy
+#~ msgid "Order Now!"
+#~ msgstr "Comprar Agora"
+
 #~ msgid "Licensing"
 #~ msgstr "Licença"
 
@@ -1378,9 +1481,6 @@ msgstr "URL do Autor:"
 #~ "ou imagens.<br/>As fotos ou imagens com qualidade melhorada são entregues "
 #~ "no formato como JPG, PNG, TIFF, PDF e PSD com fundo transparente, para um "
 #~ "uso mais flexível."
-
-#~ msgid "Order Now"
-#~ msgstr "Comprar Agora"
 
 #~ msgid "The Time Frame would be 5 Business Days and 3 revisions."
 #~ msgstr "O prazo de entrega é de 5 dias úteis com até 3 revisões"
