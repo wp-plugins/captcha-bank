@@ -1,4 +1,4 @@
-=== Captcha Bank - Advanced Spam Protection ===
+=== Captcha Bank - Best Captcha Plugin ===
 Contributors: contact-banker, Gallery-Bank
 Tags: captcha bank, admin, ajax, anti-spam, anti spam, spam control, antispam security, antispam, captcha, captcha numbers, protection shield, captcha plugin, captcha words, comment, comments, contact form with captcha, cpatcha, label, login, lost password, match captcha, registration, security, spam, spam protection, text captcha, web form protection, login protection, wordpress protection, shield, security, wordpress security, captcha protection, case sensitive captcha, wordpress captcha, admin comment, contact bank, plugin, register, best captcha, best wordpress captcha, simple captcha, popular captcha, spam, form, best captcha
 Requires at least: 3.0
