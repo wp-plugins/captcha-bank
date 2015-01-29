@@ -7,9 +7,11 @@ Stable tag: 2.1.6
 License: GPLv3 or later
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
 
-Captcha Bank is a Bullet Proof Advance Protection Shield for your Wordpress website. It's more than just a Captcha!
+Captcha Bank protects your website from spam and abuse while letting real people pass through with ease. It's more than just a Captcha!
 
 == Description ==
+
+#### Captcha Bank = Tough on bots, Easy on humans
 
 [**WP Captcha Bank - Best Captcha Plugin**](http://tech-banker.com/products/wp-captcha-bank/) is a powerful WordPress shield which allows you to protect your WordPress website from SPAM. You can display **Captcha** on Login Form, Registration Form, Comment Form, Admin Comment form, Contact Bank Form and Hide **Captcha** for registered users easily. 
 
@@ -18,6 +20,8 @@ Captcha Bank is a Bullet Proof Advance Protection Shield for your Wordpress webs
 **Captcha Bank**, a bullet proof captcha validator allows you to display **captcha** in different formats such as alphabets, digits or both. Its an advance protection shield that protects your website from spam by means of **captcha logic**, easily understood by human beings. Its a protection method for Website Login, Website Registration and Comment Spam in Blogs which makes the Captcha Bank powerful.
 
 **Captcha Bank** uses our own Tech Banker API based on Maxmind Database to fetch location and other details based on IP Address for its feature Login Logs.
+
+Captcha Bank is built for security. Armed with state of the art technology, it always stays at the forefront of spam and abuse fighting trends. 
 
 > #### **Live Demos - Captcha Bank**
 
