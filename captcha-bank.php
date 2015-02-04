@@ -4,7 +4,7 @@ Plugin Name: WP Captcha Bank Lite Edition
 Plugin URI: http://tech-banker.com
 Description: This plugin allows you to implement security captcha form into web forms to prevent spam.
 Author: Tech Banker
-Version: 2.1.8
+Version: 2.1.9
 Author URI: http://tech-banker.com
 */
 /////////////////////////////////////  Define  WP Captcha Bank  Constants  //////////////////////////////////
@@ -214,18 +214,17 @@ if(!function_exists("plugin_install_script_for_captcha_bank"))
 
 /////////////////////////////////////  Call Uninstall Script on Plugin Deactivation ////////////////////////////////
 
-// if(!function_exists("plugin_uninstall_script_for_captcha_bank"))
-// {
-// 	function plugin_uninstall_script_for_captcha_bank()
-// 	{
-// 	global $wpdb;
-		
-// 		if (file_exists(WP_CAPTCHA_BK_PLUGIN_DIR . "/lib/uninstall-script.php"))
-// 		{
-// 			include_once WP_CAPTCHA_BK_PLUGIN_DIR . "/lib/uninstall-script.php";
-// 		}
-// 	}
-// }
+if(!function_exists("plugin_uninstall_script_for_captcha_bank"))
+{
+	function plugin_uninstall_script_for_captcha_bank()
+	{
+		global $wpdb;
+		if (file_exists(WP_CAPTCHA_BK_PLUGIN_DIR . "/lib/uninstall-script.php"))
+		{
+			include_once WP_CAPTCHA_BK_PLUGIN_DIR . "/lib/uninstall-script.php";
+		}
+	}
+}
 
 ///////////////////////////////////// Register Ajax Based Function ////////////////////////////////////////////////
 
@@ -383,8 +382,8 @@ function captcha_plugin_autoUpdate()
 // activation Hook called for installation_for_captcha bank
 register_activation_hook(__FILE__, "plugin_install_script_for_captcha_bank");
 
-// activation Hook called for uninstallation_for_captcha bank
-//register_uninstall_hook(__FILE__, "plugin_uninstall_script_for_captcha_bank");
+//activation Hook called for uninstallation_for_captcha bank
+register_uninstall_hook(__FILE__, "plugin_uninstall_script_for_captcha_bank");
 
 // add_action Hook called for languages for captcha bank
 add_action("plugins_loaded", "plugin_load_textdomain_wp_captcha_bank");

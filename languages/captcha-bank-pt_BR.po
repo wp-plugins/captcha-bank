@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Captcha Bank\n"
-"POT-Creation-Date: 2015-01-07 14:20+0530\n"
+"POT-Creation-Date: 2015-02-04 17:37+0530\n"
 "PO-Revision-Date: \n"
 "Last-Translator: \n"
 "Language-Team: \n"
@@ -11,24 +11,23 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: Poedit 1.6.6\n"
 "X-Poedit-KeywordsList: _e;__;gettext\n"
-"X-Poedit-Basepath: C:\\xampp\\htdocs\\captcha_testing\\wp-content\\plugins"
-"\\captcha-bank\n"
+"X-Poedit-Basepath: C:\\Users\\Developer\\Desktop\\captcha-bank\\\n"
 "X-Poedit-SearchPath-0: .\n"
 
-#: captcha-bank.php:303
+#: captcha-bank.php:302
 msgid "View WP Captcha Bank Documentation"
 msgstr "Ver a documentação do WP Captcha Bank"
 
-#: captcha-bank.php:303
+#: captcha-bank.php:302
 msgid "Docs"
 msgstr "Docs"
 
-#: captcha-bank.php:304
+#: captcha-bank.php:303
 #, fuzzy
 msgid "View WP Captcha Bank Editions"
 msgstr "Ver a documentação do WP Captcha Bank"
 
-#: captcha-bank.php:304
+#: captcha-bank.php:303
 msgid "Go for Premium!"
 msgstr "ir para PREMIUM!"
 
@@ -37,30 +36,36 @@ msgstr "ir para PREMIUM!"
 msgid "Captcha Settings"
 msgstr "Configurações de Captcha"
 
-#: lib/admin-bar-menu.php:24 lib/menus.php:13 views/header.php:149
+#: lib/admin-bar-menu.php:24 lib/menus.php:13
+#: views/automatic-plugin-update.php:28 views/automatic-plugin-update.php:33
+#, fuzzy
+msgid "Plugin Updates"
+msgstr "Configurações do Plugin"
+
+#: lib/admin-bar-menu.php:30 lib/menus.php:14 views/header.php:149
 #: views/login-logs.php:30
 msgid "Login Logs"
 msgstr "Registros de Login"
 
-#: lib/admin-bar-menu.php:30 lib/menus.php:14 views/header.php:152
+#: lib/admin-bar-menu.php:36 lib/menus.php:15 views/header.php:152
 #: views/plugin-settings.php:39
 msgid "Plugin Settings"
 msgstr "Configurações do Plugin"
 
-#: lib/admin-bar-menu.php:36 lib/menus.php:15
+#: lib/admin-bar-menu.php:42 lib/menus.php:16
 msgid "System Status"
 msgstr "Status do Sistema"
 
-#: lib/admin-bar-menu.php:42 lib/menus.php:16 views/header.php:94
+#: lib/admin-bar-menu.php:48 lib/menus.php:17 views/header.php:94
 #: views/header.php:158
 msgid "Recommendations"
 msgstr "Recomendações"
 
-#: lib/admin-bar-menu.php:48 lib/menus.php:17 views/header.php:155
+#: lib/admin-bar-menu.php:54 lib/menus.php:18 views/header.php:155
 msgid "Premium Editions"
 msgstr "Edições Premium"
 
-#: lib/admin-bar-menu.php:54 lib/menus.php:18 views/header.php:99
+#: lib/admin-bar-menu.php:60 lib/menus.php:19 views/header.php:99
 #: views/header.php:161
 msgid "Our Other Services"
 msgstr "Mais Serviços Nossos"
@@ -121,6 +126,24 @@ msgstr ""
 "Você Excedeu o Máximo de Tentativas de Login.\n"
 "Por isso o seu IP foi bloqueado por hoje.\n"
 "Por gentileza, tente novamente em 24 Horas."
+
+#: views/automatic-plugin-update.php:36 views/plugin-settings.php:98
+#: views/plugin-settings.php:105 views/settings.php:369 views/settings.php:376
+#: views/settings.php:417 views/settings.php:424 views/settings.php:465
+#: views/settings.php:472 views/settings.php:513 views/settings.php:520
+#: views/settings.php:549 views/settings.php:556 views/settings.php:722
+#: views/settings.php:729
+msgid "Enable"
+msgstr "Habilitar"
+
+#: views/automatic-plugin-update.php:37 views/plugin-settings.php:99
+#: views/plugin-settings.php:106 views/settings.php:370 views/settings.php:377
+#: views/settings.php:418 views/settings.php:425 views/settings.php:466
+#: views/settings.php:473 views/settings.php:514 views/settings.php:521
+#: views/settings.php:550 views/settings.php:557 views/settings.php:723
+#: views/settings.php:730
+msgid "Disable"
+msgstr "Desabilitar"
 
 #: views/frontend-captcha.php:44
 msgid "Enter Code"
@@ -318,22 +341,6 @@ msgid ""
 msgstr ""
 "Permite ativar ou desativar o WP Captcha Bank pela barra de menu superior "
 "entre as diferentes classes dos usuários do WordPress."
-
-#: views/plugin-settings.php:98 views/plugin-settings.php:105
-#: views/settings.php:369 views/settings.php:376 views/settings.php:417
-#: views/settings.php:424 views/settings.php:465 views/settings.php:472
-#: views/settings.php:513 views/settings.php:520 views/settings.php:549
-#: views/settings.php:556 views/settings.php:722 views/settings.php:729
-msgid "Enable"
-msgstr "Habilitar"
-
-#: views/plugin-settings.php:99 views/plugin-settings.php:106
-#: views/settings.php:370 views/settings.php:377 views/settings.php:418
-#: views/settings.php:425 views/settings.php:466 views/settings.php:473
-#: views/settings.php:514 views/settings.php:521 views/settings.php:550
-#: views/settings.php:557 views/settings.php:723 views/settings.php:730
-msgid "Disable"
-msgstr "Desabilitar"
 
 #: views/plugin-settings.php:113 views/settings.php:45 views/settings.php:930
 msgid "Save Changes"
@@ -1107,10 +1114,6 @@ msgstr "URL do Autor:"
 
 #~ msgid "choose"
 #~ msgstr "escolher"
-
-#, fuzzy
-#~ msgid "Plugin Updates"
-#~ msgstr "Configurações do Plugin"
 
 #, fuzzy
 #~ msgid "Captcha General Settings"
