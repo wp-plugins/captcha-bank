@@ -4,7 +4,7 @@ Plugin Name: WP Captcha Bank Lite Edition
 Plugin URI: http://tech-banker.com
 Description: This plugin allows you to implement security captcha form into web forms to prevent spam.
 Author: Tech Banker
-Version: 2.1.7
+Version: 2.1.8
 Author URI: http://tech-banker.com
 */
 /////////////////////////////////////  Define  WP Captcha Bank  Constants  //////////////////////////////////
@@ -339,6 +339,43 @@ $version = get_option("captcha-bank-version-number");
 if($version == "" || $version != "")
 {
 	add_action("admin_init", "plugin_install_script_for_captcha_bank");
+}
+
+///////////////// CODE FOR PLUGIN AUTOMATIC UPDATE /////////////////
+
+$is_option_auto_update = get_option("captcha-bank-automatic_update");
+
+if($is_option_auto_update == "" || $is_option_auto_update == "1")
+{
+	if (!wp_next_scheduled("captcha_bank_auto_update"))
+	{
+		wp_schedule_event(time(), "daily", "captcha_bank_auto_update");
+	}
+	add_action("captcha_bank_auto_update", "captcha_plugin_autoUpdate");
+}
+else
+{
+	wp_clear_scheduled_hook("captcha_bank_auto_update");
+}
+function captcha_plugin_autoUpdate()
+{
+	try
+	{
+		require_once(ABSPATH . "wp-admin/includes/class-wp-upgrader.php");
+		require_once(ABSPATH . "wp-admin/includes/misc.php");
+		define("FS_METHOD", "direct");
+		require_once(ABSPATH . "wp-includes/update.php");
+		require_once(ABSPATH . "wp-admin/includes/file.php");
+		wp_update_plugins();
+		ob_start();
+		$plugin_upgrader = new Plugin_Upgrader();
+		$plugin_upgrader->upgrade("captcha-bank/captcha-bank.php");
+		$output = @ob_get_contents();
+		@ob_end_clean();
+	}
+	catch(Exception $e)
+	{
+	}
 }
 
 ///////////////////////////////////  Call Hooks   /////////////////////////////////////////////////////

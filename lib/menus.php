@@ -10,6 +10,7 @@ else
 {
 	add_menu_page("Captcha Bank","WP Captcha Bank", "read", "captcha_bank", "", plugins_url("/assets/images/icon.png" , dirname(__FILE__)));
 	add_submenu_page("captcha_bank", "Settings", __("Captcha Settings", captcha_bank), "read", "captcha_bank", "captcha_bank");
+	add_submenu_page("captcha_bank", "Plugin Updates", __("Plugin Updates", captcha_bank), "read", "wpcb_plugin_updates", "wpcb_plugin_updates");
 	add_submenu_page("captcha_bank", "Login Logs", __("Login Logs", captcha_bank), "read", "wpcb_login_logs", "wpcb_login_logs");
 	add_submenu_page("captcha_bank", "Plugin Settings", __("Plugin Settings", captcha_bank), "read", "wpcb_plugin_settings", "wpcb_plugin_settings");
 	add_submenu_page("captcha_bank", "System Status", __("System Status", captcha_bank), "read", "wpcb_system_status", "wpcb_system_status");
@@ -42,6 +43,31 @@ else
 			if(file_exists(WP_CAPTCHA_BK_PLUGIN_DIR . "/views/settings.php"))
 			{
 				include_once WP_CAPTCHA_BK_PLUGIN_DIR . "/views/settings.php";
+			}
+		}
+	}
+	if(!function_exists("wpcb_plugin_updates"))
+	{
+		function wpcb_plugin_updates()
+		{
+			global $wpdb,$current_user,$user_role_permission,$wp_version;
+			if(is_super_admin())
+			{
+				$captcha_role = "administrator";
+			}
+			else
+			{
+				$captcha_role = $wpdb->prefix . "capabilities";
+				$current_user->role = array_keys($current_user->$captcha_role);
+				$captcha_role = $current_user->role[0];
+			}
+			if(file_exists(WP_CAPTCHA_BK_PLUGIN_DIR . "/views/header.php"))
+			{
+				include_once WP_CAPTCHA_BK_PLUGIN_DIR . "/views/header.php";
+			}
+			if(file_exists(WP_CAPTCHA_BK_PLUGIN_DIR . "/views/automatic-plugin-update.php"))
+			{
+				include_once WP_CAPTCHA_BK_PLUGIN_DIR . "/views/automatic-plugin-update.php";
 			}
 		}
 	}

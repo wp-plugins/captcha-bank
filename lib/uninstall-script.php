@@ -20,4 +20,5 @@ $wpdb->query($sql);
 delete_option("captcha-bank-version-number");
 delete_option("captcha-bank-activation");
 delete_option("captcha-bank-updation-check-url");
+delete_option("captcha-bank-automatic-update");
 ?>

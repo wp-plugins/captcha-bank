@@ -19,6 +19,12 @@ else
 	));
 	$wp_admin_bar->add_menu(array(
 		"parent" => "captcha_bank_links",
+		"id" => "captcha_bank_updates_links",
+		"href" => site_url() . "/wp-admin/admin.php?page=wpcb_plugin_updates",
+		"title" => __("Plugin Updates", captcha_bank)
+	));
+	$wp_admin_bar->add_menu(array(
+		"parent" => "captcha_bank_links",
 		"id" => "captcha_bank_login_logs",
 		"href" => site_url() . "/wp-admin/admin.php?page=wpcb_login_logs",
 		"title" => __("Login Logs", captcha_bank)

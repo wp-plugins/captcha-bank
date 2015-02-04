@@ -283,4 +283,9 @@ if($version == "")
 	}
 }
 update_option("captcha-bank-version-number","2.0");
+$option_auto_update = get_option("captcha-bank-automatic-update");
+if($option_auto_update == "")
+{
+	update_option("captcha-bank-automatic-update", "1");
+}
  ?>
