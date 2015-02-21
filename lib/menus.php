@@ -13,6 +13,7 @@ else
 	add_submenu_page("captcha_bank", "Plugin Updates", __("Plugin Updates", captcha_bank), "read", "wpcb_plugin_updates", "wpcb_plugin_updates");
 	add_submenu_page("captcha_bank", "Login Logs", __("Login Logs", captcha_bank), "read", "wpcb_login_logs", "wpcb_login_logs");
 	add_submenu_page("captcha_bank", "Plugin Settings", __("Plugin Settings", captcha_bank), "read", "wpcb_plugin_settings", "wpcb_plugin_settings");
+	add_submenu_page("captcha_bank", "Feature Requests", __("Feature Requests",captcha_bank), "read", "wpcb_feature_requests", "wpcb_feature_requests");
 	add_submenu_page("captcha_bank", "System Status", __("System Status", captcha_bank), "read", "wpcb_system_status", "wpcb_system_status");
 	add_submenu_page("captcha_bank", "Recommendations", __("Recommendations", captcha_bank), "read", "wpcb_recommended_plugins", "wpcb_recommended_plugins");
 	add_submenu_page("captcha_bank", "Premium Editions", __("Premium Editions", captcha_bank), "read", "wpcb_purchase_premium_edition", "wpcb_purchase_premium_edition");
@@ -219,6 +220,31 @@ else
 			if(file_exists(WP_CAPTCHA_BK_PLUGIN_DIR . "/views/plugin-settings.php"))
 			{
 				include_once WP_CAPTCHA_BK_PLUGIN_DIR . "/views/plugin-settings.php";
+			}
+		}
+	}
+	if(!function_exists("wpcb_feature_requests"))
+	{
+		function wpcb_feature_requests()
+		{
+			global $wpdb,$current_user,$user_role_permission,$wp_version;
+			if(is_super_admin())
+			{
+				$captcha_role = "administrator";
+			}
+			else
+			{
+				$captcha_role = $wpdb->prefix . "capabilities";
+				$current_user->role = array_keys($current_user->$captcha_role);
+				$captcha_role = $current_user->role[0];
+			}
+			if(file_exists(WP_CAPTCHA_BK_PLUGIN_DIR . "/views/header.php"))
+			{
+				include_once WP_CAPTCHA_BK_PLUGIN_DIR . "/views/header.php";
+			}
+			if(file_exists(WP_CAPTCHA_BK_PLUGIN_DIR . "/views/captcha-feedback.php"))
+			{
+				include_once WP_CAPTCHA_BK_PLUGIN_DIR . "/views/captcha-feedback.php";
 			}
 		}
 	}

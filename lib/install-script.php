@@ -64,9 +64,9 @@ if(!function_exists("create_table_captcha_log"))
 		dbDelta($sql);
 	}
 }
-if(!function_exists("create_table_block_single_ip"))
+if(!function_exists("create_table_block_single_ip_cb"))
 {
-	function create_table_block_single_ip()
+	function create_table_block_single_ip_cb()
 	{
 		global $wpdb;
 		$sql = "CREATE TABLE " . captcha_bank_block_single_ip() . "(
@@ -77,9 +77,9 @@ if(!function_exists("create_table_block_single_ip"))
 		dbDelta($sql);
 	}
 }
-if(!function_exists("create_table_block_range_ip"))
+if(!function_exists("create_table_block_range_ip_cb"))
 {
-	function create_table_block_range_ip()
+	function create_table_block_range_ip_cb()
 	{
 		global $wpdb;
 		$sql = "CREATE TABLE " . captcha_bank_block_range_ip() . "(
@@ -109,6 +109,7 @@ if(!function_exists("create_table_plugin_settings"))
 global $wpdb;
 require_once(ABSPATH . "wp-admin/includes/upgrade.php");
 $version = get_option("captcha-bank-version-number");
+update_option("tech-banker-updation-check-url","http://tech-banker.com/wp-admin/admin-ajax.php");
 if($version == "")
 {
 	if (count($wpdb->get_var("SHOW TABLES LIKE '" . captcha_bank_settings() . "'")) == 0)
@@ -124,7 +125,7 @@ if($version == "")
 	{
 		$db_captcha_settings = $wpdb->get_results
 		(
-			"SELECT * FROM " .  captcha_bank_settings()
+			"SELECT * FROM " . captcha_bank_settings()
 		);
 		
 		$sql = "DROP TABLE " . captcha_bank_settings();
@@ -255,11 +256,11 @@ if($version == "")
 	}
 	if (count($wpdb->get_var("SHOW TABLES LIKE '" . captcha_bank_block_single_ip() . "'")) == 0)
 	{
-		create_table_block_single_ip();
+		create_table_block_single_ip_cb();
 	}
 	if (count($wpdb->get_var("SHOW TABLES LIKE '" . captcha_bank_block_range_ip() . "'")) == 0)
 	{
-		create_table_block_range_ip();
+		create_table_block_range_ip_cb();
 	}
 	if (count($wpdb->get_var("SHOW TABLES LIKE '" . captcha_bank_plugin_settings() . "'")) == 0)
 	{

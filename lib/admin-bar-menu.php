@@ -37,6 +37,12 @@ else
 	));
 	$wp_admin_bar->add_menu(array(
 		"parent" => "captcha_bank_links",
+		"id" => "captcha_bank_feedback",
+		"href" => site_url() . "/wp-admin/admin.php?page=wpcb_feature_requests",
+		"title" => __("Feature Requests", captcha_bank)
+	));
+	$wp_admin_bar->add_menu(array(
+		"parent" => "captcha_bank_links",
 		"id" => "captcha_bank_system_status_links",
 		"href" => site_url() . "/wp-admin/admin.php?page=wpcb_system_status",
 		"title" => __("System Status", captcha_bank)
