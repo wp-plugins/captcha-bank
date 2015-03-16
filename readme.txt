@@ -3,7 +3,7 @@ Contributors: contact-banker, Gallery-Bank
 Tags: captcha bank, admin, ajax, anti-spam, anti spam, spam control, antispam security, antispam, captcha, captcha numbers, protection shield, captcha plugin, captcha words, comment, comments, contact form with captcha, cpatcha, label, login, lost password, match captcha, registration, security, spam, spam protection, text captcha, web form protection, login protection, wordpress protection, shield, security, wordpress security, captcha protection, case sensitive captcha, wordpress captcha, admin comment, contact bank, plugin, register, best captcha, best wordpress captcha, simple captcha, popular captcha, spam, form, best captcha
 Requires at least: 3.0
 Tested up to: 4.1.1
-Stable tag: 2.1.12
+Stable tag: 2.1.13
 License: GPLv3 or later
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
 
@@ -435,9 +435,14 @@ After changing settings, when you click on the Save Settings button you can see 
 
 == Changelog ==
 
+= 2.1.13 =
+
+* Minor Bugs Fixed.
+* Premium Editions Section Updated.
+
 = 2.1.12 =
 
-* Minor Bugs Fixed related to User Roles.
+* Minor Bugs Fixed related to user roles.
 
 = 2.1.11 =
 
