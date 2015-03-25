@@ -791,7 +791,7 @@ else
 														<?php _e("You just need to pay for once for life time.", captcha_bank); ?>
 													</span>
 													 <h1 class="col1">
-														&pound;<span><?php _e("10", captcha_bank); ?></span>
+														&pound;<span><?php _e("12", captcha_bank); ?></span>
 													</h1>
 													<h3 class="col1">
 														<?php _e("one time", captcha_bank); ?>
@@ -2043,8 +2043,8 @@ else
 						<div class="wpb_text_column wpb_content_element ">
 							<div class="wpb_wrapper">
 								<strong><u>NOTE FOR MULTISITE* :</u></strong> Allows you to use this
-								Plugin with network of sites / Multisites WordPress. But you
-								need to have separate license for each Installation.
+									Plugin with network of sites / Multisites WordPress. But you
+									need to purchase separate license for each Installation / Instance.
 							</div>
 						</div>
 					</div>
