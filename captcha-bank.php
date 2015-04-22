@@ -4,8 +4,9 @@ Plugin Name: WP Captcha Bank Lite Edition
 Plugin URI: http://tech-banker.com
 Description: This plugin allows you to implement security captcha form into web forms to prevent spam.
 Author: Tech Banker
-Version: 2.1.16
+Version: 2.1.17
 Author URI: http://tech-banker.com
+License: GPLv3 or later
 */
 /////////////////////////////////////  Define  WP Captcha Bank  Constants  //////////////////////////////////
 
@@ -64,7 +65,6 @@ if(!function_exists("admin_panel_css_calls_for_captcha_bank"))
 		wp_enqueue_style("google-fonts-roboto", "//fonts.googleapis.com/css?family=Roboto Condensed:300|Roboto Condensed:300|Roboto Condensed:300|Roboto Condensed:regular|Roboto Condensed:300");
 	}
 }
-
 /////////////////////////////////////  This Function creates menus on the admin bar. ////////////////////////////////////////
 
 if(!function_exists("create_admin_bar_menus_for_captcha_bank"))
