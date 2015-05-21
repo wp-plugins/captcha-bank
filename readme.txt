@@ -6,8 +6,7 @@ Tested up to: 4.2.2
 Stable tag: 2.1.21
 License: GPLv3 or later
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
-
-Captcha Bank protects your website from spam and abuse while letting real people pass through with ease. It's more than just a Captcha!
+Captcha Bank is an easy to use wordpress Captcha plugin to prevent spam on your site while letting real people pass through with ease. It's more than just a Captcha!
 
 == Description ==
 
