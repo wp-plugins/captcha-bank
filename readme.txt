@@ -3,7 +3,7 @@ Contributors: contact-banker, Gallery-Bank
 Tags: captcha bank, admin, ajax, anti-spam, anti spam, spam control, antispam security, antispam, captcha, captcha numbers, protection shield, captcha plugin, captcha words, comment, comments, contact form with captcha, cpatcha, label, login, lost password, match captcha, registration, security, spam, spam protection, text captcha, web form protection, login protection, wordpress protection, shield, security, wordpress security, captcha protection, case sensitive captcha, wordpress captcha, admin comment, contact bank, plugin, register, best captcha, best wordpress captcha, simple captcha, popular captcha, spam, form, best captcha
 Requires at least: 3.0
 Tested up to: 4.2.2
-Stable tag: 2.1.21
+Stable tag: 2.1.22
 License: GPLv3 or later
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
 Captcha Bank is an easy to use wordpress Captcha plugin to prevent spam on your site while letting real people pass through with ease. It's more than just a Captcha!
@@ -434,7 +434,16 @@ After changing settings, when you click on the Save Settings button you can see 
 
 == Changelog ==
 
-= 2.1.19 =
+= 2.1.22 =
+
+* Few Bugs Fixed
+* Removed Unwanted Js Files
+
+= 2.1.21 =
+
+* Few Bugs Fixed
+
+= 2.1.20 =
 
 * Compatiblility Tested with WordPress 4.2.2
 
