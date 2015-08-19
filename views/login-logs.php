@@ -186,7 +186,7 @@ else
 	</div>
 	<script type="text/javascript">
 	
-	jQuery(".hovertip").tooltip({placement: "right"});
+	jQuery(".hovertip").tooltip_tip({placement: "right"});
 	jQuery(document).ready(function()
 	{
 		var oTable = jQuery("#data-table-logs").dataTable

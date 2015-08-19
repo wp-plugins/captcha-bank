@@ -938,7 +938,7 @@ else
 	</form>
 	<script type="text/javascript">
 		var captcha_settings_array = [];
-		jQuery(".hovertip").tooltip({placement: "right"});
+		jQuery(".hovertip").tooltip_tip({placement: "right"});
 		jQuery(document).ready(function()
 		{
 			jQuery("#ux_ddl_action").val("<?php echo $captcha_type;?>");

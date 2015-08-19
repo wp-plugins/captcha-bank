@@ -119,7 +119,7 @@ else
 		</div>
 	</form>
 	<script type="text/javascript">
-	jQuery(".hovertip").tooltip({placement: "right"});
+	jQuery(".hovertip").tooltip_tip({placement: "right"});
 	jQuery("#frm_wp_plugin_settings").validate
 	({
 		submitHandler: function(form)
